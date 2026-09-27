@@ -1,0 +1,843 @@
+{
+  "frames": [
+    {
+      "filename": "triple_claw_combo_00",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_01",
+      "frame": {
+        "x": 524,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_02",
+      "frame": {
+        "x": 1048,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_03",
+      "frame": {
+        "x": 1572,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_04",
+      "frame": {
+        "x": 2096,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_05",
+      "frame": {
+        "x": 2620,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_06",
+      "frame": {
+        "x": 3144,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_07",
+      "frame": {
+        "x": 0,
+        "y": 360,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_08",
+      "frame": {
+        "x": 524,
+        "y": 360,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_09",
+      "frame": {
+        "x": 1048,
+        "y": 360,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_10",
+      "frame": {
+        "x": 1572,
+        "y": 360,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_11",
+      "frame": {
+        "x": 2096,
+        "y": 360,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_12",
+      "frame": {
+        "x": 2620,
+        "y": 360,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_13",
+      "frame": {
+        "x": 3144,
+        "y": 360,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_14",
+      "frame": {
+        "x": 0,
+        "y": 720,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_15",
+      "frame": {
+        "x": 524,
+        "y": 720,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_16",
+      "frame": {
+        "x": 1048,
+        "y": 720,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_17",
+      "frame": {
+        "x": 1572,
+        "y": 720,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_18",
+      "frame": {
+        "x": 2096,
+        "y": 720,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_19",
+      "frame": {
+        "x": 2620,
+        "y": 720,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_20",
+      "frame": {
+        "x": 3144,
+        "y": 720,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_21",
+      "frame": {
+        "x": 0,
+        "y": 1080,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_22",
+      "frame": {
+        "x": 524,
+        "y": 1080,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_23",
+      "frame": {
+        "x": 1048,
+        "y": 1080,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_24",
+      "frame": {
+        "x": 1572,
+        "y": 1080,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_25",
+      "frame": {
+        "x": 2096,
+        "y": 1080,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_26",
+      "frame": {
+        "x": 2620,
+        "y": 1080,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_27",
+      "frame": {
+        "x": 3144,
+        "y": 1080,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_28",
+      "frame": {
+        "x": 0,
+        "y": 1440,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_29",
+      "frame": {
+        "x": 524,
+        "y": 1440,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_30",
+      "frame": {
+        "x": 1048,
+        "y": 1440,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_31",
+      "frame": {
+        "x": 1572,
+        "y": 1440,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_32",
+      "frame": {
+        "x": 2096,
+        "y": 1440,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_33",
+      "frame": {
+        "x": 2620,
+        "y": 1440,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_34",
+      "frame": {
+        "x": 3144,
+        "y": 1440,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_35",
+      "frame": {
+        "x": 0,
+        "y": 1800,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    },
+    {
+      "filename": "triple_claw_combo_36",
+      "frame": {
+        "x": 524,
+        "y": 1800,
+        "w": 524,
+        "h": 360
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 360
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 360
+      },
+      "duration": 33
+    }
+  ],
+  "meta": {
+    "app": "tools/video_to_spritesheet.py",
+    "version": "1.0",
+    "image": "triple_claw_combo_spritesheet_half.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 3668,
+      "h": 2160
+    },
+    "scale": "1",
+    "frameTags": [
+      {
+        "name": "triple_claw_combo",
+        "from": 0,
+        "to": 36,
+        "direction": "forward"
+      }
+    ],
+    "frameWidth": 524,
+    "frameHeight": 360,
+    "columns": 7,
+    "rows": 6,
+    "frameCount": 37,
+    "fps": 30.0
+  }
+}
