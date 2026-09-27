@@ -1,816 +1,750 @@
 {
   "frames": [
     {
-      "filename": "triple_claw_combo_00",
+      "filename": "heavy_claw_attack_00",
       "frame": {
         "x": 0,
         "y": 0,
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "sourceSize": {
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "duration": 33
     },
     {
-      "filename": "triple_claw_combo_01",
-      "frame": {
-        "x": 540,
-        "y": 0,
-        "w": 540,
-        "h": 378
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 540,
-        "h": 378
-      },
-      "sourceSize": {
-        "w": 540,
-        "h": 378
-      },
-      "duration": 33
-    },
-    {
-      "filename": "triple_claw_combo_02",
+      "filename": "heavy_claw_attack_01",
       "frame": {
         "x": 1080,
         "y": 0,
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "sourceSize": {
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "duration": 33
     },
     {
-      "filename": "triple_claw_combo_03",
-      "frame": {
-        "x": 1620,
-        "y": 0,
-        "w": 540,
-        "h": 378
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 540,
-        "h": 378
-      },
-      "sourceSize": {
-        "w": 540,
-        "h": 378
-      },
-      "duration": 33
-    },
-    {
-      "filename": "triple_claw_combo_04",
+      "filename": "heavy_claw_attack_02",
       "frame": {
         "x": 2160,
         "y": 0,
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "sourceSize": {
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "duration": 33
     },
     {
-      "filename": "triple_claw_combo_05",
-      "frame": {
-        "x": 2700,
-        "y": 0,
-        "w": 540,
-        "h": 378
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 540,
-        "h": 378
-      },
-      "sourceSize": {
-        "w": 540,
-        "h": 378
-      },
-      "duration": 33
-    },
-    {
-      "filename": "triple_claw_combo_06",
+      "filename": "heavy_claw_attack_03",
       "frame": {
         "x": 3240,
         "y": 0,
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "sourceSize": {
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "duration": 33
     },
     {
-      "filename": "triple_claw_combo_07",
+      "filename": "heavy_claw_attack_04",
       "frame": {
-        "x": 0,
-        "y": 378,
-        "w": 540,
-        "h": 378
+        "x": 4320,
+        "y": 0,
+        "w": 1080,
+        "h": 756
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "sourceSize": {
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "duration": 33
     },
     {
-      "filename": "triple_claw_combo_08",
+      "filename": "heavy_claw_attack_05",
       "frame": {
-        "x": 540,
-        "y": 378,
-        "w": 540,
-        "h": 378
+        "x": 5400,
+        "y": 0,
+        "w": 1080,
+        "h": 756
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "sourceSize": {
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "duration": 33
     },
     {
-      "filename": "triple_claw_combo_09",
+      "filename": "heavy_claw_attack_06",
       "frame": {
-        "x": 1080,
-        "y": 378,
-        "w": 540,
-        "h": 378
+        "x": 6480,
+        "y": 0,
+        "w": 1080,
+        "h": 756
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "sourceSize": {
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "duration": 33
     },
     {
-      "filename": "triple_claw_combo_10",
-      "frame": {
-        "x": 1620,
-        "y": 378,
-        "w": 540,
-        "h": 378
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 540,
-        "h": 378
-      },
-      "sourceSize": {
-        "w": 540,
-        "h": 378
-      },
-      "duration": 33
-    },
-    {
-      "filename": "triple_claw_combo_11",
-      "frame": {
-        "x": 2160,
-        "y": 378,
-        "w": 540,
-        "h": 378
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 540,
-        "h": 378
-      },
-      "sourceSize": {
-        "w": 540,
-        "h": 378
-      },
-      "duration": 33
-    },
-    {
-      "filename": "triple_claw_combo_12",
-      "frame": {
-        "x": 2700,
-        "y": 378,
-        "w": 540,
-        "h": 378
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 540,
-        "h": 378
-      },
-      "sourceSize": {
-        "w": 540,
-        "h": 378
-      },
-      "duration": 33
-    },
-    {
-      "filename": "triple_claw_combo_13",
-      "frame": {
-        "x": 3240,
-        "y": 378,
-        "w": 540,
-        "h": 378
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 540,
-        "h": 378
-      },
-      "sourceSize": {
-        "w": 540,
-        "h": 378
-      },
-      "duration": 33
-    },
-    {
-      "filename": "triple_claw_combo_14",
+      "filename": "heavy_claw_attack_07",
       "frame": {
         "x": 0,
         "y": 756,
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "sourceSize": {
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "duration": 33
     },
     {
-      "filename": "triple_claw_combo_15",
-      "frame": {
-        "x": 540,
-        "y": 756,
-        "w": 540,
-        "h": 378
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 540,
-        "h": 378
-      },
-      "sourceSize": {
-        "w": 540,
-        "h": 378
-      },
-      "duration": 33
-    },
-    {
-      "filename": "triple_claw_combo_16",
+      "filename": "heavy_claw_attack_08",
       "frame": {
         "x": 1080,
         "y": 756,
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "sourceSize": {
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "duration": 33
     },
     {
-      "filename": "triple_claw_combo_17",
-      "frame": {
-        "x": 1620,
-        "y": 756,
-        "w": 540,
-        "h": 378
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 540,
-        "h": 378
-      },
-      "sourceSize": {
-        "w": 540,
-        "h": 378
-      },
-      "duration": 33
-    },
-    {
-      "filename": "triple_claw_combo_18",
+      "filename": "heavy_claw_attack_09",
       "frame": {
         "x": 2160,
         "y": 756,
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "sourceSize": {
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "duration": 33
     },
     {
-      "filename": "triple_claw_combo_19",
-      "frame": {
-        "x": 2700,
-        "y": 756,
-        "w": 540,
-        "h": 378
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 540,
-        "h": 378
-      },
-      "sourceSize": {
-        "w": 540,
-        "h": 378
-      },
-      "duration": 33
-    },
-    {
-      "filename": "triple_claw_combo_20",
+      "filename": "heavy_claw_attack_10",
       "frame": {
         "x": 3240,
         "y": 756,
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "sourceSize": {
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "duration": 33
     },
     {
-      "filename": "triple_claw_combo_21",
+      "filename": "heavy_claw_attack_11",
       "frame": {
-        "x": 0,
-        "y": 1134,
-        "w": 540,
-        "h": 378
+        "x": 4320,
+        "y": 756,
+        "w": 1080,
+        "h": 756
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "sourceSize": {
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "duration": 33
     },
     {
-      "filename": "triple_claw_combo_22",
+      "filename": "heavy_claw_attack_12",
       "frame": {
-        "x": 540,
-        "y": 1134,
-        "w": 540,
-        "h": 378
+        "x": 5400,
+        "y": 756,
+        "w": 1080,
+        "h": 756
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "sourceSize": {
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "duration": 33
     },
     {
-      "filename": "triple_claw_combo_23",
+      "filename": "heavy_claw_attack_13",
       "frame": {
-        "x": 1080,
-        "y": 1134,
-        "w": 540,
-        "h": 378
+        "x": 6480,
+        "y": 756,
+        "w": 1080,
+        "h": 756
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "sourceSize": {
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "duration": 33
     },
     {
-      "filename": "triple_claw_combo_24",
-      "frame": {
-        "x": 1620,
-        "y": 1134,
-        "w": 540,
-        "h": 378
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 540,
-        "h": 378
-      },
-      "sourceSize": {
-        "w": 540,
-        "h": 378
-      },
-      "duration": 33
-    },
-    {
-      "filename": "triple_claw_combo_25",
-      "frame": {
-        "x": 2160,
-        "y": 1134,
-        "w": 540,
-        "h": 378
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 540,
-        "h": 378
-      },
-      "sourceSize": {
-        "w": 540,
-        "h": 378
-      },
-      "duration": 33
-    },
-    {
-      "filename": "triple_claw_combo_26",
-      "frame": {
-        "x": 2700,
-        "y": 1134,
-        "w": 540,
-        "h": 378
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 540,
-        "h": 378
-      },
-      "sourceSize": {
-        "w": 540,
-        "h": 378
-      },
-      "duration": 33
-    },
-    {
-      "filename": "triple_claw_combo_27",
-      "frame": {
-        "x": 3240,
-        "y": 1134,
-        "w": 540,
-        "h": 378
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 540,
-        "h": 378
-      },
-      "sourceSize": {
-        "w": 540,
-        "h": 378
-      },
-      "duration": 33
-    },
-    {
-      "filename": "triple_claw_combo_28",
+      "filename": "heavy_claw_attack_14",
       "frame": {
         "x": 0,
         "y": 1512,
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "sourceSize": {
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "duration": 33
     },
     {
-      "filename": "triple_claw_combo_29",
-      "frame": {
-        "x": 540,
-        "y": 1512,
-        "w": 540,
-        "h": 378
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 540,
-        "h": 378
-      },
-      "sourceSize": {
-        "w": 540,
-        "h": 378
-      },
-      "duration": 33
-    },
-    {
-      "filename": "triple_claw_combo_30",
+      "filename": "heavy_claw_attack_15",
       "frame": {
         "x": 1080,
         "y": 1512,
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "sourceSize": {
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "duration": 33
     },
     {
-      "filename": "triple_claw_combo_31",
-      "frame": {
-        "x": 1620,
-        "y": 1512,
-        "w": 540,
-        "h": 378
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 540,
-        "h": 378
-      },
-      "sourceSize": {
-        "w": 540,
-        "h": 378
-      },
-      "duration": 33
-    },
-    {
-      "filename": "triple_claw_combo_32",
+      "filename": "heavy_claw_attack_16",
       "frame": {
         "x": 2160,
         "y": 1512,
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "sourceSize": {
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "duration": 33
     },
     {
-      "filename": "triple_claw_combo_33",
-      "frame": {
-        "x": 2700,
-        "y": 1512,
-        "w": 540,
-        "h": 378
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 540,
-        "h": 378
-      },
-      "sourceSize": {
-        "w": 540,
-        "h": 378
-      },
-      "duration": 33
-    },
-    {
-      "filename": "triple_claw_combo_34",
+      "filename": "heavy_claw_attack_17",
       "frame": {
         "x": 3240,
         "y": 1512,
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "sourceSize": {
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "duration": 33
     },
     {
-      "filename": "triple_claw_combo_35",
+      "filename": "heavy_claw_attack_18",
       "frame": {
-        "x": 0,
-        "y": 1890,
-        "w": 540,
-        "h": 378
+        "x": 4320,
+        "y": 1512,
+        "w": 1080,
+        "h": 756
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "sourceSize": {
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "duration": 33
     },
     {
-      "filename": "triple_claw_combo_36",
+      "filename": "heavy_claw_attack_19",
       "frame": {
-        "x": 540,
-        "y": 1890,
-        "w": 540,
-        "h": 378
+        "x": 5400,
+        "y": 1512,
+        "w": 1080,
+        "h": 756
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
       },
       "sourceSize": {
-        "w": 540,
-        "h": 378
+        "w": 1080,
+        "h": 756
+      },
+      "duration": 33
+    },
+    {
+      "filename": "heavy_claw_attack_20",
+      "frame": {
+        "x": 6480,
+        "y": 1512,
+        "w": 1080,
+        "h": 756
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1080,
+        "h": 756
+      },
+      "sourceSize": {
+        "w": 1080,
+        "h": 756
+      },
+      "duration": 33
+    },
+    {
+      "filename": "heavy_claw_attack_21",
+      "frame": {
+        "x": 0,
+        "y": 2268,
+        "w": 1080,
+        "h": 756
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1080,
+        "h": 756
+      },
+      "sourceSize": {
+        "w": 1080,
+        "h": 756
+      },
+      "duration": 33
+    },
+    {
+      "filename": "heavy_claw_attack_22",
+      "frame": {
+        "x": 1080,
+        "y": 2268,
+        "w": 1080,
+        "h": 756
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1080,
+        "h": 756
+      },
+      "sourceSize": {
+        "w": 1080,
+        "h": 756
+      },
+      "duration": 33
+    },
+    {
+      "filename": "heavy_claw_attack_23",
+      "frame": {
+        "x": 2160,
+        "y": 2268,
+        "w": 1080,
+        "h": 756
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1080,
+        "h": 756
+      },
+      "sourceSize": {
+        "w": 1080,
+        "h": 756
+      },
+      "duration": 33
+    },
+    {
+      "filename": "heavy_claw_attack_24",
+      "frame": {
+        "x": 3240,
+        "y": 2268,
+        "w": 1080,
+        "h": 756
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1080,
+        "h": 756
+      },
+      "sourceSize": {
+        "w": 1080,
+        "h": 756
+      },
+      "duration": 33
+    },
+    {
+      "filename": "heavy_claw_attack_25",
+      "frame": {
+        "x": 4320,
+        "y": 2268,
+        "w": 1080,
+        "h": 756
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1080,
+        "h": 756
+      },
+      "sourceSize": {
+        "w": 1080,
+        "h": 756
+      },
+      "duration": 33
+    },
+    {
+      "filename": "heavy_claw_attack_26",
+      "frame": {
+        "x": 5400,
+        "y": 2268,
+        "w": 1080,
+        "h": 756
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1080,
+        "h": 756
+      },
+      "sourceSize": {
+        "w": 1080,
+        "h": 756
+      },
+      "duration": 33
+    },
+    {
+      "filename": "heavy_claw_attack_27",
+      "frame": {
+        "x": 6480,
+        "y": 2268,
+        "w": 1080,
+        "h": 756
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1080,
+        "h": 756
+      },
+      "sourceSize": {
+        "w": 1080,
+        "h": 756
+      },
+      "duration": 33
+    },
+    {
+      "filename": "heavy_claw_attack_28",
+      "frame": {
+        "x": 0,
+        "y": 3024,
+        "w": 1080,
+        "h": 756
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1080,
+        "h": 756
+      },
+      "sourceSize": {
+        "w": 1080,
+        "h": 756
+      },
+      "duration": 33
+    },
+    {
+      "filename": "heavy_claw_attack_29",
+      "frame": {
+        "x": 1080,
+        "y": 3024,
+        "w": 1080,
+        "h": 756
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1080,
+        "h": 756
+      },
+      "sourceSize": {
+        "w": 1080,
+        "h": 756
+      },
+      "duration": 33
+    },
+    {
+      "filename": "heavy_claw_attack_30",
+      "frame": {
+        "x": 2160,
+        "y": 3024,
+        "w": 1080,
+        "h": 756
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1080,
+        "h": 756
+      },
+      "sourceSize": {
+        "w": 1080,
+        "h": 756
+      },
+      "duration": 33
+    },
+    {
+      "filename": "heavy_claw_attack_31",
+      "frame": {
+        "x": 3240,
+        "y": 3024,
+        "w": 1080,
+        "h": 756
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1080,
+        "h": 756
+      },
+      "sourceSize": {
+        "w": 1080,
+        "h": 756
+      },
+      "duration": 33
+    },
+    {
+      "filename": "heavy_claw_attack_32",
+      "frame": {
+        "x": 4320,
+        "y": 3024,
+        "w": 1080,
+        "h": 756
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1080,
+        "h": 756
+      },
+      "sourceSize": {
+        "w": 1080,
+        "h": 756
+      },
+      "duration": 33
+    },
+    {
+      "filename": "heavy_claw_attack_33",
+      "frame": {
+        "x": 5400,
+        "y": 3024,
+        "w": 1080,
+        "h": 756
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1080,
+        "h": 756
+      },
+      "sourceSize": {
+        "w": 1080,
+        "h": 756
       },
       "duration": 33
     }
@@ -818,26 +752,26 @@
   "meta": {
     "app": "tools/video_to_spritesheet.py",
     "version": "1.0",
-    "image": "triple_claw_combo_spritesheet_half.png",
+    "image": "heavy_claw_attack_spritesheet.png",
     "format": "RGBA8888",
     "size": {
-      "w": 3780,
-      "h": 2268
+      "w": 7560,
+      "h": 3780
     },
     "scale": "1",
     "frameTags": [
       {
-        "name": "triple_claw_combo",
+        "name": "heavy_claw_attack",
         "from": 0,
-        "to": 36,
+        "to": 33,
         "direction": "forward"
       }
     ],
-    "frameWidth": 540,
-    "frameHeight": 378,
+    "frameWidth": 1080,
+    "frameHeight": 756,
     "columns": 7,
-    "rows": 6,
-    "frameCount": 37,
+    "rows": 5,
+    "frameCount": 34,
     "fps": 30.0
   }
 }

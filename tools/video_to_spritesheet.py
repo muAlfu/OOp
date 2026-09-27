@@ -2,17 +2,23 @@
 """Turn a short character clip on a plain light background into a game sprite sheet.
 
 Every frame of the video is kept. All frames are cut with the same rectangle
-(the union of the character's extent over the whole clip plus a margin), so no
-frame is clipped and the character never jitters between cells. The background
-is keyed out into real alpha: flood fill from the border, enclosed gaps
-(e.g. between a claw and the face), and closed-form matting on the edge band so
-outlines and motion blur keep soft, halo-free edges.
+(by default the union of the character's extent over the whole clip plus a
+margin), so no frame is clipped and the character never jitters between cells.
+Pass --rect to cut several clips of one character with the same rectangle, so
+their animations line up with the same pivot. The background is keyed out into
+real alpha: flood fill from the border, enclosed gaps (e.g. between a claw and
+the face), and closed-form matting on the edge band so outlines and motion blur
+keep soft, halo-free edges. Where the clip itself runs out of the video frame
+(e.g. a dust effect), those pixels do not exist; the part near that video edge
+is faded out instead of ending in a straight cut.
 
 Requires: pip install av pillow numpy scipy pymatting
 
-Example (how assets/sprites/triple_claw_combo was made):
-    python3 tools/video_to_spritesheet.py Triple_claw_combo.MOV \
-        assets/sprites/triple_claw_combo --name triple_claw_combo --columns 7 --half --preview
+How assets/sprites was made (both clips share one 1080x756 canvas):
+    python3 tools/video_to_spritesheet.py Triple_claw_combo.MOV assets/sprites/triple_claw_combo \
+        --name triple_claw_combo --rect 0 135 1080 891 --half --preview
+    python3 tools/video_to_spritesheet.py Havvy-claw-attak.MOV assets/sprites/heavy_claw_attack \
+        --name heavy_claw_attack --rect 0 135 1080 891 --half --preview
 """
 import argparse
 import json
@@ -27,8 +33,8 @@ from scipy import ndimage as ndi
 BG_TOLERANCE = 10      # max channel distance from the background colour that still counts as background
 GAP_MATCH = 4          # enclosed pockets must be this close to the background colour (median) to be cut out
 EDGE_BAND = 3          # px around the keyed background that are re-solved by matting
-TRAIL_LIGHTNESS = 48   # light pixels touching the background (motion blur) are also re-solved ...
-TRAIL_REACH = 24       # ... up to this many px from the background
+TRAIL_LIGHTNESS = 48   # pale pixels touching the background (dust, motion blur) are also re-solved ...
+TRAIL_REACH = 48       # ... up to this many px from the background
 TRAIL_SOFTEN = 1.5     # gaussian sigma (px) applied to the alpha of those trails
 EIGHT = np.ones((3, 3), bool)
 
@@ -103,20 +109,25 @@ def key_frame(rgb):
     known_bg = outer_bg | enclosed_gaps(near_bg, outer_bg, dist, rgb)
 
     from_bg = ndi.distance_transform_edt(~known_bg)
-    unknown = ~known_bg & (from_bg <= EDGE_BAND)
+    band = ~known_bg & (from_bg <= EDGE_BAND)
     light = ~known_bg & (dist < TRAIL_LIGHTNESS) & (from_bg <= TRAIL_REACH)
-    labels, _ = ndi.label(light | unknown, structure=EIGHT)
-    reached = np.unique(labels[unknown])
-    unknown |= light & np.isin(labels, reached[reached > 0])
+    labels, _ = ndi.label(light | band, structure=EIGHT)
+    reached = np.unique(labels[band])
+    pale = light & np.isin(labels, reached[reached > 0])
+    unknown = band | pale
 
     trimap = np.where(known_bg, 0.0, np.where(unknown, 0.5, 1.0))
     image = rgb.astype(np.float64) / 255.0
     alpha = np.clip(estimate_alpha_cf(image, trimap), 0.0, 1.0)
     alpha[known_bg] = 0.0
     alpha[trimap == 1.0] = 1.0
-    # Motion-blur trails carry the video's 8x8 compression blocks; soften them so
-    # the edge does not stair-step. Crisp outlines (the thin edge band) are untouched.
-    trail = unknown & (from_bg > EDGE_BAND)
+    # Pale areas that reach the background without crossing an outline (dust, motion
+    # blur) are see-through in the clip: cap their opacity by their contrast with the
+    # background so they do not turn into solid white patches on a dark backdrop.
+    alpha[pale] = np.minimum(alpha[pale], dist[pale] / TRAIL_LIGHTNESS)
+    # Those trails also carry the video's 8x8 compression blocks; soften them so the
+    # edge does not stair-step. Crisp outlines (the thin edge band) are untouched.
+    trail = pale & (from_bg > EDGE_BAND)
     if trail.any():
         zone = ndi.binary_dilation(trail, EIGHT, iterations=4)
         alpha[zone] = ndi.gaussian_filter(alpha, TRAIL_SOFTEN)[zone]
@@ -140,15 +151,56 @@ def union_box(frames):
     return x0, y0, x1 + 1, y1 + 1
 
 
-def cell_rect(box, margin, width, height):
-    """Centre an even-sized cell on the union box, clamped to the video."""
+def cell_rect(box, margin):
+    """Centre an even-sized cell on the union box; it may reach past the video (padded)."""
     x0, y0, x1, y1 = box
     w = (x1 - x0 + 2 * margin + 1) // 2 * 2
     h = (y1 - y0 + 2 * margin + 1) // 2 * 2
-    cx, cy = (x0 + x1) // 2, (y0 + y1) // 2
-    left = min(max(cx - w // 2, 0), width - w)
-    top = min(max(cy - h // 2, 0), height - h)
+    left = (x0 + x1) // 2 - w // 2
+    top = (y0 + y1) // 2 - h // 2
     return left, top, left + w, top + h
+
+
+def crop(rgb, rect):
+    """Cut rect out of the frame, filling any part outside the video with its background colour."""
+    left, top, right, bottom = rect
+    height, width = rgb.shape[:2]
+    out = np.empty((bottom - top, right - left, 3), np.uint8)
+    out[:] = np.rint(background_colour(rgb)).astype(np.uint8)
+    x0, y0, x1, y1 = max(left, 0), max(top, 0), min(right, width), min(bottom, height)
+    if x0 < x1 and y0 < y1:
+        out[y0 - top:y1 - top, x0 - left:x1 - left] = rgb[y0:y1, x0:x1]
+    return out
+
+
+def border_contact(frames):
+    """Which video edges the clip's content touches, and in which frames."""
+    sides = {}
+    for i, rgb in enumerate(frames):
+        solid = colour_distance(rgb, background_colour(rgb)) > BG_TOLERANCE
+        for side, strip in (("left", solid[:, 0]), ("right", solid[:, -1]), ("top", solid[0]), ("bottom", solid[-1])):
+            if strip.any():
+                sides.setdefault(side, []).append(i)
+    return sides
+
+
+def fade_edges(cell, rect, width, height, sides, fade):
+    """Ramp alpha to zero at the video edges the content runs into, so it trails off instead of ending in a cut."""
+    left, top, right, bottom = rect
+    xs = np.arange(left, right, dtype=np.float32)
+    ys = np.arange(top, bottom, dtype=np.float32)
+    ramp = np.ones((bottom - top, right - left), np.float32)
+    if "left" in sides:
+        ramp *= np.clip(xs / fade, 0, 1)[None, :]
+    if "right" in sides:
+        ramp *= np.clip((width - 1 - xs) / fade, 0, 1)[None, :]
+    if "top" in sides:
+        ramp *= np.clip(ys / fade, 0, 1)[:, None]
+    if "bottom" in sides:
+        ramp *= np.clip((height - 1 - ys) / fade, 0, 1)[:, None]
+    cell[..., 3] = np.rint(cell[..., 3] * ramp).astype(np.uint8)
+    cell[cell[..., 3] == 0, :3] = 0
+    return cell
 
 
 def build_sheet(cells, columns):
@@ -214,6 +266,12 @@ def main():
     parser.add_argument("--name", default="sprite")
     parser.add_argument("--columns", type=int, default=7)
     parser.add_argument("--margin", type=int, default=16, help="empty px kept around the union of all poses")
+    parser.add_argument("--rect", type=int, nargs=4, metavar=("LEFT", "TOP", "RIGHT", "BOTTOM"),
+                        help="cut every frame with this rectangle (video px) instead of fitting one; "
+                             "use the same rect for all clips of a character")
+    parser.add_argument("--edge-fade", type=int, default=96,
+                        help="px over which content running out of the video is faded out, in the frames where "
+                             "it does (0 = keep the hard cut)")
     parser.add_argument("--half", action="store_true", help="also write a 50%% sheet")
     parser.add_argument("--frames", action="store_true", help="also write every frame as its own PNG")
     parser.add_argument("--preview", action="store_true", help="also write an animated GIF preview")
@@ -222,17 +280,26 @@ def main():
     frames, fps = read_frames(args.video)
     height, width = frames[0].shape[:2]
     box = union_box(frames)
-    left, top, right, bottom = cell_rect(box, args.margin, width, height)
+    rect = tuple(args.rect) if args.rect else cell_rect(box, args.margin)
+    left, top, right, bottom = rect
     w, h = right - left, bottom - top
     print(f"{len(frames)} frames @ {fps:g} fps, {width}x{height}; character box {box}; cell {w}x{h} at ({left},{top})")
+    if box[0] < left or box[1] < top or box[2] > right or box[3] > bottom:
+        raise SystemExit(f"the clip reaches {box}, outside the cell {rect} - frames would be cut; widen --rect")
+    contact = border_contact(frames) if args.edge_fade > 0 else {}
+    for side, hits in contact.items():
+        print(f"  content runs out of the video on the {side} in frames {hits}; fading the last {args.edge_fade} px")
 
     os.makedirs(args.out_dir, exist_ok=True)
     cells = []
     for i, rgb in enumerate(frames):
-        cell = key_frame(rgb[top:bottom, left:right])
+        cell = key_frame(crop(rgb, rect))
+        sides = {side for side, hits in contact.items() if i in hits}
+        if sides:
+            cell = fade_edges(cell, rect, width, height, sides, args.edge_fade)
         edge = np.concatenate([cell[0, :, 3], cell[-1, :, 3], cell[:, 0, 3], cell[:, -1, 3]])
         if edge.any():
-            raise SystemExit(f"frame {i} touches the cell edge - increase --margin")
+            raise SystemExit(f"frame {i} touches the cell edge - increase --margin or widen --rect")
         cells.append(cell)
         if args.frames:
             frame_dir = os.path.join(args.out_dir, "frames")
