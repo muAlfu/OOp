@@ -9,20 +9,27 @@ Use the same pivot for all of them and the character stays put when the animatio
 | --- | --- | --- | --- | --- |
 | `triple_claw_combo/` | 37 | 7 columns × 6 rows (last 5 cells empty) | 7560×4536 | 3780×2268 |
 | `heavy_claw_attack/` | 34 | 7 columns × 5 rows (last cell empty) | 7560×3780 | 3780×1890 |
+| `final_heavy_claw_attack/` | 92 | 10 columns × 10 rows (last 8 cells empty) | not made (would be 10800×7560) | 5400×3780 |
 
-- Frames go left to right, top to bottom: frame `i` is at column `i % 7`, row `i / 7`.
+- Frames go left to right, top to bottom: frame `i` is at column `i % columns`, row `i / columns`.
 - Play at 30 fps (33 ms per frame).
 - Each folder also has the frame rectangles as JSON (Aseprite / TexturePacker "JSON Array" format) and a GIF preview
   on a dark background. The GIF is only for viewing, not for the game.
 - `heavy_claw_attack`: in frames 22–24 (counting from 0) the dust from the strike runs past the right edge of the
   video, so that part of the dust was never recorded. It fades out toward that edge instead of ending in a straight cut.
   The character itself is complete in every frame.
+- `final_heavy_claw_attack`: 92 frames is too many for a full-resolution sheet that a game can load as one texture, so
+  it only has the half-size sheet, at the same scale as the other half sheets. Every 5th frame repeats the one before
+  it, because the video was converted from 24 to 30 fps. The repeats are kept so the timing matches the video.
+  In frames 62–67 (counting from 0) a few fur tips of the cape cross the left edge of the video; the last 8 px there
+  are faded.
 
 ## Unity
 
 1. Drop the PNG into `Assets`.
-2. Inspector: **Texture Type** `Sprite (2D and UI)`, **Sprite Mode** `Multiple`, **Max Size** `4096` for a half sheet
-   or `8192` for a full sheet (the default 2048 shrinks it). Apply.
+2. Inspector: **Texture Type** `Sprite (2D and UI)`, **Sprite Mode** `Multiple`, **Max Size** at least the sheet's
+   larger side: `4096` for the 3780-wide half sheets, `8192` for `final_heavy_claw_attack` (5400 wide) and the full
+   sheets. The default 2048 shrinks the sheet. Apply.
 3. **Sprite Editor → Slice**: **Type** `Grid By Cell Size`, **Pixel Size** `540 × 378` (half) or `1080 × 756` (full),
    **Pivot** `Bottom`. Slice, then Apply. Empty cells at the end are skipped.
 4. Select the sprites, drag them into the scene to make the animation, and set **Sample Rate** to `30`.

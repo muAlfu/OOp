@@ -1,0 +1,2053 @@
+{
+  "frames": [
+    {
+      "filename": "final_heavy_claw_attack_00",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_01",
+      "frame": {
+        "x": 540,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_02",
+      "frame": {
+        "x": 1080,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_03",
+      "frame": {
+        "x": 1620,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_04",
+      "frame": {
+        "x": 2160,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_05",
+      "frame": {
+        "x": 2700,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_06",
+      "frame": {
+        "x": 3240,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_07",
+      "frame": {
+        "x": 3780,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_08",
+      "frame": {
+        "x": 4320,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_09",
+      "frame": {
+        "x": 4860,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_10",
+      "frame": {
+        "x": 0,
+        "y": 378,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_11",
+      "frame": {
+        "x": 540,
+        "y": 378,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_12",
+      "frame": {
+        "x": 1080,
+        "y": 378,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_13",
+      "frame": {
+        "x": 1620,
+        "y": 378,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_14",
+      "frame": {
+        "x": 2160,
+        "y": 378,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_15",
+      "frame": {
+        "x": 2700,
+        "y": 378,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_16",
+      "frame": {
+        "x": 3240,
+        "y": 378,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_17",
+      "frame": {
+        "x": 3780,
+        "y": 378,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_18",
+      "frame": {
+        "x": 4320,
+        "y": 378,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_19",
+      "frame": {
+        "x": 4860,
+        "y": 378,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_20",
+      "frame": {
+        "x": 0,
+        "y": 756,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_21",
+      "frame": {
+        "x": 540,
+        "y": 756,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_22",
+      "frame": {
+        "x": 1080,
+        "y": 756,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_23",
+      "frame": {
+        "x": 1620,
+        "y": 756,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_24",
+      "frame": {
+        "x": 2160,
+        "y": 756,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_25",
+      "frame": {
+        "x": 2700,
+        "y": 756,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_26",
+      "frame": {
+        "x": 3240,
+        "y": 756,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_27",
+      "frame": {
+        "x": 3780,
+        "y": 756,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_28",
+      "frame": {
+        "x": 4320,
+        "y": 756,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_29",
+      "frame": {
+        "x": 4860,
+        "y": 756,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_30",
+      "frame": {
+        "x": 0,
+        "y": 1134,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_31",
+      "frame": {
+        "x": 540,
+        "y": 1134,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_32",
+      "frame": {
+        "x": 1080,
+        "y": 1134,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_33",
+      "frame": {
+        "x": 1620,
+        "y": 1134,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_34",
+      "frame": {
+        "x": 2160,
+        "y": 1134,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_35",
+      "frame": {
+        "x": 2700,
+        "y": 1134,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_36",
+      "frame": {
+        "x": 3240,
+        "y": 1134,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_37",
+      "frame": {
+        "x": 3780,
+        "y": 1134,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_38",
+      "frame": {
+        "x": 4320,
+        "y": 1134,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_39",
+      "frame": {
+        "x": 4860,
+        "y": 1134,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_40",
+      "frame": {
+        "x": 0,
+        "y": 1512,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_41",
+      "frame": {
+        "x": 540,
+        "y": 1512,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_42",
+      "frame": {
+        "x": 1080,
+        "y": 1512,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_43",
+      "frame": {
+        "x": 1620,
+        "y": 1512,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_44",
+      "frame": {
+        "x": 2160,
+        "y": 1512,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_45",
+      "frame": {
+        "x": 2700,
+        "y": 1512,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_46",
+      "frame": {
+        "x": 3240,
+        "y": 1512,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_47",
+      "frame": {
+        "x": 3780,
+        "y": 1512,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_48",
+      "frame": {
+        "x": 4320,
+        "y": 1512,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_49",
+      "frame": {
+        "x": 4860,
+        "y": 1512,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_50",
+      "frame": {
+        "x": 0,
+        "y": 1890,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_51",
+      "frame": {
+        "x": 540,
+        "y": 1890,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_52",
+      "frame": {
+        "x": 1080,
+        "y": 1890,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_53",
+      "frame": {
+        "x": 1620,
+        "y": 1890,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_54",
+      "frame": {
+        "x": 2160,
+        "y": 1890,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_55",
+      "frame": {
+        "x": 2700,
+        "y": 1890,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_56",
+      "frame": {
+        "x": 3240,
+        "y": 1890,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_57",
+      "frame": {
+        "x": 3780,
+        "y": 1890,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_58",
+      "frame": {
+        "x": 4320,
+        "y": 1890,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_59",
+      "frame": {
+        "x": 4860,
+        "y": 1890,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_60",
+      "frame": {
+        "x": 0,
+        "y": 2268,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_61",
+      "frame": {
+        "x": 540,
+        "y": 2268,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_62",
+      "frame": {
+        "x": 1080,
+        "y": 2268,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_63",
+      "frame": {
+        "x": 1620,
+        "y": 2268,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_64",
+      "frame": {
+        "x": 2160,
+        "y": 2268,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_65",
+      "frame": {
+        "x": 2700,
+        "y": 2268,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_66",
+      "frame": {
+        "x": 3240,
+        "y": 2268,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_67",
+      "frame": {
+        "x": 3780,
+        "y": 2268,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_68",
+      "frame": {
+        "x": 4320,
+        "y": 2268,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_69",
+      "frame": {
+        "x": 4860,
+        "y": 2268,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_70",
+      "frame": {
+        "x": 0,
+        "y": 2646,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_71",
+      "frame": {
+        "x": 540,
+        "y": 2646,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_72",
+      "frame": {
+        "x": 1080,
+        "y": 2646,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_73",
+      "frame": {
+        "x": 1620,
+        "y": 2646,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_74",
+      "frame": {
+        "x": 2160,
+        "y": 2646,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_75",
+      "frame": {
+        "x": 2700,
+        "y": 2646,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_76",
+      "frame": {
+        "x": 3240,
+        "y": 2646,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_77",
+      "frame": {
+        "x": 3780,
+        "y": 2646,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_78",
+      "frame": {
+        "x": 4320,
+        "y": 2646,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_79",
+      "frame": {
+        "x": 4860,
+        "y": 2646,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_80",
+      "frame": {
+        "x": 0,
+        "y": 3024,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_81",
+      "frame": {
+        "x": 540,
+        "y": 3024,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_82",
+      "frame": {
+        "x": 1080,
+        "y": 3024,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_83",
+      "frame": {
+        "x": 1620,
+        "y": 3024,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_84",
+      "frame": {
+        "x": 2160,
+        "y": 3024,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_85",
+      "frame": {
+        "x": 2700,
+        "y": 3024,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_86",
+      "frame": {
+        "x": 3240,
+        "y": 3024,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_87",
+      "frame": {
+        "x": 3780,
+        "y": 3024,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_88",
+      "frame": {
+        "x": 4320,
+        "y": 3024,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_89",
+      "frame": {
+        "x": 4860,
+        "y": 3024,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_90",
+      "frame": {
+        "x": 0,
+        "y": 3402,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    },
+    {
+      "filename": "final_heavy_claw_attack_91",
+      "frame": {
+        "x": 540,
+        "y": 3402,
+        "w": 540,
+        "h": 378
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 378
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 378
+      },
+      "duration": 33
+    }
+  ],
+  "meta": {
+    "app": "tools/video_to_spritesheet.py",
+    "version": "1.0",
+    "image": "final_heavy_claw_attack_spritesheet_half.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 5400,
+      "h": 3780
+    },
+    "scale": "1",
+    "frameTags": [
+      {
+        "name": "final_heavy_claw_attack",
+        "from": 0,
+        "to": 91,
+        "direction": "forward"
+      }
+    ],
+    "frameWidth": 540,
+    "frameHeight": 378,
+    "columns": 10,
+    "rows": 10,
+    "frameCount": 92,
+    "fps": 30.0
+  }
+}

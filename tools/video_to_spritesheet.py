@@ -14,11 +14,13 @@ is faded out instead of ending in a straight cut.
 
 Requires: pip install av pillow numpy scipy pymatting
 
-How assets/sprites was made (both clips share one 1080x756 canvas):
+How assets/sprites was made (all clips share one 1080x756 canvas):
     python3 tools/video_to_spritesheet.py Triple_claw_combo.MOV assets/sprites/triple_claw_combo \
         --name triple_claw_combo --rect 0 135 1080 891 --half --preview
     python3 tools/video_to_spritesheet.py Havvy-claw-attak.MOV assets/sprites/heavy_claw_attack \
         --name heavy_claw_attack --rect 0 135 1080 891 --half --preview
+    python3 tools/video_to_spritesheet.py Final_Heavy_Claw_Attack_.MOV assets/sprites/final_heavy_claw_attack \
+        --name final_heavy_claw_attack --rect 0 135 1080 891 --columns 10 --edge-fade 8 --half --no-full --preview
 """
 import argparse
 import json
@@ -203,6 +205,16 @@ def fade_edges(cell, rect, width, height, sides, fade):
     return cell
 
 
+def halve(cell):
+    """50% copy of a cell. Resampling can spread a faint trace of content that sits at the
+    cell edge onto the 1 px border; clear it so it cannot bleed into the neighbouring cell."""
+    h, w = cell.shape[:2]
+    small = np.array(Image.fromarray(cell, "RGBA").resize((w // 2, h // 2), Image.LANCZOS))
+    small[[0, -1]] = 0
+    small[:, [0, -1]] = 0
+    return small
+
+
 def build_sheet(cells, columns):
     h, w = cells[0].shape[:2]
     rows = -(-len(cells) // columns)
@@ -273,6 +285,8 @@ def main():
                         help="px over which content running out of the video is faded out, in the frames where "
                              "it does (0 = keep the hard cut)")
     parser.add_argument("--half", action="store_true", help="also write a 50%% sheet")
+    parser.add_argument("--no-full", action="store_true",
+                        help="skip the full-resolution sheet (for long clips whose full sheet is too big for a texture)")
     parser.add_argument("--frames", action="store_true", help="also write every frame as its own PNG")
     parser.add_argument("--preview", action="store_true", help="also write an animated GIF preview")
     args = parser.parse_args()
@@ -306,9 +320,9 @@ def main():
             os.makedirs(frame_dir, exist_ok=True)
             Image.fromarray(cell, "RGBA").save(os.path.join(frame_dir, f"{args.name}_{i:02d}.png"), optimize=True)
 
-    outputs = [("", cells, w, h)]
+    outputs = [] if args.no_full else [("", cells, w, h)]
     if args.half or args.preview:
-        half = [np.asarray(Image.fromarray(c, "RGBA").resize((w // 2, h // 2), Image.LANCZOS)) for c in cells]
+        half = [halve(c) for c in cells]
     if args.half:
         outputs.append(("_half", half, w // 2, h // 2))
     for suffix, sheet_cells, cw, ch in outputs:
