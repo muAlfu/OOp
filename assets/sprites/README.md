@@ -2,14 +2,16 @@
 
 Every sheet here keeps **all frames of its video, in order**, with the background removed (transparent PNG).
 All animations share one canvas: each frame is the same 1080×756 area of the 1080×1080 video (x 0–1080, y 135–891).
+The jump is the exception: it goes higher, so its frames are taller (y 39–891) but end at the same bottom edge.
 The whole character fits in every frame, and it sits in the same place in every animation.
-Use the same pivot for all of them and the character stays put when the animation changes.
+Use the `Bottom` pivot for all of them and the character stays put when the animation changes.
 
 | Animation | Frames | Grid | Full sheet (frame 1080×756) | Half sheet (frame 540×378) |
 | --- | --- | --- | --- | --- |
 | `triple_claw_combo/` | 37 | 7 columns × 6 rows (last 5 cells empty) | 7560×4536 | 3780×2268 |
 | `heavy_claw_attack/` | 34 | 7 columns × 5 rows (last cell empty) | 7560×3780 | 3780×1890 |
 | `final_heavy_claw_attack/` | 92 | 10 columns × 10 rows (last 8 cells empty) | not made (would be 10800×7560) | 5400×3780 |
+| `jump_hallow/` | 66 | 10 columns × 7 rows (last 4 cells empty) | not made (would be 10800×5964) | 5400×2982, **frame 540×426** |
 
 - Frames go left to right, top to bottom: frame `i` is at column `i % columns`, row `i / columns`.
 - Play at 30 fps (33 ms per frame).
@@ -23,15 +25,20 @@ Use the same pivot for all of them and the character stays put when the animatio
   it, because the video was converted from 24 to 30 fps. The repeats are kept so the timing matches the video.
   In frames 62–67 (counting from 0) a few fur tips of the cape cross the left edge of the video; the last 8 px there
   are faded.
+- `jump_hallow`: the jump rises above the shared canvas, so this sheet's canvas is taller: x 0–1080, y 39–891
+  (1080×852, half 540×426). It has the same bottom edge and width as the others, so with the `Bottom` pivot the
+  character still stands in the same place. The clip was shot on a green screen; the green light that spilled onto
+  the character (claws, skull, body) is removed. The body and cape in the mid-air frames stay darker and more
+  olive/orange than in the other animations, because that is how the video lights them.
 
 ## Unity
 
 1. Drop the PNG into `Assets`.
 2. Inspector: **Texture Type** `Sprite (2D and UI)`, **Sprite Mode** `Multiple`, **Max Size** at least the sheet's
-   larger side: `4096` for the 3780-wide half sheets, `8192` for `final_heavy_claw_attack` (5400 wide) and the full
-   sheets. The default 2048 shrinks the sheet. Apply.
+   larger side: `4096` for the 3780-wide half sheets, `8192` for `final_heavy_claw_attack` and `jump_hallow`
+   (5400 wide) and the full sheets. The default 2048 shrinks the sheet. Apply.
 3. **Sprite Editor → Slice**: **Type** `Grid By Cell Size`, **Pixel Size** `540 × 378` (half) or `1080 × 756` (full),
-   **Pivot** `Bottom`. Slice, then Apply. Empty cells at the end are skipped.
+   except `jump_hallow`: `540 × 426`. **Pivot** `Bottom`. Slice, then Apply. Empty cells at the end are skipped.
 4. Select the sprites, drag them into the scene to make the animation, and set **Sample Rate** to `30`.
 
 ## Java

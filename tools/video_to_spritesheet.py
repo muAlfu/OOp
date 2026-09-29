@@ -21,6 +21,10 @@ How assets/sprites was made (all clips share one 1080x756 canvas):
         --name heavy_claw_attack --rect 0 135 1080 891 --half --preview
     python3 tools/video_to_spritesheet.py Final_Heavy_Claw_Attack_.MOV assets/sprites/final_heavy_claw_attack \
         --name final_heavy_claw_attack --rect 0 135 1080 891 --columns 10 --edge-fade 8 --half --no-full --preview
+    # the jump rises above y 135, so its canvas is taller; the bottom edge (891) and x range stay the same,
+    # so with a Bottom pivot it still lines up with the others
+    python3 tools/video_to_spritesheet.py Jump_hallow_.MOV assets/sprites/jump_hallow \
+        --name jump_hallow --rect 0 39 1080 891 --columns 10 --half --no-full --preview
 """
 import argparse
 import json
@@ -52,6 +56,12 @@ def read_frames(path):
 def background_colour(rgb):
     border = np.concatenate([rgb[0], rgb[-1], rgb[:, 0], rgb[:, -1]])
     return np.median(border, axis=0)
+
+
+def key_channel(bg):
+    """The dominant channel of a green or blue screen, or None for a neutral (e.g. white) background."""
+    order = np.argsort(bg)
+    return int(order[-1]) if bg[order[-1]] - bg[order[-2]] > 60 else None
 
 
 def colour_distance(rgb, bg):
@@ -100,6 +110,23 @@ def drop_specks(alpha, faint=6 / 255, max_area=16, max_peak=0.15):
     return alpha
 
 
+def despill(foreground, key):
+    """Remove green/blue screen light from the character's colours.
+
+    Pixels where the key channel clearly leads the other two are pulled down to the
+    average of those two (olive turns back to brown, pale green claws to bone); pixels
+    where it does not lead, such as yellows, oranges and greys, are left alone. The
+    blend between the two is smooth so gradients do not band.
+    """
+    a, b = [c for c in range(3) if c != key]
+    high = np.maximum(foreground[..., a], foreground[..., b])
+    mean = (foreground[..., a] + foreground[..., b]) / 2
+    lead = foreground[..., key] - high
+    weight = np.clip(lead / (20 / 255) + 0.5, 0, 1)
+    foreground[..., key] = np.minimum(foreground[..., key], high - weight * (high - mean))
+    return foreground
+
+
 def key_frame(rgb):
     """Return an RGBA frame with the background removed."""
     bg = background_colour(rgb)
@@ -135,6 +162,9 @@ def key_frame(rgb):
         alpha[zone] = ndi.gaussian_filter(alpha, TRAIL_SOFTEN)[zone]
     alpha = drop_specks(alpha)
     foreground = estimate_foreground_ml(image, alpha)
+    key = key_channel(bg)
+    if key is not None:
+        foreground = despill(foreground, key)
 
     out = np.dstack([np.clip(foreground, 0, 1) * 255, alpha * 255])
     out = np.rint(out).astype(np.uint8)
@@ -301,6 +331,9 @@ def main():
     if box[0] < left or box[1] < top or box[2] > right or box[3] > bottom:
         raise SystemExit(f"the clip reaches {box}, outside the cell {rect} - frames would be cut; widen --rect")
     contact = border_contact(frames) if args.edge_fade > 0 else {}
+    key = key_channel(background_colour(frames[0]))
+    if key is not None:
+        print(f"  {'RGB'[key]} screen background: removing its colour spill from the character")
     for side, hits in contact.items():
         print(f"  content runs out of the video on the {side} in frames {hits}; fading the last {args.edge_fade} px")
 

@@ -1,0 +1,1481 @@
+{
+  "frames": [
+    {
+      "filename": "jump_hallow_00",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_01",
+      "frame": {
+        "x": 540,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_02",
+      "frame": {
+        "x": 1080,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_03",
+      "frame": {
+        "x": 1620,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_04",
+      "frame": {
+        "x": 2160,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_05",
+      "frame": {
+        "x": 2700,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_06",
+      "frame": {
+        "x": 3240,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_07",
+      "frame": {
+        "x": 3780,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_08",
+      "frame": {
+        "x": 4320,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_09",
+      "frame": {
+        "x": 4860,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_10",
+      "frame": {
+        "x": 0,
+        "y": 426,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_11",
+      "frame": {
+        "x": 540,
+        "y": 426,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_12",
+      "frame": {
+        "x": 1080,
+        "y": 426,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_13",
+      "frame": {
+        "x": 1620,
+        "y": 426,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_14",
+      "frame": {
+        "x": 2160,
+        "y": 426,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_15",
+      "frame": {
+        "x": 2700,
+        "y": 426,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_16",
+      "frame": {
+        "x": 3240,
+        "y": 426,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_17",
+      "frame": {
+        "x": 3780,
+        "y": 426,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_18",
+      "frame": {
+        "x": 4320,
+        "y": 426,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_19",
+      "frame": {
+        "x": 4860,
+        "y": 426,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_20",
+      "frame": {
+        "x": 0,
+        "y": 852,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_21",
+      "frame": {
+        "x": 540,
+        "y": 852,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_22",
+      "frame": {
+        "x": 1080,
+        "y": 852,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_23",
+      "frame": {
+        "x": 1620,
+        "y": 852,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_24",
+      "frame": {
+        "x": 2160,
+        "y": 852,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_25",
+      "frame": {
+        "x": 2700,
+        "y": 852,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_26",
+      "frame": {
+        "x": 3240,
+        "y": 852,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_27",
+      "frame": {
+        "x": 3780,
+        "y": 852,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_28",
+      "frame": {
+        "x": 4320,
+        "y": 852,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_29",
+      "frame": {
+        "x": 4860,
+        "y": 852,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_30",
+      "frame": {
+        "x": 0,
+        "y": 1278,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_31",
+      "frame": {
+        "x": 540,
+        "y": 1278,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_32",
+      "frame": {
+        "x": 1080,
+        "y": 1278,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_33",
+      "frame": {
+        "x": 1620,
+        "y": 1278,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_34",
+      "frame": {
+        "x": 2160,
+        "y": 1278,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_35",
+      "frame": {
+        "x": 2700,
+        "y": 1278,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_36",
+      "frame": {
+        "x": 3240,
+        "y": 1278,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_37",
+      "frame": {
+        "x": 3780,
+        "y": 1278,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_38",
+      "frame": {
+        "x": 4320,
+        "y": 1278,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_39",
+      "frame": {
+        "x": 4860,
+        "y": 1278,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_40",
+      "frame": {
+        "x": 0,
+        "y": 1704,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_41",
+      "frame": {
+        "x": 540,
+        "y": 1704,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_42",
+      "frame": {
+        "x": 1080,
+        "y": 1704,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_43",
+      "frame": {
+        "x": 1620,
+        "y": 1704,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_44",
+      "frame": {
+        "x": 2160,
+        "y": 1704,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_45",
+      "frame": {
+        "x": 2700,
+        "y": 1704,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_46",
+      "frame": {
+        "x": 3240,
+        "y": 1704,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_47",
+      "frame": {
+        "x": 3780,
+        "y": 1704,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_48",
+      "frame": {
+        "x": 4320,
+        "y": 1704,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_49",
+      "frame": {
+        "x": 4860,
+        "y": 1704,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_50",
+      "frame": {
+        "x": 0,
+        "y": 2130,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_51",
+      "frame": {
+        "x": 540,
+        "y": 2130,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_52",
+      "frame": {
+        "x": 1080,
+        "y": 2130,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_53",
+      "frame": {
+        "x": 1620,
+        "y": 2130,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_54",
+      "frame": {
+        "x": 2160,
+        "y": 2130,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_55",
+      "frame": {
+        "x": 2700,
+        "y": 2130,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_56",
+      "frame": {
+        "x": 3240,
+        "y": 2130,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_57",
+      "frame": {
+        "x": 3780,
+        "y": 2130,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_58",
+      "frame": {
+        "x": 4320,
+        "y": 2130,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_59",
+      "frame": {
+        "x": 4860,
+        "y": 2130,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_60",
+      "frame": {
+        "x": 0,
+        "y": 2556,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_61",
+      "frame": {
+        "x": 540,
+        "y": 2556,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_62",
+      "frame": {
+        "x": 1080,
+        "y": 2556,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_63",
+      "frame": {
+        "x": 1620,
+        "y": 2556,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_64",
+      "frame": {
+        "x": 2160,
+        "y": 2556,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    },
+    {
+      "filename": "jump_hallow_65",
+      "frame": {
+        "x": 2700,
+        "y": 2556,
+        "w": 540,
+        "h": 426
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 426
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 426
+      },
+      "duration": 33
+    }
+  ],
+  "meta": {
+    "app": "tools/video_to_spritesheet.py",
+    "version": "1.0",
+    "image": "jump_hallow_spritesheet_half.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 5400,
+      "h": 2982
+    },
+    "scale": "1",
+    "frameTags": [
+      {
+        "name": "jump_hallow",
+        "from": 0,
+        "to": 65,
+        "direction": "forward"
+      }
+    ],
+    "frameWidth": 540,
+    "frameHeight": 426,
+    "columns": 10,
+    "rows": 7,
+    "frameCount": 66,
+    "fps": 30.0
+  }
+}
