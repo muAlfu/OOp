@@ -28,6 +28,11 @@ How assets/sprites was made (all clips share one 1080x756 canvas):
     # a different character, so its own canvas; one small pocket by the foot needs a manual cut
     python3 tools/video_to_spritesheet.py Rat_Under_Magic_Idle.MOV assets/sprites/rat_under_magic_idle \
         --name rat_under_magic_idle --rect 142 70 854 886 --columns 16 --cut-pocket 611 814 --half --no-full --preview
+    # the walk was exported at 960x960 and 24 fps: scale it to the idle's 1080 so the rat keeps its size; its poses
+    # are wider, so the canvas is wider, around the same centre (x 498) and bottom (886) for the Bottom pivot
+    python3 tools/video_to_spritesheet.py Rat_under_magic_walk_.MP4 assets/sprites/rat_under_magic_walk \
+        --name rat_under_magic_walk --scale 1.125 --rect 80 150 916 886 --columns 9 \
+        --cut-region 0 635 820 --cut-region 0 673 642 --half --no-full --preview
 """
 import argparse
 import json
@@ -141,11 +146,17 @@ def despill(foreground, key):
     return foreground
 
 
-def key_frame(rgb, cut_points=()):
+CUT_REGION_TOLERANCE = 30  # a hand-picked region may be this far off the background colour ...
+CUT_REGION_MAX = 20000     # ... and at most this many px (a bigger one means the spot was wrong)
+
+
+def key_frame(rgb, cut_points=(), cut_regions=()):
     """Return an RGBA frame with the background removed.
 
     cut_points are (x, y) spots, in this frame's coordinates, where any enclosed
     background pocket is cut out even if the automatic gap test kept it.
+    cut_regions are (x, y) spots inside a pale patch that compression has tinted too
+    far from the background for the gap test; the whole connected patch is cut out.
     """
     bg = background_colour(rgb)
     dist = colour_distance(rgb, bg)
@@ -159,6 +170,14 @@ def key_frame(rgb, cut_points=()):
         for x, y in cut_points:
             spot = labels[max(y - 3, 0):y + 4, max(x - 3, 0):x + 4]
             known_bg |= np.isin(labels, np.unique(spot[spot > 0]))
+    if cut_regions:
+        labels, _ = ndi.label(dist <= CUT_REGION_TOLERANCE, structure=EIGHT)
+        for x, y in cut_regions:
+            region = labels == labels[y, x] if labels[y, x] else None
+            if region is None or region.sum() > CUT_REGION_MAX:
+                print(f"  --cut-region at ({x},{y}) is not on a small pale patch; skipped")
+                continue
+            known_bg |= region
 
     from_bg = ndi.distance_transform_edt(~known_bg)
     band = ~known_bg & (from_bg <= EDGE_BAND)
@@ -337,8 +356,13 @@ def main():
     parser.add_argument("--edge-fade", type=int, default=96,
                         help="px over which content running out of the video is faded out, in the frames where "
                              "it does (0 = keep the hard cut)")
+    parser.add_argument("--scale", type=float, default=1.0,
+                        help="resize the video first, e.g. to match another clip of the same character shot at a "
+                             "different resolution (--rect is then in the resized video's px)")
     parser.add_argument("--cut-pocket", type=int, nargs=2, action="append", default=[], metavar=("X", "Y"),
                         help="video px where an enclosed background pocket must always be cut out (repeatable)")
+    parser.add_argument("--cut-region", type=int, nargs=3, action="append", default=[], metavar=("FRAME", "X", "Y"),
+                        help="in that one frame, cut out the pale patch around video px X,Y (repeatable)")
     parser.add_argument("--half", action="store_true", help="also write a 50%% sheet")
     parser.add_argument("--no-full", action="store_true",
                         help="skip the full-resolution sheet (for long clips whose full sheet is too big for a texture)")
@@ -347,6 +371,9 @@ def main():
     args = parser.parse_args()
 
     frames, fps = read_frames(args.video)
+    if args.scale != 1:
+        size = (round(frames[0].shape[1] * args.scale), round(frames[0].shape[0] * args.scale))
+        frames = [np.asarray(Image.fromarray(f).resize(size, Image.LANCZOS)) for f in frames]
     height, width = frames[0].shape[:2]
     box = union_box(frames)
     rect = tuple(args.rect) if args.rect else cell_rect(box, args.margin)
@@ -365,7 +392,8 @@ def main():
     os.makedirs(args.out_dir, exist_ok=True)
     cells = []
     for i, rgb in enumerate(frames):
-        cell = key_frame(crop(rgb, rect), [(x - left, y - top) for x, y in args.cut_pocket])
+        cell = key_frame(crop(rgb, rect), [(x - left, y - top) for x, y in args.cut_pocket],
+                         [(x - left, y - top) for f, x, y in args.cut_region if f == i])
         sides = {side for side, hits in contact.items() if i in hits}
         if sides:
             cell = fade_edges(cell, rect, width, height, sides, args.edge_fade)

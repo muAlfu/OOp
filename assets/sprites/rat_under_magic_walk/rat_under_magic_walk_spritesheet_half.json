@@ -1,0 +1,1635 @@
+{
+  "frames": [
+    {
+      "filename": "rat_under_magic_walk_00",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_01",
+      "frame": {
+        "x": 418,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_02",
+      "frame": {
+        "x": 836,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_03",
+      "frame": {
+        "x": 1254,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_04",
+      "frame": {
+        "x": 1672,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_05",
+      "frame": {
+        "x": 2090,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_06",
+      "frame": {
+        "x": 2508,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_07",
+      "frame": {
+        "x": 2926,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_08",
+      "frame": {
+        "x": 3344,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_09",
+      "frame": {
+        "x": 0,
+        "y": 368,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_10",
+      "frame": {
+        "x": 418,
+        "y": 368,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_11",
+      "frame": {
+        "x": 836,
+        "y": 368,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_12",
+      "frame": {
+        "x": 1254,
+        "y": 368,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_13",
+      "frame": {
+        "x": 1672,
+        "y": 368,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_14",
+      "frame": {
+        "x": 2090,
+        "y": 368,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_15",
+      "frame": {
+        "x": 2508,
+        "y": 368,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_16",
+      "frame": {
+        "x": 2926,
+        "y": 368,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_17",
+      "frame": {
+        "x": 3344,
+        "y": 368,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_18",
+      "frame": {
+        "x": 0,
+        "y": 736,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_19",
+      "frame": {
+        "x": 418,
+        "y": 736,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_20",
+      "frame": {
+        "x": 836,
+        "y": 736,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_21",
+      "frame": {
+        "x": 1254,
+        "y": 736,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_22",
+      "frame": {
+        "x": 1672,
+        "y": 736,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_23",
+      "frame": {
+        "x": 2090,
+        "y": 736,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_24",
+      "frame": {
+        "x": 2508,
+        "y": 736,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_25",
+      "frame": {
+        "x": 2926,
+        "y": 736,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_26",
+      "frame": {
+        "x": 3344,
+        "y": 736,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_27",
+      "frame": {
+        "x": 0,
+        "y": 1104,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_28",
+      "frame": {
+        "x": 418,
+        "y": 1104,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_29",
+      "frame": {
+        "x": 836,
+        "y": 1104,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_30",
+      "frame": {
+        "x": 1254,
+        "y": 1104,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_31",
+      "frame": {
+        "x": 1672,
+        "y": 1104,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_32",
+      "frame": {
+        "x": 2090,
+        "y": 1104,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_33",
+      "frame": {
+        "x": 2508,
+        "y": 1104,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_34",
+      "frame": {
+        "x": 2926,
+        "y": 1104,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_35",
+      "frame": {
+        "x": 3344,
+        "y": 1104,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_36",
+      "frame": {
+        "x": 0,
+        "y": 1472,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_37",
+      "frame": {
+        "x": 418,
+        "y": 1472,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_38",
+      "frame": {
+        "x": 836,
+        "y": 1472,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_39",
+      "frame": {
+        "x": 1254,
+        "y": 1472,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_40",
+      "frame": {
+        "x": 1672,
+        "y": 1472,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_41",
+      "frame": {
+        "x": 2090,
+        "y": 1472,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_42",
+      "frame": {
+        "x": 2508,
+        "y": 1472,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_43",
+      "frame": {
+        "x": 2926,
+        "y": 1472,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_44",
+      "frame": {
+        "x": 3344,
+        "y": 1472,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_45",
+      "frame": {
+        "x": 0,
+        "y": 1840,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_46",
+      "frame": {
+        "x": 418,
+        "y": 1840,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_47",
+      "frame": {
+        "x": 836,
+        "y": 1840,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_48",
+      "frame": {
+        "x": 1254,
+        "y": 1840,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_49",
+      "frame": {
+        "x": 1672,
+        "y": 1840,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_50",
+      "frame": {
+        "x": 2090,
+        "y": 1840,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_51",
+      "frame": {
+        "x": 2508,
+        "y": 1840,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_52",
+      "frame": {
+        "x": 2926,
+        "y": 1840,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_53",
+      "frame": {
+        "x": 3344,
+        "y": 1840,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_54",
+      "frame": {
+        "x": 0,
+        "y": 2208,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_55",
+      "frame": {
+        "x": 418,
+        "y": 2208,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_56",
+      "frame": {
+        "x": 836,
+        "y": 2208,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_57",
+      "frame": {
+        "x": 1254,
+        "y": 2208,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_58",
+      "frame": {
+        "x": 1672,
+        "y": 2208,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_59",
+      "frame": {
+        "x": 2090,
+        "y": 2208,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_60",
+      "frame": {
+        "x": 2508,
+        "y": 2208,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_61",
+      "frame": {
+        "x": 2926,
+        "y": 2208,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_62",
+      "frame": {
+        "x": 3344,
+        "y": 2208,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_63",
+      "frame": {
+        "x": 0,
+        "y": 2576,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_64",
+      "frame": {
+        "x": 418,
+        "y": 2576,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_65",
+      "frame": {
+        "x": 836,
+        "y": 2576,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_66",
+      "frame": {
+        "x": 1254,
+        "y": 2576,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_67",
+      "frame": {
+        "x": 1672,
+        "y": 2576,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_68",
+      "frame": {
+        "x": 2090,
+        "y": 2576,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_69",
+      "frame": {
+        "x": 2508,
+        "y": 2576,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_70",
+      "frame": {
+        "x": 2926,
+        "y": 2576,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_71",
+      "frame": {
+        "x": 3344,
+        "y": 2576,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_walk_72",
+      "frame": {
+        "x": 0,
+        "y": 2944,
+        "w": 418,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 418,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 418,
+        "h": 368
+      },
+      "duration": 42
+    }
+  ],
+  "meta": {
+    "app": "tools/video_to_spritesheet.py",
+    "version": "1.0",
+    "image": "rat_under_magic_walk_spritesheet_half.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 3762,
+      "h": 3312
+    },
+    "scale": "1",
+    "frameTags": [
+      {
+        "name": "rat_under_magic_walk",
+        "from": 0,
+        "to": 72,
+        "direction": "forward"
+      }
+    ],
+    "frameWidth": 418,
+    "frameHeight": 368,
+    "columns": 9,
+    "rows": 9,
+    "frameCount": 73,
+    "fps": 24.0
+  }
+}
