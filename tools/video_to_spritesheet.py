@@ -25,6 +25,9 @@ How assets/sprites was made (all clips share one 1080x756 canvas):
     # so with a Bottom pivot it still lines up with the others
     python3 tools/video_to_spritesheet.py Jump_hallow_.MOV assets/sprites/jump_hallow \
         --name jump_hallow --rect 0 39 1080 891 --columns 10 --half --no-full --preview
+    # a different character, so its own canvas; one small pocket by the foot needs a manual cut
+    python3 tools/video_to_spritesheet.py Rat_Under_Magic_Idle.MOV assets/sprites/rat_under_magic_idle \
+        --name rat_under_magic_idle --rect 142 70 854 886 --columns 16 --cut-pocket 611 814 --half --no-full --preview
 """
 import argparse
 import json
@@ -37,7 +40,9 @@ from pymatting import estimate_alpha_cf, estimate_foreground_ml
 from scipy import ndimage as ndi
 
 BG_TOLERANCE = 10      # max channel distance from the background colour that still counts as background
-GAP_MATCH = 4          # enclosed pockets must be this close to the background colour (median) to be cut out
+GAP_MATCH = 4          # enclosed pockets must be this close to the background colour (median) to be cut out ...
+GAP_LOOSE_MATCH = 12   # ... or, for pockets the video's colour compression tints from the cloth around them,
+GAP_LOOSE = ((100, 0.55), (50, 0.75))  # this looser match when (area px, dark share of the ring) reach a pair
 EDGE_BAND = 3          # px around the keyed background that are re-solved by matting
 TRAIL_LIGHTNESS = 48   # pale pixels touching the background (dust, motion blur) are also re-solved ...
 TRAIL_REACH = 48       # ... up to this many px from the background
@@ -76,9 +81,12 @@ def touching_border(labels):
 def enclosed_gaps(near_bg, outer_bg, dist, rgb, min_area=20):
     """Background pockets the border flood fill cannot reach.
 
-    A pocket is kept only if it matches the background colour almost exactly and
-    is ringed mostly by dark outline pixels; pale highlights on horns and claws
-    are slightly off-white and are left alone.
+    A pocket is cut out only if it is ringed mostly by dark outline/cloth pixels and
+    matches the background colour: almost exactly, or more loosely (compression bleeds
+    the colour of saturated cloth into them) when the pocket is big enough and its ring
+    dark enough. Pale highlights on horns and claws are slightly off-white
+    and half ringed by the light bone around them, and eye shines and glows are ringed
+    by light colours, so they are left alone.
     """
     labels, count = ndi.label(near_bg & ~outer_bg, structure=EIGHT)
     luma = rgb.astype(np.float32) @ np.array([0.299, 0.587, 0.114], np.float32)
@@ -88,11 +96,17 @@ def enclosed_gaps(near_bg, outer_bg, dist, rgb, min_area=20):
         y = slice(max(y.start - 4, 0), y.stop + 4)
         x = slice(max(x.start - 4, 0), x.stop + 4)
         blob = labels[y, x] == index
-        if blob.sum() < min_area or np.median(dist[y, x][blob]) > GAP_MATCH:
+        area = blob.sum()
+        if area < min_area:
             continue
         ring = ndi.binary_dilation(blob, EIGHT, iterations=3) & ~ndi.binary_dilation(blob, EIGHT)
         ring &= ~near_bg[y, x]
-        if ring.any() and (luma[y, x][ring] < 110).mean() > 0.5:
+        if not ring.any():
+            continue
+        match = np.median(dist[y, x][blob])
+        dark = (luma[y, x][ring] < 110).mean()
+        loose = match <= GAP_LOOSE_MATCH and any(area >= a and dark >= d for a, d in GAP_LOOSE)
+        if (match <= GAP_MATCH and dark > 0.5) or loose:
             gaps[y, x] |= blob
     return gaps
 
@@ -127,8 +141,12 @@ def despill(foreground, key):
     return foreground
 
 
-def key_frame(rgb):
-    """Return an RGBA frame with the background removed."""
+def key_frame(rgb, cut_points=()):
+    """Return an RGBA frame with the background removed.
+
+    cut_points are (x, y) spots, in this frame's coordinates, where any enclosed
+    background pocket is cut out even if the automatic gap test kept it.
+    """
     bg = background_colour(rgb)
     dist = colour_distance(rgb, bg)
 
@@ -136,6 +154,11 @@ def key_frame(rgb):
     labels, _ = ndi.label(near_bg, structure=EIGHT)
     outer_bg = touching_border(labels)
     known_bg = outer_bg | enclosed_gaps(near_bg, outer_bg, dist, rgb)
+    if cut_points:
+        labels, _ = ndi.label(near_bg & ~known_bg, structure=EIGHT)
+        for x, y in cut_points:
+            spot = labels[max(y - 3, 0):y + 4, max(x - 3, 0):x + 4]
+            known_bg |= np.isin(labels, np.unique(spot[spot > 0]))
 
     from_bg = ndi.distance_transform_edt(~known_bg)
     band = ~known_bg & (from_bg <= EDGE_BAND)
@@ -314,6 +337,8 @@ def main():
     parser.add_argument("--edge-fade", type=int, default=96,
                         help="px over which content running out of the video is faded out, in the frames where "
                              "it does (0 = keep the hard cut)")
+    parser.add_argument("--cut-pocket", type=int, nargs=2, action="append", default=[], metavar=("X", "Y"),
+                        help="video px where an enclosed background pocket must always be cut out (repeatable)")
     parser.add_argument("--half", action="store_true", help="also write a 50%% sheet")
     parser.add_argument("--no-full", action="store_true",
                         help="skip the full-resolution sheet (for long clips whose full sheet is too big for a texture)")
@@ -340,7 +365,7 @@ def main():
     os.makedirs(args.out_dir, exist_ok=True)
     cells = []
     for i, rgb in enumerate(frames):
-        cell = key_frame(crop(rgb, rect))
+        cell = key_frame(crop(rgb, rect), [(x - left, y - top) for x, y in args.cut_pocket])
         sides = {side for side, hits in contact.items() if i in hits}
         if sides:
             cell = fade_edges(cell, rect, width, height, sides, args.edge_fade)

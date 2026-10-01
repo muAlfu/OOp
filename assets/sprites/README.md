@@ -13,6 +13,12 @@ Use the `Bottom` pivot for all of them and the character stays put when the anim
 | `final_heavy_claw_attack/` | 92 | 10 columns × 10 rows (last 8 cells empty) | not made (would be 10800×7560) | 5400×3780 |
 | `jump_hallow/` | 66 | 10 columns × 7 rows (last 4 cells empty) | not made (would be 10800×5964) | 5400×2982, **frame 540×426** |
 
+A second character, the rat mage, has its own canvas (x 142–854, y 70–886 of the video, 712×816):
+
+| Animation | Frames | Grid | Full sheet (frame 712×816) | Half sheet (frame 356×408) |
+| --- | --- | --- | --- | --- |
+| `rat_under_magic_idle/` | 183 | 16 columns × 12 rows (last 9 cells empty) | not made (would be 11392×9792) | 5696×4896 |
+
 - Frames go left to right, top to bottom: frame `i` is at column `i % columns`, row `i / columns`.
 - Play at 30 fps (33 ms per frame).
 - Each folder also has the frame rectangles as JSON (Aseprite / TexturePacker "JSON Array" format) and a GIF preview
@@ -30,15 +36,20 @@ Use the `Bottom` pivot for all of them and the character stays put when the anim
   character still stands in the same place. The clip was shot on a green screen; the green light that spilled onto
   the character (claws, skull, body) is removed. The body and cape in the mid-air frames stay darker and more
   olive/orange than in the other animations, because that is how the video lights them.
+- `rat_under_magic_idle`: a slow idle, so many neighbouring frames look almost the same; all are kept so the
+  timing matches the video. The red sparks around the staff are kept.
+- Gaps where the background shows through the character (between cloak and staff, claw and leg, inside the
+  staff head) are cut out. Small pale highlights on horns and claws stay.
 
 ## Unity
 
 1. Drop the PNG into `Assets`.
 2. Inspector: **Texture Type** `Sprite (2D and UI)`, **Sprite Mode** `Multiple`, **Max Size** at least the sheet's
-   larger side: `4096` for the 3780-wide half sheets, `8192` for `final_heavy_claw_attack` and `jump_hallow`
-   (5400 wide) and the full sheets. The default 2048 shrinks the sheet. Apply.
+   larger side: `4096` for the 3780-wide half sheets, `8192` for `final_heavy_claw_attack`, `jump_hallow`,
+   `rat_under_magic_idle` and the full sheets. The default 2048 shrinks the sheet. Apply.
 3. **Sprite Editor → Slice**: **Type** `Grid By Cell Size`, **Pixel Size** `540 × 378` (half) or `1080 × 756` (full),
-   except `jump_hallow`: `540 × 426`. **Pivot** `Bottom`. Slice, then Apply. Empty cells at the end are skipped.
+   except `jump_hallow`: `540 × 426`, and the rat: `356 × 408`. **Pivot** `Bottom`. Slice, then Apply. Empty cells
+   at the end are skipped.
 4. Select the sprites, drag them into the scene to make the animation, and set **Sample Rate** to `30`.
 
 ## Java
