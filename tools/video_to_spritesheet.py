@@ -33,6 +33,12 @@ How assets/sprites was made (all clips share one 1080x756 canvas):
     python3 tools/video_to_spritesheet.py Rat_under_magic_walk_.MP4 assets/sprites/rat_under_magic_walk \
         --name rat_under_magic_walk --scale 1.125 --rect 80 150 916 886 --columns 9 \
         --cut-region 0 635 820 --cut-region 0 673 642 --half --no-full --preview
+    # the projectile on its own canvas; its flame trail runs into the left edge of the video, so that side is
+    # faded the same way in every frame
+    python3 tools/video_to_spritesheet.py Rat_under_magic_projectile_animation.MP4 \
+        assets/sprites/rat_under_magic_projectile --name rat_under_magic_projectile --scale 1.125 \
+        --rect 0 342 912 718 --columns 8 --fade-side left --edge-fade 160 --keep-enclosed --seal 6 \
+        --hold-still 613 472 726 608 --half --no-full --preview
     # same export as the walk; the staff thrust reaches far right, so an even wider canvas around x 498
     python3 tools/video_to_spritesheet.py Rat_under_magic_Cast_Projectile.MP4 assets/sprites/rat_under_magic_cast_projectile \\
         --name rat_under_magic_cast_projectile --scale 1.125 --rect -68 74 1064 886 --columns 9 \\
@@ -156,21 +162,38 @@ CUT_REGION_TOLERANCE = 30  # a hand-picked region may be this far off the backgr
 CUT_REGION_MAX = 20000     # ... and at most this many px (a bigger one means the spot was wrong)
 
 
-def key_frame(rgb, cut_points=(), cut_regions=()):
+def disk(radius):
+    y, x = np.ogrid[-radius:radius + 1, -radius:radius + 1]
+    return x * x + y * y <= radius * radius
+
+
+def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0):
     """Return an RGBA frame with the background removed.
 
     cut_points are (x, y) spots, in this frame's coordinates, where any enclosed
     background pocket is cut out even if the automatic gap test kept it.
     cut_regions are (x, y) spots inside a pale patch that compression has tinted too
     far from the background for the gap test; the whole connected patch is cut out.
+    cut_gaps=False keeps every enclosed pale area, for effects such as a fireball
+    whose white-hot glow sits inside the flames. seal > 0 also keeps pale areas that
+    reach the outside only through openings narrower than 2 * seal px; they stay as a
+    faint glow instead of being flood-filled as background.
     """
     bg = background_colour(rgb)
     dist = colour_distance(rgb, bg)
+    if seal:
+        solid = dist > BG_TOLERANCE
+        pad = seal + 2
+        closed = ndi.binary_closing(np.pad(solid, pad), structure=disk(seal))[pad:-pad, pad:-pad]
+        sealed = closed & ~solid
+        rgb = rgb.copy()
+        rgb[sealed] = np.clip(bg - (BG_TOLERANCE + 5) * np.sign(bg - 127.5), 0, 255).astype(np.uint8)
+        dist = colour_distance(rgb, bg)
 
     near_bg = dist <= BG_TOLERANCE
     labels, _ = ndi.label(near_bg, structure=EIGHT)
     outer_bg = touching_border(labels)
-    known_bg = outer_bg | enclosed_gaps(near_bg, outer_bg, dist, rgb)
+    known_bg = (outer_bg | enclosed_gaps(near_bg, outer_bg, dist, rgb)) if cut_gaps else outer_bg
     if cut_points:
         labels, _ = ndi.label(near_bg & ~known_bg, structure=EIGHT)
         for x, y in cut_points:
@@ -293,6 +316,25 @@ def halve(cell):
     return small
 
 
+def track_x(frames, box, search=150):
+    """Horizontal position of the content in box (video px) in each frame, relative to frame 0."""
+    x0, y0, x1, y1 = box
+    ref = frames[0][y0:y1, x0:x1].astype(np.float32).mean(axis=2)
+    ref -= ref.mean()
+    offsets = []
+    for rgb in frames:
+        grey = rgb.astype(np.float32).mean(axis=2)
+        best, best_dx = -np.inf, 0
+        for dx in range(max(-search, -x0), min(search, grey.shape[1] - x1) + 1):
+            patch = grey[y0:y1, x0 + dx:x1 + dx]
+            patch = patch - patch.mean()
+            score = float((patch * ref).sum()) / (float(np.linalg.norm(patch)) + 1e-6)
+            if score > best:
+                best, best_dx = score, dx
+        offsets.append(best_dx)
+    return np.array(offsets)
+
+
 def build_sheet(cells, columns):
     h, w = cells[0].shape[:2]
     rows = -(-len(cells) // columns)
@@ -362,6 +404,9 @@ def main():
     parser.add_argument("--edge-fade", type=int, default=96,
                         help="px over which content running out of the video is faded out, in the frames where "
                              "it does (0 = keep the hard cut)")
+    parser.add_argument("--fade-side", choices=("left", "right", "top", "bottom"), action="append", default=[],
+                        help="fade that video edge in every frame, not only where content touches it, e.g. for a "
+                             "flame trail that only sometimes reaches the edge (repeatable)")
     parser.add_argument("--scale", type=float, default=1.0,
                         help="resize the video first, e.g. to match another clip of the same character shot at a "
                              "different resolution (--rect is then in the resized video's px)")
@@ -369,6 +414,13 @@ def main():
                         help="video px where an enclosed background pocket must always be cut out (repeatable)")
     parser.add_argument("--cut-region", type=int, nargs=3, action="append", default=[], metavar=("FRAME", "X", "Y"),
                         help="in that one frame, cut out the pale patch around video px X,Y (repeatable)")
+    parser.add_argument("--hold-still", type=int, nargs=4, metavar=("X0", "Y0", "X1", "Y1"),
+                        help="video px box around a part that drifts sideways during the clip (e.g. a projectile's "
+                             "orb); it is tracked and every frame is shifted so it stays where it is in the last frame")
+    parser.add_argument("--keep-enclosed", action="store_true",
+                        help="never cut enclosed pale areas as background (effects whose white glow sits inside)")
+    parser.add_argument("--seal", type=int, default=0, metavar="PX",
+                        help="also keep pale glow that reaches the outside only through openings narrower than 2*PX")
     parser.add_argument("--half", action="store_true", help="also write a 50%% sheet")
     parser.add_argument("--no-full", action="store_true",
                         help="skip the full-resolution sheet (for long clips whose full sheet is too big for a texture)")
@@ -389,6 +441,9 @@ def main():
     if box[0] < left or box[1] < top or box[2] > right or box[3] > bottom:
         raise SystemExit(f"the clip reaches {box}, outside the cell {rect} - frames would be cut; widen --rect")
     contact = border_contact(frames) if args.edge_fade > 0 else {}
+    if args.hold_still:
+        hold = track_x(frames, args.hold_still)
+        print(f"  holding the tracked part still: it drifts {hold[-1] - hold[0]:+d} px over the clip")
     key = key_channel(background_colour(frames[0]))
     if key is not None:
         print(f"  {'RGB'[key]} screen background: removing its colour spill from the character")
@@ -399,10 +454,22 @@ def main():
     cells = []
     for i, rgb in enumerate(frames):
         cell = key_frame(crop(rgb, rect), [(x - left, y - top) for x, y in args.cut_pocket],
-                         [(x - left, y - top) for f, x, y in args.cut_region if f == i])
-        sides = {side for side, hits in contact.items() if i in hits}
+                         [(x - left, y - top) for f, x, y in args.cut_region if f == i], not args.keep_enclosed,
+                         args.seal)
+        sides = {side for side, hits in contact.items() if i in hits} | set(args.fade_side)
         if sides:
             cell = fade_edges(cell, rect, width, height, sides, args.edge_fade)
+        if args.hold_still:
+            # line every frame up with the last one; the gap left behind is transparent
+            shift = int(hold[-1] - hold[i])
+            moved = np.zeros_like(cell)
+            if shift >= 0:
+                moved[:, shift:] = cell[:, :w - shift]
+            else:
+                moved[:, :w + shift] = cell[:, -shift:]
+            if np.abs(shift) and (cell[:, w - shift:] if shift > 0 else cell[:, :-shift]).any():
+                raise SystemExit(f"frame {i}: shifting by {shift} px pushes content out of the cell - widen --rect")
+            cell = moved
         edge = np.concatenate([cell[0, :, 3], cell[-1, :, 3], cell[:, 0, 3], cell[:, -1, 3]])
         if edge.any():
             raise SystemExit(f"frame {i} touches the cell edge - increase --margin or widen --rect")

@@ -20,6 +20,13 @@ A second character, the rat mage, has its own canvas (x 142–854, y 70–886 of
 | `rat_under_magic_idle/` | 183 | 16 columns × 12 rows (last 9 cells empty) | not made (would be 11392×9792) | 5696×4896 |
 | `rat_under_magic_walk/` | 73, **24 fps** | 9 columns × 9 rows (last 8 cells empty) | not made (kept at the idle's scale) | 3762×3312, **frame 418×368** |
 | `rat_under_magic_cast_projectile/` | 73, **24 fps** | 9 columns × 9 rows (last 8 cells empty) | not made (kept at the idle's scale) | 5094×3654, **frame 566×406** |
+| `rat_under_magic_projectile/` | 73, **24 fps** | 8 columns × 10 rows (last 7 cells empty) | not made (kept at the idle's scale) | 3648×1880, **frame 456×188** |
+
+The projectile (the fireball the rat casts) has its own canvas, at the same scale as the rat (×1.125). In the video
+the ball slowly drifts right (62 px over the clip); every frame is shifted so the ball stays in one place and the
+animation loops without a jump. Its flame trail runs into the left edge of the video, so the trail's last 160 px fade
+out the same way in every frame. The white glow between the ball and the flames is kept as a soft, see-through glow.
+Use a custom pivot at the centre of the ball: **X 0.82, Y 0.47**.
 
 The walk video was exported at 960×960 and 24 fps. Its frames are scaled ×1.125 so the rat is the same size as in
 the idle. The walk's frames are wider (418×368 at half size) because the tail and staff reach further, but they share
@@ -29,8 +36,8 @@ the right, so its frames are wider still (566×406 at half size), again around t
 clip shows the casting motion; there is no projectile flying in it.
 
 - Frames go left to right, top to bottom: frame `i` is at column `i % columns`, row `i / columns`.
-- Play at 30 fps (33 ms per frame), except the rat walk and cast: 24 fps (42 ms). The JSON files carry the right
-  duration.
+- Play at 30 fps (33 ms per frame), except the rat walk, cast and projectile: 24 fps (42 ms). The JSON files carry
+  the right duration.
 - Each folder also has the frame rectangles as JSON (Aseprite / TexturePacker "JSON Array" format) and a GIF preview
   on a dark background. The GIF is only for viewing, not for the game.
 - `heavy_claw_attack`: in frames 22–24 (counting from 0) the dust from the strike runs past the right edge of the
@@ -58,11 +65,11 @@ clip shows the casting motion; there is no projectile flying in it.
    larger side: `4096` for the 3780-wide half sheets, `8192` for `final_heavy_claw_attack`, `jump_hallow`,
    `rat_under_magic_idle`, `rat_under_magic_cast_projectile` and the full sheets. The default 2048 shrinks the sheet. Apply.
 3. **Sprite Editor → Slice**: **Type** `Grid By Cell Size`, **Pixel Size** `540 × 378` (half) or `1080 × 756` (full),
-   except `jump_hallow`: `540 × 426`, the rat idle: `356 × 408`, the rat walk: `418 × 368` and the rat cast:
-   `566 × 406`. **Pivot** `Bottom`.
+   except `jump_hallow`: `540 × 426`, the rat idle: `356 × 408`, the rat walk: `418 × 368`, the rat cast:
+   `566 × 406` and the projectile: `456 × 188`. **Pivot** `Bottom` (the projectile: `Custom Pivot` X 0.82, Y 0.47).
    Slice, then Apply. Empty cells at the end are skipped.
 4. Select the sprites, drag them into the scene to make the animation, and set **Sample Rate** to `30`
-   (`24` for the rat walk and cast).
+   (`24` for the rat walk, cast and projectile).
 
 ## Java
 
