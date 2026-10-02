@@ -10,7 +10,8 @@ real alpha: flood fill from the border, enclosed gaps (e.g. between a claw and
 the face), and closed-form matting on the edge band so outlines and motion blur
 keep soft, halo-free edges. Where the clip itself runs out of the video frame
 (e.g. a dust effect), those pixels do not exist; the part near that video edge
-is faded out instead of ending in a straight cut.
+is faded out instead of ending in a straight cut. For a glowing effect drawn on
+white, such as an explosion, --effect keeps its white-hot middle as solid white.
 
 Requires: pip install av pillow numpy scipy pymatting
 
@@ -45,6 +46,14 @@ How assets/sprites was made (all clips share one 1080x756 canvas):
         --cut-region 0 635 820 --cut-region 0 673 642 --cut-region 1 669 656 --cut-region 1 639 822 \\
         --cut-region 2 671 669 --cut-region 2 642 822 --cut-region 3 643 823 --cut-region 4 646 823 \\
         --half --no-full --preview
+    # the explosion the projectile makes: an effect, not a character. It fills the whole video and its shards fly
+    # out of every edge, so all four edges are faded the same way in every frame. Its white-hot middle is white like
+    # the background: the middle of the ring stays white, the inside of the ring is background, and the white flash
+    # at the start opens up from its middle over frames 13-19
+    python3 tools/video_to_spritesheet.py Rat_under_magic_2D_magical_impact_explosion_.MP4 \
+        assets/sprites/rat_under_magic_impact_explosion --name rat_under_magic_impact_explosion --scale 1.125 \
+        --rect 0 0 1080 1080 --columns 9 --fade-side left --fade-side right --fade-side top --fade-side bottom \
+        --effect --flash 12 20 --half --no-full --preview
 """
 import argparse
 import json
@@ -64,6 +73,10 @@ EDGE_BAND = 3          # px around the keyed background that are re-solved by ma
 TRAIL_LIGHTNESS = 48   # pale pixels touching the background (dust, motion blur) are also re-solved ...
 TRAIL_REACH = 48       # ... up to this many px from the background
 TRAIL_SOFTEN = 1.5     # gaussian sigma (px) applied to the alpha of those trails
+EFFECT_SEAL = 6        # --effect: white closed in by the effect except for gaps narrower than 2x this is inside it
+EFFECT_THIN = 40       # --effect: white inside the effect up to 2x this across is its white-hot middle and stays ...
+EFFECT_SPARKLE = 135   # ... and so does wider white ringed by colour at least this strong (a sparkle on a shard)
+FLASH_FEATHER = 12     # --flash: px over which the opening flash fades into its hole
 EIGHT = np.ones((3, 3), bool)
 
 
@@ -128,6 +141,51 @@ def enclosed_gaps(near_bg, outer_bg, dist, rgb, min_area=20):
     return gaps
 
 
+def effect_white(dist):
+    """Sort the white inside a glowing effect drawn on white (--effect): returns (body, hollow).
+
+    White is also such an effect's hottest colour: the middle of a glowing ring or flame,
+    the sparkle on a crystal. White the effect closes in (gaps narrower than 2 * EFFECT_SEAL
+    px count as closed) is body when it is at most 2 * EFFECT_THIN px across or ringed by
+    strong colour; it stays. Wider white, such as the inside of the ring, is hollow: background,
+    or a flash that fades (flash_rim). Open white and the gaps between flying shards are background.
+    """
+    solid = dist > BG_TOLERANCE
+    pad = EFFECT_SEAL + 2
+    closed = ndi.binary_closing(np.pad(solid, pad), structure=disk(EFFECT_SEAL))[pad:-pad, pad:-pad]
+    labels, _ = ndi.label(~closed, structure=EIGHT)
+    outer = touching_border(labels)
+    sealed = closed & ~solid
+    pieces, _ = ndi.label(sealed, structure=EIGHT)
+    opening = np.unique(pieces[ndi.binary_dilation(outer, EIGHT) & sealed])
+    body = sealed & ~np.isin(pieces, opening[opening > 0])
+    hollow = np.zeros_like(solid)
+    labels, _ = ndi.label(~closed & ~outer, structure=EIGHT)
+    for index, region in enumerate(ndi.find_objects(labels), start=1):
+        y, x = region
+        y = slice(max(y.start - 4, 0), y.stop + 4)
+        x = slice(max(x.start - 4, 0), x.stop + 4)
+        blob = labels[y, x] == index
+        ring = ndi.binary_dilation(blob, EIGHT, iterations=3) & ~ndi.binary_dilation(blob, EIGHT) & solid[y, x]
+        strong = ring.any() and np.median(dist[y, x][ring]) >= EFFECT_SPARKLE
+        if strong or ndi.distance_transform_edt(np.pad(blob, 1)).max() <= EFFECT_THIN:
+            body[y, x] |= blob
+        else:
+            hollow[y, x] |= blob
+    return body, hollow
+
+
+def flash_rim(hollow, weight):
+    """Opacity of hollow white while a flash fades out (weight 1 -> 0): it opens up from its
+    middle, leaving a rim along its edge that narrows to nothing."""
+    depth = ndi.distance_transform_edt(np.pad(hollow, 1))[1:-1, 1:-1]
+    labels, count = ndi.label(hollow, structure=EIGHT)
+    deepest = np.zeros(count + 1)
+    deepest[1:] = ndi.maximum(depth, labels, np.arange(1, count + 1))
+    reach = weight * (deepest[labels] + FLASH_FEATHER) - FLASH_FEATHER / 2
+    return np.where(hollow, np.clip((reach - depth) / FLASH_FEATHER + 0.5, 0, 1), 0.0)
+
+
 def drop_specks(alpha, faint=6 / 255, max_area=16, max_peak=0.15):
     """Clear invisible matting noise: near-zero alpha and tiny faint islands off the body."""
     alpha[alpha < faint] = 0.0
@@ -167,7 +225,7 @@ def disk(radius):
     return x * x + y * y <= radius * radius
 
 
-def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0):
+def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=False, flash=0.0):
     """Return an RGBA frame with the background removed.
 
     cut_points are (x, y) spots, in this frame's coordinates, where any enclosed
@@ -178,6 +236,9 @@ def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0):
     whose white-hot glow sits inside the flames. seal > 0 also keeps pale areas that
     reach the outside only through openings narrower than 2 * seal px; they stay as a
     faint glow instead of being flood-filled as background.
+    effect=True is for a glowing effect such as an explosion, whose white-hot middle
+    is white like the background (see effect_white). flash (1 -> 0) then also keeps
+    its wider hollow white, solid at 1 and opening up from the middle as it drops.
     """
     bg = background_colour(rgb)
     dist = colour_distance(rgb, bg)
@@ -191,9 +252,16 @@ def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0):
         dist = colour_distance(rgb, bg)
 
     near_bg = dist <= BG_TOLERANCE
-    labels, _ = ndi.label(near_bg, structure=EIGHT)
-    outer_bg = touching_border(labels)
-    known_bg = (outer_bg | enclosed_gaps(near_bg, outer_bg, dist, rgb)) if cut_gaps else outer_bg
+    keep = rim = None
+    if effect:
+        body, hollow = effect_white(dist)
+        rim = flash_rim(hollow, flash) if flash > 0 else np.zeros(dist.shape)
+        keep = body | (rim > 0)
+        known_bg = near_bg & ~keep
+    else:
+        labels, _ = ndi.label(near_bg, structure=EIGHT)
+        outer_bg = touching_border(labels)
+        known_bg = (outer_bg | enclosed_gaps(near_bg, outer_bg, dist, rgb)) if cut_gaps else outer_bg
     if cut_points:
         labels, _ = ndi.label(near_bg & ~known_bg, structure=EIGHT)
         for x, y in cut_points:
@@ -211,6 +279,8 @@ def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0):
     from_bg = ndi.distance_transform_edt(~known_bg)
     band = ~known_bg & (from_bg <= EDGE_BAND)
     light = ~known_bg & (dist < TRAIL_LIGHTNESS) & (from_bg <= TRAIL_REACH)
+    if keep is not None:
+        light &= ~keep  # white-hot parts are solid, not a faint trail
     labels, _ = ndi.label(light | band, structure=EIGHT)
     reached = np.unique(labels[band])
     pale = light & np.isin(labels, reached[reached > 0])
@@ -224,13 +294,21 @@ def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0):
     # Pale areas that reach the background without crossing an outline (dust, motion
     # blur) are see-through in the clip: cap their opacity by their contrast with the
     # background so they do not turn into solid white patches on a dark backdrop.
-    alpha[pale] = np.minimum(alpha[pale], dist[pale] / TRAIL_LIGHTNESS)
+    cap = dist / TRAIL_LIGHTNESS
+    if keep is not None and keep.any():
+        # in an effect, pale glow between the background and a white-hot part turns solid toward that part
+        from_keep = ndi.distance_transform_edt(~keep)
+        cap = np.maximum(cap, from_bg / np.maximum(from_bg + from_keep, 1e-6))
+    alpha[pale] = np.minimum(alpha[pale], cap[pale])
     # Those trails also carry the video's 8x8 compression blocks; soften them so the
     # edge does not stair-step. Crisp outlines (the thin edge band) are untouched.
     trail = pale & (from_bg > EDGE_BAND)
     if trail.any():
         zone = ndi.binary_dilation(trail, EIGHT, iterations=4)
         alpha[zone] = ndi.gaussian_filter(alpha, TRAIL_SOFTEN)[zone]
+    if rim is not None:
+        fading = rim > 0
+        alpha[fading] *= rim[fading]
     alpha = drop_specks(alpha)
     foreground = estimate_foreground_ml(image, alpha)
     key = key_channel(bg)
@@ -421,6 +499,13 @@ def main():
                         help="never cut enclosed pale areas as background (effects whose white glow sits inside)")
     parser.add_argument("--seal", type=int, default=0, metavar="PX",
                         help="also keep pale glow that reaches the outside only through openings narrower than 2*PX")
+    parser.add_argument("--effect", action="store_true",
+                        help="the clip is a glowing effect on white, such as an explosion: white that the effect "
+                             "closes in (the middle of a glowing ring or flame, sparkles) stays solid white, while "
+                             "wide white such as the inside of a ring is background")
+    parser.add_argument("--flash", type=int, nargs=2, metavar=("FROM", "TO"),
+                        help="with --effect: the wide white inside the effect is a flash, solid up to frame FROM, "
+                             "then opening up from its middle until it is gone at frame TO")
     parser.add_argument("--half", action="store_true", help="also write a 50%% sheet")
     parser.add_argument("--no-full", action="store_true",
                         help="skip the full-resolution sheet (for long clips whose full sheet is too big for a texture)")
@@ -449,13 +534,19 @@ def main():
         print(f"  {'RGB'[key]} screen background: removing its colour spill from the character")
     for side, hits in contact.items():
         print(f"  content runs out of the video on the {side} in frames {hits}; fading the last {args.edge_fade} px")
+    if args.flash:
+        flash_from, flash_to = args.flash
+        if not args.effect or flash_from >= flash_to:
+            raise SystemExit("--flash needs --effect and FROM < TO")
+        print(f"  white flash: solid up to frame {flash_from}, opening up until it is gone at frame {flash_to}")
 
     os.makedirs(args.out_dir, exist_ok=True)
     cells = []
     for i, rgb in enumerate(frames):
+        flash = float(np.clip((flash_to - i) / (flash_to - flash_from), 0, 1)) if args.flash else 0.0
         cell = key_frame(crop(rgb, rect), [(x - left, y - top) for x, y in args.cut_pocket],
                          [(x - left, y - top) for f, x, y in args.cut_region if f == i], not args.keep_enclosed,
-                         args.seal)
+                         args.seal, args.effect, flash)
         sides = {side for side, hits in contact.items() if i in hits} | set(args.fade_side)
         if sides:
             cell = fade_edges(cell, rect, width, height, sides, args.edge_fade)
