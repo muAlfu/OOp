@@ -19,14 +19,18 @@ A second character, the rat mage, has its own canvas (x 142–854, y 70–886 of
 | --- | --- | --- | --- | --- |
 | `rat_under_magic_idle/` | 183 | 16 columns × 12 rows (last 9 cells empty) | not made (would be 11392×9792) | 5696×4896 |
 | `rat_under_magic_walk/` | 73, **24 fps** | 9 columns × 9 rows (last 8 cells empty) | not made (kept at the idle's scale) | 3762×3312, **frame 418×368** |
+| `rat_under_magic_cast_projectile/` | 73, **24 fps** | 9 columns × 9 rows (last 8 cells empty) | not made (kept at the idle's scale) | 5094×3654, **frame 566×406** |
 
 The walk video was exported at 960×960 and 24 fps. Its frames are scaled ×1.125 so the rat is the same size as in
 the idle. The walk's frames are wider (418×368 at half size) because the tail and staff reach further, but they share
 the idle's centre and bottom edge, so with the `Bottom` pivot the rat stays in place between idle and walk. Play the
-walk at 24 fps.
+walk at 24 fps. The cast was exported the same way (960×960, 24 fps, scaled ×1.125); the staff thrust reaches far to
+the right, so its frames are wider still (566×406 at half size), again around the idle's centre and bottom edge. The
+clip shows the casting motion; there is no projectile flying in it.
 
 - Frames go left to right, top to bottom: frame `i` is at column `i % columns`, row `i / columns`.
-- Play at 30 fps (33 ms per frame), except the rat walk: 24 fps (42 ms). The JSON files carry the right duration.
+- Play at 30 fps (33 ms per frame), except the rat walk and cast: 24 fps (42 ms). The JSON files carry the right
+  duration.
 - Each folder also has the frame rectangles as JSON (Aseprite / TexturePacker "JSON Array" format) and a GIF preview
   on a dark background. The GIF is only for viewing, not for the game.
 - `heavy_claw_attack`: in frames 22–24 (counting from 0) the dust from the strike runs past the right edge of the
@@ -52,12 +56,13 @@ walk at 24 fps.
 1. Drop the PNG into `Assets`.
 2. Inspector: **Texture Type** `Sprite (2D and UI)`, **Sprite Mode** `Multiple`, **Max Size** at least the sheet's
    larger side: `4096` for the 3780-wide half sheets, `8192` for `final_heavy_claw_attack`, `jump_hallow`,
-   `rat_under_magic_idle` and the full sheets. The default 2048 shrinks the sheet. Apply.
+   `rat_under_magic_idle`, `rat_under_magic_cast_projectile` and the full sheets. The default 2048 shrinks the sheet. Apply.
 3. **Sprite Editor → Slice**: **Type** `Grid By Cell Size`, **Pixel Size** `540 × 378` (half) or `1080 × 756` (full),
-   except `jump_hallow`: `540 × 426`, the rat idle: `356 × 408` and the rat walk: `418 × 368`. **Pivot** `Bottom`.
+   except `jump_hallow`: `540 × 426`, the rat idle: `356 × 408`, the rat walk: `418 × 368` and the rat cast:
+   `566 × 406`. **Pivot** `Bottom`.
    Slice, then Apply. Empty cells at the end are skipped.
 4. Select the sprites, drag them into the scene to make the animation, and set **Sample Rate** to `30`
-   (`24` for the rat walk).
+   (`24` for the rat walk and cast).
 
 ## Java
 

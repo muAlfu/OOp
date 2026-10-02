@@ -33,6 +33,12 @@ How assets/sprites was made (all clips share one 1080x756 canvas):
     python3 tools/video_to_spritesheet.py Rat_under_magic_walk_.MP4 assets/sprites/rat_under_magic_walk \
         --name rat_under_magic_walk --scale 1.125 --rect 80 150 916 886 --columns 9 \
         --cut-region 0 635 820 --cut-region 0 673 642 --half --no-full --preview
+    # same export as the walk; the staff thrust reaches far right, so an even wider canvas around x 498
+    python3 tools/video_to_spritesheet.py Rat_under_magic_Cast_Projectile.MP4 assets/sprites/rat_under_magic_cast_projectile \\
+        --name rat_under_magic_cast_projectile --scale 1.125 --rect -68 74 1064 886 --columns 9 \\
+        --cut-region 0 635 820 --cut-region 0 673 642 --cut-region 1 669 656 --cut-region 1 639 822 \\
+        --cut-region 2 671 669 --cut-region 2 642 822 --cut-region 3 643 823 --cut-region 4 646 823 \\
+        --half --no-full --preview
 """
 import argparse
 import json

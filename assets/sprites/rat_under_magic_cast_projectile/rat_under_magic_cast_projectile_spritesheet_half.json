@@ -1,0 +1,1635 @@
+{
+  "frames": [
+    {
+      "filename": "rat_under_magic_cast_projectile_00",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_01",
+      "frame": {
+        "x": 566,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_02",
+      "frame": {
+        "x": 1132,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_03",
+      "frame": {
+        "x": 1698,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_04",
+      "frame": {
+        "x": 2264,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_05",
+      "frame": {
+        "x": 2830,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_06",
+      "frame": {
+        "x": 3396,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_07",
+      "frame": {
+        "x": 3962,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_08",
+      "frame": {
+        "x": 4528,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_09",
+      "frame": {
+        "x": 0,
+        "y": 406,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_10",
+      "frame": {
+        "x": 566,
+        "y": 406,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_11",
+      "frame": {
+        "x": 1132,
+        "y": 406,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_12",
+      "frame": {
+        "x": 1698,
+        "y": 406,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_13",
+      "frame": {
+        "x": 2264,
+        "y": 406,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_14",
+      "frame": {
+        "x": 2830,
+        "y": 406,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_15",
+      "frame": {
+        "x": 3396,
+        "y": 406,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_16",
+      "frame": {
+        "x": 3962,
+        "y": 406,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_17",
+      "frame": {
+        "x": 4528,
+        "y": 406,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_18",
+      "frame": {
+        "x": 0,
+        "y": 812,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_19",
+      "frame": {
+        "x": 566,
+        "y": 812,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_20",
+      "frame": {
+        "x": 1132,
+        "y": 812,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_21",
+      "frame": {
+        "x": 1698,
+        "y": 812,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_22",
+      "frame": {
+        "x": 2264,
+        "y": 812,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_23",
+      "frame": {
+        "x": 2830,
+        "y": 812,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_24",
+      "frame": {
+        "x": 3396,
+        "y": 812,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_25",
+      "frame": {
+        "x": 3962,
+        "y": 812,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_26",
+      "frame": {
+        "x": 4528,
+        "y": 812,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_27",
+      "frame": {
+        "x": 0,
+        "y": 1218,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_28",
+      "frame": {
+        "x": 566,
+        "y": 1218,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_29",
+      "frame": {
+        "x": 1132,
+        "y": 1218,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_30",
+      "frame": {
+        "x": 1698,
+        "y": 1218,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_31",
+      "frame": {
+        "x": 2264,
+        "y": 1218,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_32",
+      "frame": {
+        "x": 2830,
+        "y": 1218,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_33",
+      "frame": {
+        "x": 3396,
+        "y": 1218,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_34",
+      "frame": {
+        "x": 3962,
+        "y": 1218,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_35",
+      "frame": {
+        "x": 4528,
+        "y": 1218,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_36",
+      "frame": {
+        "x": 0,
+        "y": 1624,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_37",
+      "frame": {
+        "x": 566,
+        "y": 1624,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_38",
+      "frame": {
+        "x": 1132,
+        "y": 1624,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_39",
+      "frame": {
+        "x": 1698,
+        "y": 1624,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_40",
+      "frame": {
+        "x": 2264,
+        "y": 1624,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_41",
+      "frame": {
+        "x": 2830,
+        "y": 1624,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_42",
+      "frame": {
+        "x": 3396,
+        "y": 1624,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_43",
+      "frame": {
+        "x": 3962,
+        "y": 1624,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_44",
+      "frame": {
+        "x": 4528,
+        "y": 1624,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_45",
+      "frame": {
+        "x": 0,
+        "y": 2030,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_46",
+      "frame": {
+        "x": 566,
+        "y": 2030,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_47",
+      "frame": {
+        "x": 1132,
+        "y": 2030,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_48",
+      "frame": {
+        "x": 1698,
+        "y": 2030,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_49",
+      "frame": {
+        "x": 2264,
+        "y": 2030,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_50",
+      "frame": {
+        "x": 2830,
+        "y": 2030,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_51",
+      "frame": {
+        "x": 3396,
+        "y": 2030,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_52",
+      "frame": {
+        "x": 3962,
+        "y": 2030,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_53",
+      "frame": {
+        "x": 4528,
+        "y": 2030,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_54",
+      "frame": {
+        "x": 0,
+        "y": 2436,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_55",
+      "frame": {
+        "x": 566,
+        "y": 2436,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_56",
+      "frame": {
+        "x": 1132,
+        "y": 2436,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_57",
+      "frame": {
+        "x": 1698,
+        "y": 2436,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_58",
+      "frame": {
+        "x": 2264,
+        "y": 2436,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_59",
+      "frame": {
+        "x": 2830,
+        "y": 2436,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_60",
+      "frame": {
+        "x": 3396,
+        "y": 2436,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_61",
+      "frame": {
+        "x": 3962,
+        "y": 2436,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_62",
+      "frame": {
+        "x": 4528,
+        "y": 2436,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_63",
+      "frame": {
+        "x": 0,
+        "y": 2842,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_64",
+      "frame": {
+        "x": 566,
+        "y": 2842,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_65",
+      "frame": {
+        "x": 1132,
+        "y": 2842,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_66",
+      "frame": {
+        "x": 1698,
+        "y": 2842,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_67",
+      "frame": {
+        "x": 2264,
+        "y": 2842,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_68",
+      "frame": {
+        "x": 2830,
+        "y": 2842,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_69",
+      "frame": {
+        "x": 3396,
+        "y": 2842,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_70",
+      "frame": {
+        "x": 3962,
+        "y": 2842,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_71",
+      "frame": {
+        "x": 4528,
+        "y": 2842,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_cast_projectile_72",
+      "frame": {
+        "x": 0,
+        "y": 3248,
+        "w": 566,
+        "h": 406
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 566,
+        "h": 406
+      },
+      "sourceSize": {
+        "w": 566,
+        "h": 406
+      },
+      "duration": 42
+    }
+  ],
+  "meta": {
+    "app": "tools/video_to_spritesheet.py",
+    "version": "1.0",
+    "image": "rat_under_magic_cast_projectile_spritesheet_half.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 5094,
+      "h": 3654
+    },
+    "scale": "1",
+    "frameTags": [
+      {
+        "name": "rat_under_magic_cast_projectile",
+        "from": 0,
+        "to": 72,
+        "direction": "forward"
+      }
+    ],
+    "frameWidth": 566,
+    "frameHeight": 406,
+    "columns": 9,
+    "rows": 9,
+    "frameCount": 73,
+    "fps": 24.0
+  }
+}
