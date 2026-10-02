@@ -1,0 +1,1635 @@
+{
+  "frames": [
+    {
+      "filename": "rat_under_magic_impact_explosion_00",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_01",
+      "frame": {
+        "x": 540,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_02",
+      "frame": {
+        "x": 1080,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_03",
+      "frame": {
+        "x": 1620,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_04",
+      "frame": {
+        "x": 2160,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_05",
+      "frame": {
+        "x": 2700,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_06",
+      "frame": {
+        "x": 3240,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_07",
+      "frame": {
+        "x": 3780,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_08",
+      "frame": {
+        "x": 4320,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_09",
+      "frame": {
+        "x": 0,
+        "y": 540,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_10",
+      "frame": {
+        "x": 540,
+        "y": 540,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_11",
+      "frame": {
+        "x": 1080,
+        "y": 540,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_12",
+      "frame": {
+        "x": 1620,
+        "y": 540,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_13",
+      "frame": {
+        "x": 2160,
+        "y": 540,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_14",
+      "frame": {
+        "x": 2700,
+        "y": 540,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_15",
+      "frame": {
+        "x": 3240,
+        "y": 540,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_16",
+      "frame": {
+        "x": 3780,
+        "y": 540,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_17",
+      "frame": {
+        "x": 4320,
+        "y": 540,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_18",
+      "frame": {
+        "x": 0,
+        "y": 1080,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_19",
+      "frame": {
+        "x": 540,
+        "y": 1080,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_20",
+      "frame": {
+        "x": 1080,
+        "y": 1080,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_21",
+      "frame": {
+        "x": 1620,
+        "y": 1080,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_22",
+      "frame": {
+        "x": 2160,
+        "y": 1080,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_23",
+      "frame": {
+        "x": 2700,
+        "y": 1080,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_24",
+      "frame": {
+        "x": 3240,
+        "y": 1080,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_25",
+      "frame": {
+        "x": 3780,
+        "y": 1080,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_26",
+      "frame": {
+        "x": 4320,
+        "y": 1080,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_27",
+      "frame": {
+        "x": 0,
+        "y": 1620,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_28",
+      "frame": {
+        "x": 540,
+        "y": 1620,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_29",
+      "frame": {
+        "x": 1080,
+        "y": 1620,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_30",
+      "frame": {
+        "x": 1620,
+        "y": 1620,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_31",
+      "frame": {
+        "x": 2160,
+        "y": 1620,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_32",
+      "frame": {
+        "x": 2700,
+        "y": 1620,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_33",
+      "frame": {
+        "x": 3240,
+        "y": 1620,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_34",
+      "frame": {
+        "x": 3780,
+        "y": 1620,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_35",
+      "frame": {
+        "x": 4320,
+        "y": 1620,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_36",
+      "frame": {
+        "x": 0,
+        "y": 2160,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_37",
+      "frame": {
+        "x": 540,
+        "y": 2160,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_38",
+      "frame": {
+        "x": 1080,
+        "y": 2160,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_39",
+      "frame": {
+        "x": 1620,
+        "y": 2160,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_40",
+      "frame": {
+        "x": 2160,
+        "y": 2160,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_41",
+      "frame": {
+        "x": 2700,
+        "y": 2160,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_42",
+      "frame": {
+        "x": 3240,
+        "y": 2160,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_43",
+      "frame": {
+        "x": 3780,
+        "y": 2160,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_44",
+      "frame": {
+        "x": 4320,
+        "y": 2160,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_45",
+      "frame": {
+        "x": 0,
+        "y": 2700,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_46",
+      "frame": {
+        "x": 540,
+        "y": 2700,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_47",
+      "frame": {
+        "x": 1080,
+        "y": 2700,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_48",
+      "frame": {
+        "x": 1620,
+        "y": 2700,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_49",
+      "frame": {
+        "x": 2160,
+        "y": 2700,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_50",
+      "frame": {
+        "x": 2700,
+        "y": 2700,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_51",
+      "frame": {
+        "x": 3240,
+        "y": 2700,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_52",
+      "frame": {
+        "x": 3780,
+        "y": 2700,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_53",
+      "frame": {
+        "x": 4320,
+        "y": 2700,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_54",
+      "frame": {
+        "x": 0,
+        "y": 3240,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_55",
+      "frame": {
+        "x": 540,
+        "y": 3240,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_56",
+      "frame": {
+        "x": 1080,
+        "y": 3240,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_57",
+      "frame": {
+        "x": 1620,
+        "y": 3240,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_58",
+      "frame": {
+        "x": 2160,
+        "y": 3240,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_59",
+      "frame": {
+        "x": 2700,
+        "y": 3240,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_60",
+      "frame": {
+        "x": 3240,
+        "y": 3240,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_61",
+      "frame": {
+        "x": 3780,
+        "y": 3240,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_62",
+      "frame": {
+        "x": 4320,
+        "y": 3240,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_63",
+      "frame": {
+        "x": 0,
+        "y": 3780,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_64",
+      "frame": {
+        "x": 540,
+        "y": 3780,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_65",
+      "frame": {
+        "x": 1080,
+        "y": 3780,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_66",
+      "frame": {
+        "x": 1620,
+        "y": 3780,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_67",
+      "frame": {
+        "x": 2160,
+        "y": 3780,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_68",
+      "frame": {
+        "x": 2700,
+        "y": 3780,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_69",
+      "frame": {
+        "x": 3240,
+        "y": 3780,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_70",
+      "frame": {
+        "x": 3780,
+        "y": 3780,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_71",
+      "frame": {
+        "x": 4320,
+        "y": 3780,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_impact_explosion_72",
+      "frame": {
+        "x": 0,
+        "y": 4320,
+        "w": 540,
+        "h": 540
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 540
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 540
+      },
+      "duration": 42
+    }
+  ],
+  "meta": {
+    "app": "tools/video_to_spritesheet.py",
+    "version": "1.0",
+    "image": "rat_under_magic_impact_explosion_spritesheet_half.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 4860,
+      "h": 4860
+    },
+    "scale": "1",
+    "frameTags": [
+      {
+        "name": "rat_under_magic_impact_explosion",
+        "from": 0,
+        "to": 72,
+        "direction": "forward"
+      }
+    ],
+    "frameWidth": 540,
+    "frameHeight": 540,
+    "columns": 9,
+    "rows": 9,
+    "frameCount": 73,
+    "fps": 24.0
+  }
+}
