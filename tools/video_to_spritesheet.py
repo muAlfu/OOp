@@ -54,6 +54,20 @@ How assets/sprites was made (all clips share one 1080x756 canvas):
         assets/sprites/rat_under_magic_impact_explosion --name rat_under_magic_impact_explosion --scale 1.125 \
         --rect 0 0 1080 1080 --columns 9 --fade-side left --fade-side right --fade-side top --fade-side bottom \
         --effect --flash 12 20 --half --no-full --preview
+    # the buff: the same export and rat as the cast. The raised staff reaches higher and further right, so the canvas
+    # is taller and wider, again around the idle's centre (x 498) and bottom (886). The background seen through the
+    # gaps between the staff, the hand and the robe and by the feet was tinted by compression, so it is cut by hand
+    python3 tools/video_to_spritesheet.py Rat_Under_Magic_Cast_Buff.MP4 assets/sprites/rat_under_magic_cast_buff \
+        --name rat_under_magic_cast_buff --scale 1.125 --rect -46 18 1042 886 --columns 9 \
+        --cut-region 0 674 642 --cut-region 0 635 821 --cut-region 1 671 504 --cut-region 1 667 664 \
+        --cut-region 2 668 508 --cut-region 3 667 509 --cut-region 4 665 512 --cut-region 5 664 513 \
+        --cut-region 6 663 515 --cut-region 8 614 820 --cut-region 10 749 391 --cut-region 13 772 433 \
+        --cut-region 14 779 451 --cut-region 14 670 549 --cut-region 15 790 469 --cut-region 15 673 555 \
+        --cut-region 17 801 508 --cut-region 17 362 734 --cut-region 17 676 565 --cut-region 18 815 524 \
+        --cut-region 18 680 562 --cut-region 25 879 413 --cut-region 27 880 349 --cut-region 28 769 530 \
+        --cut-region 29 772 510 --cut-region 31 713 569 --cut-region 33 818 234 --cut-region 34 811 227 \
+        --cut-region 70 737 554 \
+        --half --no-full --preview
 """
 import argparse
 import json

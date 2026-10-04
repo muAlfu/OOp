@@ -22,6 +22,7 @@ A second character, the rat mage, has its own canvas (x 142–854, y 70–886 of
 | `rat_under_magic_cast_projectile/` | 73, **24 fps** | 9 columns × 9 rows (last 8 cells empty) | not made (kept at the idle's scale) | 5094×3654, **frame 566×406** |
 | `rat_under_magic_projectile/` | 73, **24 fps** | 8 columns × 10 rows (last 7 cells empty) | not made (kept at the idle's scale) | 3648×1880, **frame 456×188** |
 | `rat_under_magic_impact_explosion/` | 73, **24 fps** | 9 columns × 9 rows (last 8 cells empty) | not made (kept at the idle's scale) | 4860×4860, **frame 540×540** |
+| `rat_under_magic_cast_buff/` | 73, **24 fps** | 9 columns × 9 rows (last 8 cells empty) | not made (kept at the idle's scale) | 4896×3906, **frame 544×434** |
 
 The projectile (the fireball the rat casts) has its own canvas, at the same scale as the rat (×1.125). In the video
 the ball slowly drifts right (62 px over the clip); every frame is shifted so the ball stays in one place and the
@@ -42,11 +43,14 @@ the idle. The walk's frames are wider (418×368 at half size) because the tail a
 the idle's centre and bottom edge, so with the `Bottom` pivot the rat stays in place between idle and walk. Play the
 walk at 24 fps. The cast was exported the same way (960×960, 24 fps, scaled ×1.125); the staff thrust reaches far to
 the right, so its frames are wider still (566×406 at half size), again around the idle's centre and bottom edge. The
-clip shows the casting motion; there is no projectile flying in it.
+clip shows the casting motion; there is no projectile flying in it. The buff (the rat raises its staff high and opens
+its other hand) was exported the same way too; the raised staff reaches higher and further right, so its frames are
+taller and wider (544×434 at half size), again around the idle's centre and bottom edge. In frames 54–60 (counting
+from 0) the rat holds the pose, so they look almost the same; they are kept so the timing matches the video.
 
 - Frames go left to right, top to bottom: frame `i` is at column `i % columns`, row `i / columns`.
-- Play at 30 fps (33 ms per frame), except the rat walk, cast, projectile and explosion: 24 fps (42 ms). The JSON
-  files carry the right duration.
+- Play at 30 fps (33 ms per frame), except the rat walk, cast, projectile, explosion and buff: 24 fps (42 ms). The
+  JSON files carry the right duration.
 - Each folder also has the frame rectangles as JSON (Aseprite / TexturePacker "JSON Array" format) and a GIF preview
   on a dark background. The GIF is only for viewing, not for the game.
 - `heavy_claw_attack`: in frames 22–24 (counting from 0) the dust from the strike runs past the right edge of the
@@ -72,14 +76,15 @@ clip shows the casting motion; there is no projectile flying in it.
 1. Drop the PNG into `Assets`.
 2. Inspector: **Texture Type** `Sprite (2D and UI)`, **Sprite Mode** `Multiple`, **Max Size** at least the sheet's
    larger side: `4096` for the 3780-wide half sheets, `8192` for `final_heavy_claw_attack`, `jump_hallow`,
-   `rat_under_magic_idle`, `rat_under_magic_cast_projectile`, `rat_under_magic_impact_explosion` and the full sheets.
-   The default 2048 shrinks the sheet. Apply.
+   `rat_under_magic_idle`, `rat_under_magic_cast_projectile`, `rat_under_magic_impact_explosion`,
+   `rat_under_magic_cast_buff` and the full sheets. The default 2048 shrinks the sheet. Apply.
 3. **Sprite Editor → Slice**: **Type** `Grid By Cell Size`, **Pixel Size** `540 × 378` (half) or `1080 × 756` (full),
    except `jump_hallow`: `540 × 426`, the rat idle: `356 × 408`, the rat walk: `418 × 368`, the rat cast:
-   `566 × 406`, the projectile: `456 × 188` and the explosion: `540 × 540`. **Pivot** `Bottom` (the projectile:
-   `Custom Pivot` X 0.82, Y 0.47; the explosion: `Center`). Slice, then Apply. Empty cells at the end are skipped.
+   `566 × 406`, the projectile: `456 × 188`, the explosion: `540 × 540` and the buff: `544 × 434`. **Pivot**
+   `Bottom` (the projectile: `Custom Pivot` X 0.82, Y 0.47; the explosion: `Center`). Slice, then Apply. Empty cells
+   at the end are skipped.
 4. Select the sprites, drag them into the scene to make the animation, and set **Sample Rate** to `30`
-   (`24` for the rat walk, cast, projectile and explosion).
+   (`24` for the rat walk, cast, projectile, explosion and buff).
 
 ## Java
 
