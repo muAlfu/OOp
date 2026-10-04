@@ -11,7 +11,9 @@ the face), and closed-form matting on the edge band so outlines and motion blur
 keep soft, halo-free edges. Where the clip itself runs out of the video frame
 (e.g. a dust effect), those pixels do not exist; the part near that video edge
 is faded out instead of ending in a straight cut. For a glowing effect drawn on
-white, such as an explosion, --effect keeps its white-hot middle as solid white.
+white, such as an explosion, --effect keeps its white-hot middle as solid white;
+for a colourless one, such as a grey magic circle, --shading turns its grey into
+see-through shading under solid white lines.
 
 Requires: pip install av pillow numpy scipy pymatting
 
@@ -80,6 +82,12 @@ How assets/sprites was made (all clips share one 1080x756 canvas):
     python3 tools/video_to_spritesheet.py Rat_Under_Magic_healing_effect_.MP4 \
         assets/sprites/rat_under_magic_healing_effect --name rat_under_magic_healing_effect --scale 1.125 \
         --rect 186 112 810 952 --columns 9 --effect --keep-white 522 138 563 905 --half --no-full --preview
+    # a looping magic circle, grey with white lines and centred in its own video: the canvas is the full width around
+    # the centre (540, 540). As solid grey it would be a grey plate on a dark floor, so the grey is see-through shading
+    # (--shading). Its glow touches the right edge in the last frames, so that side fades the same way in every frame
+    python3 tools/video_to_spritesheet.py Looping_magical_circle_.MP4 assets/sprites/looping_magical_circle \
+        --name looping_magical_circle --scale 1.125 --rect 0 352 1080 728 --columns 7 --fade-side right --edge-fade 16 \
+        --effect --shading --half --no-full --preview
 """
 import argparse
 import json
@@ -103,6 +111,9 @@ EFFECT_SEAL = 6        # --effect: white closed in by the effect except for gaps
 EFFECT_THIN = 40       # --effect: white inside the effect up to 2x this across is its white-hot middle and stays ...
 EFFECT_SPARKLE = 135   # ... and so does wider white ringed by colour at least this strong (a sparkle on a shard)
 FLASH_FEATHER = 12     # --flash: px over which the opening flash fades into its hole
+SHADING_SURFACE = 30   # --shading: pixels at least this far from the background are the effect's surface ...
+SHADING_REACH = 4      # ... a pixel lighter than the surface within this many px is part of a white line ...
+SHADING_LINE = 0.5     # ... by as much as it is lighter beyond this share of the surface's shade
 EIGHT = np.ones((3, 3), bool)
 
 
@@ -272,7 +283,7 @@ def disk(radius):
 
 
 def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=False, flash=0.0, faint=0,
-              keep_white=()):
+              keep_white=(), shading=False):
     """Return an RGBA frame with the background removed.
 
     cut_points are (x, y) spots, in this frame's coordinates, where any enclosed
@@ -288,7 +299,8 @@ def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=
     its wider hollow white, solid at 1 and opening up from the middle as it drops, and
     faint > 0 drops white closed in only by faint colour (see effect_white). keep_white
     boxes (x0, y0, x1, y1) mark white that is part of the effect wherever it reaches,
-    such as a light beam that runs out of the tip of a light column.
+    such as a light beam that runs out of the tip of a light column. shading=True is for
+    a colourless effect such as a grey magic circle (see shading_cell).
     """
     bg = background_colour(rgb)
     dist = colour_distance(rgb, bg)
@@ -309,6 +321,8 @@ def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=
         keep = body | (rim > 0)
         for x0, y0, x1, y1 in keep_white:
             keep[max(y0, 0):y1, max(x0, 0):x1] |= near_bg[max(y0, 0):y1, max(x0, 0):x1]
+        if shading:
+            return shading_cell(rgb, bg, dist, keep, rim)
         known_bg = near_bg & ~keep
     else:
         labels, _ = ndi.label(near_bg, structure=EIGHT)
@@ -369,6 +383,43 @@ def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=
 
     out = np.dstack([np.clip(foreground, 0, 1) * 255, alpha * 255])
     out = np.rint(out).astype(np.uint8)
+    out[out[..., 3] == 0, :3] = 0
+    return out
+
+
+def shading_cell(rgb, bg, dist, keep, rim):
+    """Key a colourless effect drawn on white, such as a grey magic circle with white lines.
+
+    Over white, a grey pixel looks the same whether it is solid grey or see-through dark
+    shading; as solid grey the circle would turn into a grey plate on a dark background.
+    So the grey is see-through dark shading, and white lines are solid white on top: the
+    white the effect closes in (see effect_white), plus pixels clearly lighter than the
+    surface around them (thin lines and their soft edges), which get part of their
+    lightness as white. Every pixel still gives the video's colour over the background, so
+    over white it looks the same, and on a dark background the white lines show.
+    """
+    image = rgb.astype(np.float32)
+    back = np.asarray(bg, np.float32)
+    shade_of = np.clip(((back - image) / np.maximum(back, 1)).max(axis=2), 0, 1)
+    # the area the effect covers (its surface, with gaps up to 24 px closed), and how dark
+    # that surface is around each pixel
+    pad = 14
+    surface = ndi.binary_closing(np.pad(dist > SHADING_SURFACE, pad), structure=disk(12))[pad:-pad, pad:-pad]
+    surface = ndi.binary_fill_holes(surface)
+    around = ndi.grey_dilation(np.where(surface, shade_of, 0), footprint=disk(SHADING_REACH))
+    lighter = np.where(surface & (around > 0), 1 - shade_of / np.maximum(around, 1e-6), 0)
+    line = np.minimum(np.clip((lighter - SHADING_LINE) / (1 - SHADING_LINE), 0, 1), 1 - shade_of)
+    weight = np.where(rim > 0, rim, 1.0)
+    line = np.where(keep, weight * (1 - shade_of), line)
+    shade = np.where(line < 1, shade_of / np.maximum(1 - line, 1e-6), 0.0)
+    shade[keep & (weight < 1)] = 0
+    shade_colour = back - (back - image) / np.maximum(shade_of[..., None], 1e-6)
+    shade_colour[line > 0] = 0
+    alpha = line + (1 - line) * shade
+    colour = 255 * line[..., None] + shade_colour * ((1 - line) * shade)[..., None]
+    colour /= np.maximum(alpha[..., None], 1e-6)
+    alpha[(dist <= BG_TOLERANCE) & ~keep] = 0
+    out = np.rint(np.dstack([np.clip(colour, 0, 255), np.clip(alpha, 0, 1) * 255])).astype(np.uint8)
     out[out[..., 3] == 0, :3] = 0
     return out
 
@@ -559,6 +610,10 @@ def main():
                         metavar=("X0", "Y0", "X1", "Y1"),
                         help="with --effect: white inside this video px box is part of the effect, e.g. a light "
                              "beam that opens onto the background at the tip of a light column (repeatable)")
+    parser.add_argument("--shading", action="store_true",
+                        help="with --effect, for a colourless effect such as a grey magic circle with white lines: "
+                             "grey becomes see-through dark shading (exactly the video over white) and the white "
+                             "lines stay solid, so on a dark background the lines show instead of a grey plate")
     parser.add_argument("--faint-ring", type=int, default=0, metavar="DIST",
                         help="with --effect: white closed in only by faint colour (median distance from the "
                              "background below DIST), such as the inside of a faint wisp loop, is background too")
@@ -598,8 +653,8 @@ def main():
         if not args.effect or flash_from >= flash_to:
             raise SystemExit("--flash needs --effect and FROM < TO")
         print(f"  white flash: solid up to frame {flash_from}, opening up until it is gone at frame {flash_to}")
-    if (args.faint_ring or args.keep_white) and not args.effect:
-        raise SystemExit("--faint-ring and --keep-white need --effect")
+    if (args.faint_ring or args.keep_white or args.shading) and not args.effect:
+        raise SystemExit("--faint-ring, --keep-white and --shading need --effect")
 
     os.makedirs(args.out_dir, exist_ok=True)
     cells = []
@@ -608,7 +663,8 @@ def main():
         cell = key_frame(crop(rgb, rect), [(x - left, y - top) for x, y in args.cut_pocket],
                          [(x - left, y - top) for f, x, y in args.cut_region if f == i], not args.keep_enclosed,
                          args.seal, args.effect, flash, args.faint_ring,
-                         [(x0 - left, y0 - top, x1 - left, y1 - top) for x0, y0, x1, y1 in args.keep_white])
+                         [(x0 - left, y0 - top, x1 - left, y1 - top) for x0, y0, x1, y1 in args.keep_white],
+                         args.shading)
         sides = {side for side, hits in contact.items() if i in hits} | set(args.fade_side)
         if sides:
             cell = fade_edges(cell, rect, width, height, sides, args.edge_fade)

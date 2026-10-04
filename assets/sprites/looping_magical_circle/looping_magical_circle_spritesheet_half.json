@@ -1,0 +1,1635 @@
+{
+  "frames": [
+    {
+      "filename": "looping_magical_circle_00",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_01",
+      "frame": {
+        "x": 540,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_02",
+      "frame": {
+        "x": 1080,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_03",
+      "frame": {
+        "x": 1620,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_04",
+      "frame": {
+        "x": 2160,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_05",
+      "frame": {
+        "x": 2700,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_06",
+      "frame": {
+        "x": 3240,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_07",
+      "frame": {
+        "x": 0,
+        "y": 188,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_08",
+      "frame": {
+        "x": 540,
+        "y": 188,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_09",
+      "frame": {
+        "x": 1080,
+        "y": 188,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_10",
+      "frame": {
+        "x": 1620,
+        "y": 188,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_11",
+      "frame": {
+        "x": 2160,
+        "y": 188,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_12",
+      "frame": {
+        "x": 2700,
+        "y": 188,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_13",
+      "frame": {
+        "x": 3240,
+        "y": 188,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_14",
+      "frame": {
+        "x": 0,
+        "y": 376,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_15",
+      "frame": {
+        "x": 540,
+        "y": 376,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_16",
+      "frame": {
+        "x": 1080,
+        "y": 376,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_17",
+      "frame": {
+        "x": 1620,
+        "y": 376,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_18",
+      "frame": {
+        "x": 2160,
+        "y": 376,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_19",
+      "frame": {
+        "x": 2700,
+        "y": 376,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_20",
+      "frame": {
+        "x": 3240,
+        "y": 376,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_21",
+      "frame": {
+        "x": 0,
+        "y": 564,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_22",
+      "frame": {
+        "x": 540,
+        "y": 564,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_23",
+      "frame": {
+        "x": 1080,
+        "y": 564,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_24",
+      "frame": {
+        "x": 1620,
+        "y": 564,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_25",
+      "frame": {
+        "x": 2160,
+        "y": 564,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_26",
+      "frame": {
+        "x": 2700,
+        "y": 564,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_27",
+      "frame": {
+        "x": 3240,
+        "y": 564,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_28",
+      "frame": {
+        "x": 0,
+        "y": 752,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_29",
+      "frame": {
+        "x": 540,
+        "y": 752,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_30",
+      "frame": {
+        "x": 1080,
+        "y": 752,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_31",
+      "frame": {
+        "x": 1620,
+        "y": 752,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_32",
+      "frame": {
+        "x": 2160,
+        "y": 752,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_33",
+      "frame": {
+        "x": 2700,
+        "y": 752,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_34",
+      "frame": {
+        "x": 3240,
+        "y": 752,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_35",
+      "frame": {
+        "x": 0,
+        "y": 940,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_36",
+      "frame": {
+        "x": 540,
+        "y": 940,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_37",
+      "frame": {
+        "x": 1080,
+        "y": 940,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_38",
+      "frame": {
+        "x": 1620,
+        "y": 940,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_39",
+      "frame": {
+        "x": 2160,
+        "y": 940,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_40",
+      "frame": {
+        "x": 2700,
+        "y": 940,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_41",
+      "frame": {
+        "x": 3240,
+        "y": 940,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_42",
+      "frame": {
+        "x": 0,
+        "y": 1128,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_43",
+      "frame": {
+        "x": 540,
+        "y": 1128,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_44",
+      "frame": {
+        "x": 1080,
+        "y": 1128,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_45",
+      "frame": {
+        "x": 1620,
+        "y": 1128,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_46",
+      "frame": {
+        "x": 2160,
+        "y": 1128,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_47",
+      "frame": {
+        "x": 2700,
+        "y": 1128,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_48",
+      "frame": {
+        "x": 3240,
+        "y": 1128,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_49",
+      "frame": {
+        "x": 0,
+        "y": 1316,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_50",
+      "frame": {
+        "x": 540,
+        "y": 1316,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_51",
+      "frame": {
+        "x": 1080,
+        "y": 1316,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_52",
+      "frame": {
+        "x": 1620,
+        "y": 1316,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_53",
+      "frame": {
+        "x": 2160,
+        "y": 1316,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_54",
+      "frame": {
+        "x": 2700,
+        "y": 1316,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_55",
+      "frame": {
+        "x": 3240,
+        "y": 1316,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_56",
+      "frame": {
+        "x": 0,
+        "y": 1504,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_57",
+      "frame": {
+        "x": 540,
+        "y": 1504,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_58",
+      "frame": {
+        "x": 1080,
+        "y": 1504,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_59",
+      "frame": {
+        "x": 1620,
+        "y": 1504,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_60",
+      "frame": {
+        "x": 2160,
+        "y": 1504,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_61",
+      "frame": {
+        "x": 2700,
+        "y": 1504,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_62",
+      "frame": {
+        "x": 3240,
+        "y": 1504,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_63",
+      "frame": {
+        "x": 0,
+        "y": 1692,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_64",
+      "frame": {
+        "x": 540,
+        "y": 1692,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_65",
+      "frame": {
+        "x": 1080,
+        "y": 1692,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_66",
+      "frame": {
+        "x": 1620,
+        "y": 1692,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_67",
+      "frame": {
+        "x": 2160,
+        "y": 1692,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_68",
+      "frame": {
+        "x": 2700,
+        "y": 1692,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_69",
+      "frame": {
+        "x": 3240,
+        "y": 1692,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_70",
+      "frame": {
+        "x": 0,
+        "y": 1880,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_71",
+      "frame": {
+        "x": 540,
+        "y": 1880,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    },
+    {
+      "filename": "looping_magical_circle_72",
+      "frame": {
+        "x": 1080,
+        "y": 1880,
+        "w": 540,
+        "h": 188
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 540,
+        "h": 188
+      },
+      "sourceSize": {
+        "w": 540,
+        "h": 188
+      },
+      "duration": 42
+    }
+  ],
+  "meta": {
+    "app": "tools/video_to_spritesheet.py",
+    "version": "1.0",
+    "image": "looping_magical_circle_spritesheet_half.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 3780,
+      "h": 2068
+    },
+    "scale": "1",
+    "frameTags": [
+      {
+        "name": "looping_magical_circle",
+        "from": 0,
+        "to": 72,
+        "direction": "forward"
+      }
+    ],
+    "frameWidth": 540,
+    "frameHeight": 188,
+    "columns": 7,
+    "rows": 11,
+    "frameCount": 73,
+    "fps": 24.0
+  }
+}
