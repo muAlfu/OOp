@@ -1,0 +1,1635 @@
+{
+  "frames": [
+    {
+      "filename": "rat_under_magic_healing_effect_00",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_01",
+      "frame": {
+        "x": 312,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_02",
+      "frame": {
+        "x": 624,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_03",
+      "frame": {
+        "x": 936,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_04",
+      "frame": {
+        "x": 1248,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_05",
+      "frame": {
+        "x": 1560,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_06",
+      "frame": {
+        "x": 1872,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_07",
+      "frame": {
+        "x": 2184,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_08",
+      "frame": {
+        "x": 2496,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_09",
+      "frame": {
+        "x": 0,
+        "y": 420,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_10",
+      "frame": {
+        "x": 312,
+        "y": 420,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_11",
+      "frame": {
+        "x": 624,
+        "y": 420,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_12",
+      "frame": {
+        "x": 936,
+        "y": 420,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_13",
+      "frame": {
+        "x": 1248,
+        "y": 420,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_14",
+      "frame": {
+        "x": 1560,
+        "y": 420,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_15",
+      "frame": {
+        "x": 1872,
+        "y": 420,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_16",
+      "frame": {
+        "x": 2184,
+        "y": 420,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_17",
+      "frame": {
+        "x": 2496,
+        "y": 420,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_18",
+      "frame": {
+        "x": 0,
+        "y": 840,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_19",
+      "frame": {
+        "x": 312,
+        "y": 840,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_20",
+      "frame": {
+        "x": 624,
+        "y": 840,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_21",
+      "frame": {
+        "x": 936,
+        "y": 840,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_22",
+      "frame": {
+        "x": 1248,
+        "y": 840,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_23",
+      "frame": {
+        "x": 1560,
+        "y": 840,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_24",
+      "frame": {
+        "x": 1872,
+        "y": 840,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_25",
+      "frame": {
+        "x": 2184,
+        "y": 840,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_26",
+      "frame": {
+        "x": 2496,
+        "y": 840,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_27",
+      "frame": {
+        "x": 0,
+        "y": 1260,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_28",
+      "frame": {
+        "x": 312,
+        "y": 1260,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_29",
+      "frame": {
+        "x": 624,
+        "y": 1260,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_30",
+      "frame": {
+        "x": 936,
+        "y": 1260,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_31",
+      "frame": {
+        "x": 1248,
+        "y": 1260,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_32",
+      "frame": {
+        "x": 1560,
+        "y": 1260,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_33",
+      "frame": {
+        "x": 1872,
+        "y": 1260,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_34",
+      "frame": {
+        "x": 2184,
+        "y": 1260,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_35",
+      "frame": {
+        "x": 2496,
+        "y": 1260,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_36",
+      "frame": {
+        "x": 0,
+        "y": 1680,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_37",
+      "frame": {
+        "x": 312,
+        "y": 1680,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_38",
+      "frame": {
+        "x": 624,
+        "y": 1680,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_39",
+      "frame": {
+        "x": 936,
+        "y": 1680,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_40",
+      "frame": {
+        "x": 1248,
+        "y": 1680,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_41",
+      "frame": {
+        "x": 1560,
+        "y": 1680,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_42",
+      "frame": {
+        "x": 1872,
+        "y": 1680,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_43",
+      "frame": {
+        "x": 2184,
+        "y": 1680,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_44",
+      "frame": {
+        "x": 2496,
+        "y": 1680,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_45",
+      "frame": {
+        "x": 0,
+        "y": 2100,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_46",
+      "frame": {
+        "x": 312,
+        "y": 2100,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_47",
+      "frame": {
+        "x": 624,
+        "y": 2100,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_48",
+      "frame": {
+        "x": 936,
+        "y": 2100,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_49",
+      "frame": {
+        "x": 1248,
+        "y": 2100,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_50",
+      "frame": {
+        "x": 1560,
+        "y": 2100,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_51",
+      "frame": {
+        "x": 1872,
+        "y": 2100,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_52",
+      "frame": {
+        "x": 2184,
+        "y": 2100,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_53",
+      "frame": {
+        "x": 2496,
+        "y": 2100,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_54",
+      "frame": {
+        "x": 0,
+        "y": 2520,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_55",
+      "frame": {
+        "x": 312,
+        "y": 2520,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_56",
+      "frame": {
+        "x": 624,
+        "y": 2520,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_57",
+      "frame": {
+        "x": 936,
+        "y": 2520,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_58",
+      "frame": {
+        "x": 1248,
+        "y": 2520,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_59",
+      "frame": {
+        "x": 1560,
+        "y": 2520,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_60",
+      "frame": {
+        "x": 1872,
+        "y": 2520,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_61",
+      "frame": {
+        "x": 2184,
+        "y": 2520,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_62",
+      "frame": {
+        "x": 2496,
+        "y": 2520,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_63",
+      "frame": {
+        "x": 0,
+        "y": 2940,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_64",
+      "frame": {
+        "x": 312,
+        "y": 2940,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_65",
+      "frame": {
+        "x": 624,
+        "y": 2940,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_66",
+      "frame": {
+        "x": 936,
+        "y": 2940,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_67",
+      "frame": {
+        "x": 1248,
+        "y": 2940,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_68",
+      "frame": {
+        "x": 1560,
+        "y": 2940,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_69",
+      "frame": {
+        "x": 1872,
+        "y": 2940,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_70",
+      "frame": {
+        "x": 2184,
+        "y": 2940,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_71",
+      "frame": {
+        "x": 2496,
+        "y": 2940,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    },
+    {
+      "filename": "rat_under_magic_healing_effect_72",
+      "frame": {
+        "x": 0,
+        "y": 3360,
+        "w": 312,
+        "h": 420
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 312,
+        "h": 420
+      },
+      "sourceSize": {
+        "w": 312,
+        "h": 420
+      },
+      "duration": 42
+    }
+  ],
+  "meta": {
+    "app": "tools/video_to_spritesheet.py",
+    "version": "1.0",
+    "image": "rat_under_magic_healing_effect_spritesheet_half.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 2808,
+      "h": 3780
+    },
+    "scale": "1",
+    "frameTags": [
+      {
+        "name": "rat_under_magic_healing_effect",
+        "from": 0,
+        "to": 72,
+        "direction": "forward"
+      }
+    ],
+    "frameWidth": 312,
+    "frameHeight": 420,
+    "columns": 9,
+    "rows": 9,
+    "frameCount": 73,
+    "fps": 24.0
+  }
+}

@@ -74,6 +74,12 @@ How assets/sprites was made (all clips share one 1080x756 canvas):
     python3 tools/video_to_spritesheet.py Rat_under_magic_buff_attack_effect_.MP4 \
         assets/sprites/rat_under_magic_buff_attack_effect --name rat_under_magic_buff_attack_effect --scale 1.125 \
         --rect 102 96 894 936 --columns 9 --effect --faint-ring 60 --half --no-full --preview
+    # the healing effect, a column of green light, made in the same framing: the same centre, and a custom pivot at
+    # y 886 (X 0.5, Y 66/840). The white beam down its middle is about as wide as the gaps --effect closes and runs out
+    # of the top of the column, so it would be cut as background; a box marks it as part of the effect
+    python3 tools/video_to_spritesheet.py Rat_Under_Magic_healing_effect_.MP4 \
+        assets/sprites/rat_under_magic_healing_effect --name rat_under_magic_healing_effect --scale 1.125 \
+        --rect 186 112 810 952 --columns 9 --effect --keep-white 522 138 563 905 --half --no-full --preview
 """
 import argparse
 import json
@@ -265,7 +271,8 @@ def disk(radius):
     return x * x + y * y <= radius * radius
 
 
-def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=False, flash=0.0, faint=0):
+def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=False, flash=0.0, faint=0,
+              keep_white=()):
     """Return an RGBA frame with the background removed.
 
     cut_points are (x, y) spots, in this frame's coordinates, where any enclosed
@@ -279,7 +286,9 @@ def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=
     effect=True is for a glowing effect such as an explosion, whose white-hot middle
     is white like the background (see effect_white). flash (1 -> 0) then also keeps
     its wider hollow white, solid at 1 and opening up from the middle as it drops, and
-    faint > 0 drops white closed in only by faint colour (see effect_white).
+    faint > 0 drops white closed in only by faint colour (see effect_white). keep_white
+    boxes (x0, y0, x1, y1) mark white that is part of the effect wherever it reaches,
+    such as a light beam that runs out of the tip of a light column.
     """
     bg = background_colour(rgb)
     dist = colour_distance(rgb, bg)
@@ -298,6 +307,8 @@ def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=
         body, hollow = effect_white(dist, faint)
         rim = flash_rim(hollow, flash) if flash > 0 else np.zeros(dist.shape)
         keep = body | (rim > 0)
+        for x0, y0, x1, y1 in keep_white:
+            keep[max(y0, 0):y1, max(x0, 0):x1] |= near_bg[max(y0, 0):y1, max(x0, 0):x1]
         known_bg = near_bg & ~keep
     else:
         labels, _ = ndi.label(near_bg, structure=EIGHT)
@@ -544,6 +555,10 @@ def main():
                         help="the clip is a glowing effect on white, such as an explosion: white that the effect "
                              "closes in (the middle of a glowing ring or flame, sparkles) stays solid white, while "
                              "wide white such as the inside of a ring is background")
+    parser.add_argument("--keep-white", type=int, nargs=4, action="append", default=[],
+                        metavar=("X0", "Y0", "X1", "Y1"),
+                        help="with --effect: white inside this video px box is part of the effect, e.g. a light "
+                             "beam that opens onto the background at the tip of a light column (repeatable)")
     parser.add_argument("--faint-ring", type=int, default=0, metavar="DIST",
                         help="with --effect: white closed in only by faint colour (median distance from the "
                              "background below DIST), such as the inside of a faint wisp loop, is background too")
@@ -583,8 +598,8 @@ def main():
         if not args.effect or flash_from >= flash_to:
             raise SystemExit("--flash needs --effect and FROM < TO")
         print(f"  white flash: solid up to frame {flash_from}, opening up until it is gone at frame {flash_to}")
-    if args.faint_ring and not args.effect:
-        raise SystemExit("--faint-ring needs --effect")
+    if (args.faint_ring or args.keep_white) and not args.effect:
+        raise SystemExit("--faint-ring and --keep-white need --effect")
 
     os.makedirs(args.out_dir, exist_ok=True)
     cells = []
@@ -592,7 +607,8 @@ def main():
         flash = float(np.clip((flash_to - i) / (flash_to - flash_from), 0, 1)) if args.flash else 0.0
         cell = key_frame(crop(rgb, rect), [(x - left, y - top) for x, y in args.cut_pocket],
                          [(x - left, y - top) for f, x, y in args.cut_region if f == i], not args.keep_enclosed,
-                         args.seal, args.effect, flash, args.faint_ring)
+                         args.seal, args.effect, flash, args.faint_ring,
+                         [(x0 - left, y0 - top, x1 - left, y1 - top) for x0, y0, x1, y1 in args.keep_white])
         sides = {side for side, hits in contact.items() if i in hits} | set(args.fade_side)
         if sides:
             cell = fade_edges(cell, rect, width, height, sides, args.edge_fade)

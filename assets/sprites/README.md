@@ -24,6 +24,7 @@ A second character, the rat mage, has its own canvas (x 142–854, y 70–886 of
 | `rat_under_magic_impact_explosion/` | 73, **24 fps** | 9 columns × 9 rows (last 8 cells empty) | not made (kept at the idle's scale) | 4860×4860, **frame 540×540** |
 | `rat_under_magic_cast_buff/` | 73, **24 fps** | 9 columns × 9 rows (last 8 cells empty) | not made (kept at the idle's scale) | 4896×3906, **frame 544×434** |
 | `rat_under_magic_buff_attack_effect/` | 73, **24 fps** | 9 columns × 9 rows (last 8 cells empty) | not made (kept at the idle's scale) | 3564×3780, **frame 396×420** |
+| `rat_under_magic_healing_effect/` | 73, **24 fps** | 9 columns × 9 rows (last 8 cells empty) | not made (kept at the idle's scale) | 2808×3780, **frame 312×420** |
 
 The projectile (the fireball the rat casts) has its own canvas, at the same scale as the rat (×1.125). In the video
 the ball slowly drifts right (62 px over the clip); every frame is shifted so the ball stays in one place and the
@@ -46,6 +47,15 @@ the aura at the rat's position, behind the rat, and it surrounds the rat with it
 last frame leads straight back into the first. The inside of the aura is see-through, the white-hot middle of the
 flames stays white, and inside the faint swirling wisps only their cyan lines stay.
 
+The healing effect is a column of green light with golden ribbons and a glowing ring at its base. It was made in the
+same framing too, so its canvas keeps the rat's centre and reaches 66 px below the rat's bottom edge for the ring
+(×1.125, 624×840, half 312×420). Its custom pivot **X 0.5, Y 0.0786** is the spot the rat's `Bottom` pivot sits on.
+Put it at the rat's position: behind the rat, the rat stands in the light with the ring around its feet; in front, the
+column covers the rat, because its light is solid, so lower its opacity (the Sprite Renderer's `Color` alpha) if you
+draw it in front. The white beam down the middle of the column stays white along its whole length. The clip does not
+loop seamlessly: its last frame does not lead back into the first (the ribbons and sparkles jump), so play it once per
+heal; looped, it jumps every 3 seconds.
+
 The walk video was exported at 960×960 and 24 fps. Its frames are scaled ×1.125 so the rat is the same size as in
 the idle. The walk's frames are wider (418×368 at half size) because the tail and staff reach further, but they share
 the idle's centre and bottom edge, so with the `Bottom` pivot the rat stays in place between idle and walk. Play the
@@ -57,8 +67,8 @@ taller and wider (544×434 at half size), again around the idle's centre and bot
 from 0) the rat holds the pose, so they look almost the same; they are kept so the timing matches the video.
 
 - Frames go left to right, top to bottom: frame `i` is at column `i % columns`, row `i / columns`.
-- Play at 30 fps (33 ms per frame), except the rat clips after the idle (walk, cast, projectile, explosion, buff and
-  aura): 24 fps (42 ms). The JSON files carry the right duration.
+- Play at 30 fps (33 ms per frame), except the rat clips after the idle (walk, cast, projectile, explosion, buff,
+  aura and healing): 24 fps (42 ms). The JSON files carry the right duration.
 - Each folder also has the frame rectangles as JSON (Aseprite / TexturePacker "JSON Array" format) and a GIF preview
   on a dark background. The GIF is only for viewing, not for the game.
 - `heavy_claw_attack`: in frames 22–24 (counting from 0) the dust from the strike runs past the right edge of the
@@ -88,11 +98,12 @@ from 0) the rat holds the pose, so they look almost the same; they are kept so t
    `rat_under_magic_cast_buff` and the full sheets. The default 2048 shrinks the sheet. Apply.
 3. **Sprite Editor → Slice**: **Type** `Grid By Cell Size`, **Pixel Size** `540 × 378` (half) or `1080 × 756` (full),
    except `jump_hallow`: `540 × 426`, the rat idle: `356 × 408`, the rat walk: `418 × 368`, the rat cast:
-   `566 × 406`, the projectile: `456 × 188`, the explosion: `540 × 540`, the buff: `544 × 434` and the aura:
-   `396 × 420`. **Pivot** `Bottom` (the projectile: `Custom Pivot` X 0.82, Y 0.47; the explosion: `Center`; the aura:
-   `Custom Pivot` X 0.5, Y 0.0595). Slice, then Apply. Empty cells at the end are skipped.
+   `566 × 406`, the projectile: `456 × 188`, the explosion: `540 × 540`, the buff: `544 × 434`, the aura: `396 × 420`
+   and the healing: `312 × 420`. **Pivot** `Bottom` (the projectile: `Custom Pivot` X 0.82, Y 0.47; the explosion:
+   `Center`; the aura: `Custom Pivot` X 0.5, Y 0.0595; the healing: `Custom Pivot` X 0.5, Y 0.0786). Slice, then
+   Apply. Empty cells at the end are skipped.
 4. Select the sprites, drag them into the scene to make the animation, and set **Sample Rate** to `30`
-   (`24` for the rat walk, cast, projectile, explosion, buff and aura).
+   (`24` for the rat walk, cast, projectile, explosion, buff, aura and healing).
 
 ## Java
 
