@@ -68,6 +68,12 @@ How assets/sprites was made (all clips share one 1080x756 canvas):
         --cut-region 29 772 510 --cut-region 31 713 569 --cut-region 33 818 234 --cut-region 34 811 227 \
         --cut-region 70 737 554 \
         --half --no-full --preview
+    # the buff's aura, a ring of blue fire: an effect drawn in the same framing as the rat clips, so its canvas keeps
+    # the rat's centre (x 498) and reaches below the rat's bottom edge (886) for the aura's base; a custom pivot at
+    # y 886 (X 0.5, Y 50/840) puts it around the rat. White inside the faint wisp loops is background (--faint-ring)
+    python3 tools/video_to_spritesheet.py Rat_under_magic_buff_attack_effect_.MP4 \
+        assets/sprites/rat_under_magic_buff_attack_effect --name rat_under_magic_buff_attack_effect --scale 1.125 \
+        --rect 102 96 894 936 --columns 9 --effect --faint-ring 60 --half --no-full --preview
 """
 import argparse
 import json
@@ -155,7 +161,7 @@ def enclosed_gaps(near_bg, outer_bg, dist, rgb, min_area=20):
     return gaps
 
 
-def effect_white(dist):
+def effect_white(dist, faint=0):
     """Sort the white inside a glowing effect drawn on white (--effect): returns (body, hollow).
 
     White is also such an effect's hottest colour: the middle of a glowing ring or flame,
@@ -163,6 +169,9 @@ def effect_white(dist):
     px count as closed) is body when it is at most 2 * EFFECT_THIN px across or ringed by
     strong colour; it stays. Wider white, such as the inside of the ring, is hollow: background,
     or a flash that fades (flash_rim). Open white and the gaps between flying shards are background.
+    With faint > 0, closed-in white ringed only by faint colour (median distance from the
+    background below faint), such as the inside of a faint wisp loop, is background too; the
+    narrow white lines between strokes stay, unless they border such a patch in faint colour.
     """
     solid = dist > BG_TOLERANCE
     pad = EFFECT_SEAL + 2
@@ -174,18 +183,35 @@ def effect_white(dist):
     opening = np.unique(pieces[ndi.binary_dilation(outer, EIGHT) & sealed])
     body = sealed & ~np.isin(pieces, opening[opening > 0])
     hollow = np.zeros_like(solid)
+    dropped = np.zeros_like(solid)
+
+    def ring_level(blob, y, x):
+        ring = ndi.binary_dilation(blob, EIGHT, iterations=3) & ~ndi.binary_dilation(blob, EIGHT) & solid[y, x]
+        return np.median(dist[y, x][ring]) if ring.any() else 0.0
+
     labels, _ = ndi.label(~closed & ~outer, structure=EIGHT)
     for index, region in enumerate(ndi.find_objects(labels), start=1):
         y, x = region
         y = slice(max(y.start - 4, 0), y.stop + 4)
         x = slice(max(x.start - 4, 0), x.stop + 4)
         blob = labels[y, x] == index
-        ring = ndi.binary_dilation(blob, EIGHT, iterations=3) & ~ndi.binary_dilation(blob, EIGHT) & solid[y, x]
-        strong = ring.any() and np.median(dist[y, x][ring]) >= EFFECT_SPARKLE
-        if strong or ndi.distance_transform_edt(np.pad(blob, 1)).max() <= EFFECT_THIN:
+        level = ring_level(blob, y, x)
+        if level < faint:
+            dropped[y, x] |= blob
+        elif level >= EFFECT_SPARKLE or ndi.distance_transform_edt(np.pad(blob, 1)).max() <= EFFECT_THIN:
             body[y, x] |= blob
         else:
             hollow[y, x] |= blob
+    if dropped.any():
+        bordering = np.unique(pieces[ndi.binary_dilation(dropped, EIGHT) & body])
+        objects = ndi.find_objects(pieces)
+        for index in bordering[bordering > 0]:
+            y, x = objects[index - 1]
+            y = slice(max(y.start - 4, 0), y.stop + 4)
+            x = slice(max(x.start - 4, 0), x.stop + 4)
+            piece = pieces[y, x] == index
+            if ring_level(piece, y, x) < faint:
+                body[y, x] &= ~piece
     return body, hollow
 
 
@@ -239,7 +265,7 @@ def disk(radius):
     return x * x + y * y <= radius * radius
 
 
-def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=False, flash=0.0):
+def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=False, flash=0.0, faint=0):
     """Return an RGBA frame with the background removed.
 
     cut_points are (x, y) spots, in this frame's coordinates, where any enclosed
@@ -252,7 +278,8 @@ def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=
     faint glow instead of being flood-filled as background.
     effect=True is for a glowing effect such as an explosion, whose white-hot middle
     is white like the background (see effect_white). flash (1 -> 0) then also keeps
-    its wider hollow white, solid at 1 and opening up from the middle as it drops.
+    its wider hollow white, solid at 1 and opening up from the middle as it drops, and
+    faint > 0 drops white closed in only by faint colour (see effect_white).
     """
     bg = background_colour(rgb)
     dist = colour_distance(rgb, bg)
@@ -268,7 +295,7 @@ def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=
     near_bg = dist <= BG_TOLERANCE
     keep = rim = None
     if effect:
-        body, hollow = effect_white(dist)
+        body, hollow = effect_white(dist, faint)
         rim = flash_rim(hollow, flash) if flash > 0 else np.zeros(dist.shape)
         keep = body | (rim > 0)
         known_bg = near_bg & ~keep
@@ -517,6 +544,9 @@ def main():
                         help="the clip is a glowing effect on white, such as an explosion: white that the effect "
                              "closes in (the middle of a glowing ring or flame, sparkles) stays solid white, while "
                              "wide white such as the inside of a ring is background")
+    parser.add_argument("--faint-ring", type=int, default=0, metavar="DIST",
+                        help="with --effect: white closed in only by faint colour (median distance from the "
+                             "background below DIST), such as the inside of a faint wisp loop, is background too")
     parser.add_argument("--flash", type=int, nargs=2, metavar=("FROM", "TO"),
                         help="with --effect: the wide white inside the effect is a flash, solid up to frame FROM, "
                              "then opening up from its middle until it is gone at frame TO")
@@ -553,6 +583,8 @@ def main():
         if not args.effect or flash_from >= flash_to:
             raise SystemExit("--flash needs --effect and FROM < TO")
         print(f"  white flash: solid up to frame {flash_from}, opening up until it is gone at frame {flash_to}")
+    if args.faint_ring and not args.effect:
+        raise SystemExit("--faint-ring needs --effect")
 
     os.makedirs(args.out_dir, exist_ok=True)
     cells = []
@@ -560,7 +592,7 @@ def main():
         flash = float(np.clip((flash_to - i) / (flash_to - flash_from), 0, 1)) if args.flash else 0.0
         cell = key_frame(crop(rgb, rect), [(x - left, y - top) for x, y in args.cut_pocket],
                          [(x - left, y - top) for f, x, y in args.cut_region if f == i], not args.keep_enclosed,
-                         args.seal, args.effect, flash)
+                         args.seal, args.effect, flash, args.faint_ring)
         sides = {side for side, hits in contact.items() if i in hits} | set(args.fade_side)
         if sides:
             cell = fade_edges(cell, rect, width, height, sides, args.edge_fade)
