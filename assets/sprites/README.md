@@ -77,9 +77,22 @@ its other hand) was exported the same way too; the raised staff reaches higher a
 taller and wider (544×434 at half size), again around the idle's centre and bottom edge. In frames 54–60 (counting
 from 0) the rat holds the pose, so they look almost the same; they are kept so the timing matches the video.
 
+A third character, the soldier rat (armour, sword and shield), has its own canvas: x 172–832, y 310–790 of its video
+scaled ×1.125 like the later rat clips (660×480, half 330×240). Use the `Bottom` pivot.
+
+| Animation | Frames | Grid | Full sheet (frame 660×480) | Half sheet (frame 330×240) |
+| --- | --- | --- | --- | --- |
+| `soldier_rat/` | 73, **24 fps** | 9 columns × 9 rows (last 8 cells empty) | not made (kept at the rat clips' scale) | 2970×2160 |
+
+The clip starts with the soldier facing the viewer and turning into its walk (frames 0–5), then walks on the spot. The
+walk repeats every 24 frames: frames 47–70 loop without a jump, so use those 24 for a looping walk; the whole clip,
+looped, jumps from the last frame back to the first. The white shine on the sword's edge and in the eye, and the
+whiskers, are kept; the background seen through the gaps between the sword, the legs, the arms and the cloth is cut
+out (where the video's compression tinted it, by hand).
+
 - Frames go left to right, top to bottom: frame `i` is at column `i % columns`, row `i / columns`.
 - Play at 30 fps (33 ms per frame), except the rat clips after the idle (walk, cast, projectile, explosion, buff,
-  aura, healing and magic circle): 24 fps (42 ms). The JSON files carry the right duration.
+  aura, healing and magic circle) and the soldier rat: 24 fps (42 ms). The JSON files carry the right duration.
 - Each folder also has the frame rectangles as JSON (Aseprite / TexturePacker "JSON Array" format) and a GIF preview
   on a dark background. The GIF is only for viewing, not for the game.
 - `heavy_claw_attack`: in frames 22–24 (counting from 0) the dust from the strike runs past the right edge of the
@@ -110,11 +123,12 @@ from 0) the rat holds the pose, so they look almost the same; they are kept so t
 3. **Sprite Editor → Slice**: **Type** `Grid By Cell Size`, **Pixel Size** `540 × 378` (half) or `1080 × 756` (full),
    except `jump_hallow`: `540 × 426`, the rat idle: `356 × 408`, the rat walk: `418 × 368`, the rat cast:
    `566 × 406`, the projectile: `456 × 188`, the explosion: `540 × 540`, the buff: `544 × 434`, the aura: `396 × 420`,
-   the healing: `312 × 420` and the magic circle: `540 × 188`. **Pivot** `Bottom` (the projectile: `Custom Pivot`
-   X 0.82, Y 0.47; the explosion and the magic circle: `Center`; the aura: `Custom Pivot` X 0.5, Y 0.0595; the healing:
-   `Custom Pivot` X 0.5, Y 0.0786). Slice, then Apply. Empty cells at the end are skipped.
+   the healing: `312 × 420`, the magic circle: `540 × 188` and the soldier rat: `330 × 240`. **Pivot** `Bottom` (the
+   projectile: `Custom Pivot` X 0.82, Y 0.47; the explosion and the magic circle: `Center`; the aura: `Custom Pivot`
+   X 0.5, Y 0.0595; the healing: `Custom Pivot` X 0.5, Y 0.0786). Slice, then Apply. Empty cells at the end are
+   skipped.
 4. Select the sprites, drag them into the scene to make the animation, and set **Sample Rate** to `30`
-   (`24` for the rat walk, cast, projectile, explosion, buff, aura, healing and magic circle).
+   (`24` for the rat walk, cast, projectile, explosion, buff, aura, healing, magic circle and the soldier rat).
 
 ## Java
 

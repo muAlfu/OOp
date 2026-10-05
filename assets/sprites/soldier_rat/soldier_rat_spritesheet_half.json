@@ -1,0 +1,1635 @@
+{
+  "frames": [
+    {
+      "filename": "soldier_rat_00",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_01",
+      "frame": {
+        "x": 330,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_02",
+      "frame": {
+        "x": 660,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_03",
+      "frame": {
+        "x": 990,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_04",
+      "frame": {
+        "x": 1320,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_05",
+      "frame": {
+        "x": 1650,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_06",
+      "frame": {
+        "x": 1980,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_07",
+      "frame": {
+        "x": 2310,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_08",
+      "frame": {
+        "x": 2640,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_09",
+      "frame": {
+        "x": 0,
+        "y": 240,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_10",
+      "frame": {
+        "x": 330,
+        "y": 240,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_11",
+      "frame": {
+        "x": 660,
+        "y": 240,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_12",
+      "frame": {
+        "x": 990,
+        "y": 240,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_13",
+      "frame": {
+        "x": 1320,
+        "y": 240,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_14",
+      "frame": {
+        "x": 1650,
+        "y": 240,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_15",
+      "frame": {
+        "x": 1980,
+        "y": 240,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_16",
+      "frame": {
+        "x": 2310,
+        "y": 240,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_17",
+      "frame": {
+        "x": 2640,
+        "y": 240,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_18",
+      "frame": {
+        "x": 0,
+        "y": 480,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_19",
+      "frame": {
+        "x": 330,
+        "y": 480,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_20",
+      "frame": {
+        "x": 660,
+        "y": 480,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_21",
+      "frame": {
+        "x": 990,
+        "y": 480,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_22",
+      "frame": {
+        "x": 1320,
+        "y": 480,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_23",
+      "frame": {
+        "x": 1650,
+        "y": 480,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_24",
+      "frame": {
+        "x": 1980,
+        "y": 480,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_25",
+      "frame": {
+        "x": 2310,
+        "y": 480,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_26",
+      "frame": {
+        "x": 2640,
+        "y": 480,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_27",
+      "frame": {
+        "x": 0,
+        "y": 720,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_28",
+      "frame": {
+        "x": 330,
+        "y": 720,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_29",
+      "frame": {
+        "x": 660,
+        "y": 720,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_30",
+      "frame": {
+        "x": 990,
+        "y": 720,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_31",
+      "frame": {
+        "x": 1320,
+        "y": 720,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_32",
+      "frame": {
+        "x": 1650,
+        "y": 720,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_33",
+      "frame": {
+        "x": 1980,
+        "y": 720,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_34",
+      "frame": {
+        "x": 2310,
+        "y": 720,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_35",
+      "frame": {
+        "x": 2640,
+        "y": 720,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_36",
+      "frame": {
+        "x": 0,
+        "y": 960,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_37",
+      "frame": {
+        "x": 330,
+        "y": 960,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_38",
+      "frame": {
+        "x": 660,
+        "y": 960,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_39",
+      "frame": {
+        "x": 990,
+        "y": 960,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_40",
+      "frame": {
+        "x": 1320,
+        "y": 960,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_41",
+      "frame": {
+        "x": 1650,
+        "y": 960,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_42",
+      "frame": {
+        "x": 1980,
+        "y": 960,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_43",
+      "frame": {
+        "x": 2310,
+        "y": 960,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_44",
+      "frame": {
+        "x": 2640,
+        "y": 960,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_45",
+      "frame": {
+        "x": 0,
+        "y": 1200,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_46",
+      "frame": {
+        "x": 330,
+        "y": 1200,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_47",
+      "frame": {
+        "x": 660,
+        "y": 1200,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_48",
+      "frame": {
+        "x": 990,
+        "y": 1200,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_49",
+      "frame": {
+        "x": 1320,
+        "y": 1200,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_50",
+      "frame": {
+        "x": 1650,
+        "y": 1200,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_51",
+      "frame": {
+        "x": 1980,
+        "y": 1200,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_52",
+      "frame": {
+        "x": 2310,
+        "y": 1200,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_53",
+      "frame": {
+        "x": 2640,
+        "y": 1200,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_54",
+      "frame": {
+        "x": 0,
+        "y": 1440,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_55",
+      "frame": {
+        "x": 330,
+        "y": 1440,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_56",
+      "frame": {
+        "x": 660,
+        "y": 1440,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_57",
+      "frame": {
+        "x": 990,
+        "y": 1440,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_58",
+      "frame": {
+        "x": 1320,
+        "y": 1440,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_59",
+      "frame": {
+        "x": 1650,
+        "y": 1440,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_60",
+      "frame": {
+        "x": 1980,
+        "y": 1440,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_61",
+      "frame": {
+        "x": 2310,
+        "y": 1440,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_62",
+      "frame": {
+        "x": 2640,
+        "y": 1440,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_63",
+      "frame": {
+        "x": 0,
+        "y": 1680,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_64",
+      "frame": {
+        "x": 330,
+        "y": 1680,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_65",
+      "frame": {
+        "x": 660,
+        "y": 1680,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_66",
+      "frame": {
+        "x": 990,
+        "y": 1680,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_67",
+      "frame": {
+        "x": 1320,
+        "y": 1680,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_68",
+      "frame": {
+        "x": 1650,
+        "y": 1680,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_69",
+      "frame": {
+        "x": 1980,
+        "y": 1680,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_70",
+      "frame": {
+        "x": 2310,
+        "y": 1680,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_71",
+      "frame": {
+        "x": 2640,
+        "y": 1680,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    },
+    {
+      "filename": "soldier_rat_72",
+      "frame": {
+        "x": 0,
+        "y": 1920,
+        "w": 330,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 330,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 330,
+        "h": 240
+      },
+      "duration": 42
+    }
+  ],
+  "meta": {
+    "app": "tools/video_to_spritesheet.py",
+    "version": "1.0",
+    "image": "soldier_rat_spritesheet_half.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 2970,
+      "h": 2160
+    },
+    "scale": "1",
+    "frameTags": [
+      {
+        "name": "soldier_rat",
+        "from": 0,
+        "to": 72,
+        "direction": "forward"
+      }
+    ],
+    "frameWidth": 330,
+    "frameHeight": 240,
+    "columns": 9,
+    "rows": 9,
+    "frameCount": 73,
+    "fps": 24.0
+  }
+}

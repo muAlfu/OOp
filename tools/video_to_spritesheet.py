@@ -88,6 +88,18 @@ How assets/sprites was made (all clips share one 1080x756 canvas):
     python3 tools/video_to_spritesheet.py Looping_magical_circle_.MP4 assets/sprites/looping_magical_circle \
         --name looping_magical_circle --scale 1.125 --rect 0 352 1080 728 --columns 7 --fade-side right --edge-fade 16 \
         --effect --shading --half --no-full --preview
+    # a third character, the soldier rat, on its own canvas (exported like the later rat clips: 960x960, 24 fps). Its
+    # sword's white shine touches the background and its eye's shine is ringed by the dark pupil: --shine keeps pale
+    # shine solid and cuts only pockets ringed almost all round by dark, --keep-pocket holds the eye's shine,
+    # --thin-lines keeps the whiskers, and the pockets that compression tinted are cut by hand
+    python3 tools/video_to_spritesheet.py Soldier_Rat.MP4 assets/sprites/soldier_rat --name soldier_rat --scale 1.125 \
+        --rect 172 310 832 790 --columns 9 --shine --thin-lines --keep-pocket 580 380 675 465 \
+        --cut-region 1 460 592 --cut-region 1 569 695 --cut-region 2 622 608 --cut-region 2 482 561 \
+        --cut-region 3 623 611 --cut-region 3 609 586 --cut-region 4 611 588 --cut-region 4 649 694 \
+        --cut-region 16 611 718 --cut-region 21 620 671 --cut-region 33 440 657 --cut-region 38 621 626 \
+        --cut-region 38 531 687 --cut-region 48 594 694 --cut-region 50 467 525 --cut-region 53 595 678 \
+        --cut-region 65 463 502 --cut-region 72 584 738 \
+        --half --no-full --preview
 """
 import argparse
 import json
@@ -107,6 +119,7 @@ EDGE_BAND = 3          # px around the keyed background that are re-solved by ma
 TRAIL_LIGHTNESS = 48   # pale pixels touching the background (dust, motion blur) are also re-solved ...
 TRAIL_REACH = 48       # ... up to this many px from the background
 TRAIL_SOFTEN = 1.5     # gaussian sigma (px) applied to the alpha of those trails
+SHINE_GAP_DARK = 0.75  # --shine: a pocket's ring must be at least this dark to be cut (a sword's shine is half light)
 EFFECT_SEAL = 6        # --effect: white closed in by the effect except for gaps narrower than 2x this is inside it
 EFFECT_THIN = 40       # --effect: white inside the effect up to 2x this across is its white-hot middle and stays ...
 EFFECT_SPARKLE = 135   # ... and so does wider white ringed by colour at least this strong (a sparkle on a shard)
@@ -145,7 +158,7 @@ def touching_border(labels):
     return np.isin(labels, np.unique(edge[edge > 0]))
 
 
-def enclosed_gaps(near_bg, outer_bg, dist, rgb, min_area=20):
+def enclosed_gaps(near_bg, outer_bg, dist, rgb, min_area=20, loose=True, dark_share=0.5):
     """Background pockets the border flood fill cannot reach.
 
     A pocket is cut out only if it is ringed mostly by dark outline/cloth pixels and
@@ -153,7 +166,9 @@ def enclosed_gaps(near_bg, outer_bg, dist, rgb, min_area=20):
     the colour of saturated cloth into them) when the pocket is big enough and its ring
     dark enough. Pale highlights on horns and claws are slightly off-white
     and half ringed by the light bone around them, and eye shines and glows are ringed
-    by light colours, so they are left alone.
+    by light colours, so they are left alone. With loose=False only the near-exact match
+    counts (white shine on a sword next to dark fur would pass the loose one), and
+    dark_share is the share of the ring that must be dark.
     """
     labels, count = ndi.label(near_bg & ~outer_bg, structure=EIGHT)
     luma = rgb.astype(np.float32) @ np.array([0.299, 0.587, 0.114], np.float32)
@@ -172,8 +187,8 @@ def enclosed_gaps(near_bg, outer_bg, dist, rgb, min_area=20):
             continue
         match = np.median(dist[y, x][blob])
         dark = (luma[y, x][ring] < 110).mean()
-        loose = match <= GAP_LOOSE_MATCH and any(area >= a and dark >= d for a, d in GAP_LOOSE)
-        if (match <= GAP_MATCH and dark > 0.5) or loose:
+        tinted = loose and match <= GAP_LOOSE_MATCH and any(area >= a and dark >= d for a, d in GAP_LOOSE)
+        if (match <= GAP_MATCH and dark > dark_share) or tinted:
             gaps[y, x] |= blob
     return gaps
 
@@ -273,8 +288,9 @@ def despill(foreground, key):
     return foreground
 
 
-CUT_REGION_TOLERANCE = 30  # a hand-picked region may be this far off the background colour ...
-CUT_REGION_MAX = 20000     # ... and at most this many px (a bigger one means the spot was wrong)
+CUT_REGION_TOLERANCES = (30, 20, 15, 10)  # a hand-picked region may be this far off the background colour ...
+CUT_REGION_MAX = 20000     # ... and at most this many px; a tighter tolerance is tried when a pale line joins it
+                           # to the background around the character (none at all means the spot was wrong)
 
 
 def disk(radius):
@@ -283,7 +299,7 @@ def disk(radius):
 
 
 def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=False, flash=0.0, faint=0,
-              keep_white=(), shading=False):
+              keep_white=(), shading=False, shine=False, keep_pockets=(), thin_lines=False):
     """Return an RGBA frame with the background removed.
 
     cut_points are (x, y) spots, in this frame's coordinates, where any enclosed
@@ -300,7 +316,13 @@ def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=
     faint > 0 drops white closed in only by faint colour (see effect_white). keep_white
     boxes (x0, y0, x1, y1) mark white that is part of the effect wherever it reaches,
     such as a light beam that runs out of the tip of a light column. shading=True is for
-    a colourless effect such as a grey magic circle (see shading_cell).
+    a colourless effect such as a grey magic circle (see shading_cell). shine=True is for a
+    character with polished metal, whose white shine (the edge of a sword) is solid: no pale
+    area is made see-through as a trail, and only pockets that match the background exactly
+    and are ringed almost all round by dark are cut out. keep_pockets boxes (x0, y0, x1, y1)
+    hold white pockets that are part of the character, such as the shine in an eye: a
+    pocket that reaches into one is never cut out. thin_lines=True keeps thin dark lines
+    that lie wholly in the soft edge, such as whiskers (see min_alpha).
     """
     bg = background_colour(rgb)
     dist = colour_distance(rgb, bg)
@@ -327,24 +349,36 @@ def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=
     else:
         labels, _ = ndi.label(near_bg, structure=EIGHT)
         outer_bg = touching_border(labels)
-        known_bg = (outer_bg | enclosed_gaps(near_bg, outer_bg, dist, rgb)) if cut_gaps else outer_bg
+        known_bg = outer_bg
+        if cut_gaps:
+            gaps = enclosed_gaps(near_bg, outer_bg, dist, rgb, loose=not shine,
+                                 dark_share=SHINE_GAP_DARK if shine else 0.5)
+            if keep_pockets:
+                labels, _ = ndi.label(gaps, structure=EIGHT)
+                held = np.zeros_like(gaps)
+                for x0, y0, x1, y1 in keep_pockets:
+                    held[max(y0, 0):y1, max(x0, 0):x1] = True
+                reached = np.unique(labels[held & gaps])
+                gaps &= ~np.isin(labels, reached[reached > 0])
+            known_bg = outer_bg | gaps
     if cut_points:
         labels, _ = ndi.label(near_bg & ~known_bg, structure=EIGHT)
         for x, y in cut_points:
             spot = labels[max(y - 3, 0):y + 4, max(x - 3, 0):x + 4]
             known_bg |= np.isin(labels, np.unique(spot[spot > 0]))
-    if cut_regions:
-        labels, _ = ndi.label(dist <= CUT_REGION_TOLERANCE, structure=EIGHT)
-        for x, y in cut_regions:
+    for x, y in cut_regions:
+        for tolerance in CUT_REGION_TOLERANCES:
+            labels, _ = ndi.label(dist <= tolerance, structure=EIGHT)
             region = labels == labels[y, x] if labels[y, x] else None
-            if region is None or region.sum() > CUT_REGION_MAX:
-                print(f"  --cut-region at ({x},{y}) is not on a small pale patch; skipped")
-                continue
-            known_bg |= region
+            if region is not None and region.sum() <= CUT_REGION_MAX:
+                known_bg |= region
+                break
+        else:
+            print(f"  --cut-region at ({x},{y}) is not on a small pale patch; skipped")
 
     from_bg = ndi.distance_transform_edt(~known_bg)
     band = ~known_bg & (from_bg <= EDGE_BAND)
-    light = ~known_bg & (dist < TRAIL_LIGHTNESS) & (from_bg <= TRAIL_REACH)
+    light = ~known_bg & (dist < TRAIL_LIGHTNESS) & (from_bg <= (0 if shine else TRAIL_REACH))
     if keep is not None:
         light &= ~keep  # white-hot parts are solid, not a faint trail
     labels, _ = ndi.label(light | band, structure=EIGHT)
@@ -357,6 +391,8 @@ def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=
     alpha = np.clip(estimate_alpha_cf(image, trimap), 0.0, 1.0)
     alpha[known_bg] = 0.0
     alpha[trimap == 1.0] = 1.0
+    if thin_lines:
+        alpha = np.where(known_bg, 0.0, np.maximum(alpha, min_alpha(rgb, bg)))
     # Pale areas that reach the background without crossing an outline (dust, motion
     # blur) are see-through in the clip: cap their opacity by their contrast with the
     # background so they do not turn into solid white patches on a dark backdrop.
@@ -422,6 +458,21 @@ def shading_cell(rgb, bg, dist, keep, rim):
     out = np.rint(np.dstack([np.clip(colour, 0, 255), np.clip(alpha, 0, 1) * 255])).astype(np.uint8)
     out[out[..., 3] == 0, :3] = 0
     return out
+
+
+def min_alpha(rgb, bg):
+    """The least opacity each pixel can have and still show its colour over the background.
+
+    Even a black (or white) character pixel must cover the background this much to make
+    the colour seen in the video. Matting the soft edge can let a thin dark line that lies
+    wholly in it, such as a whisker away from the face, fade out completely; this floor
+    keeps it as dark as the video shows it.
+    """
+    image = rgb.astype(np.float64)
+    back = np.asarray(bg, np.float64)
+    darker = (back - image) / np.maximum(back, 1)
+    lighter = (image - back) / np.maximum(255 - back, 1)
+    return np.clip(np.maximum(darker, lighter).max(axis=2), 0.0, 1.0)
 
 
 def union_box(frames):
@@ -593,11 +644,22 @@ def main():
                              "different resolution (--rect is then in the resized video's px)")
     parser.add_argument("--cut-pocket", type=int, nargs=2, action="append", default=[], metavar=("X", "Y"),
                         help="video px where an enclosed background pocket must always be cut out (repeatable)")
+    parser.add_argument("--keep-pocket", type=int, nargs=4, action="append", default=[],
+                        metavar=("X0", "Y0", "X1", "Y1"),
+                        help="video px box where white pockets are part of the character, such as the shine in an "
+                             "eye ringed by the dark pupil: a pocket that reaches into it is never cut (repeatable)")
     parser.add_argument("--cut-region", type=int, nargs=3, action="append", default=[], metavar=("FRAME", "X", "Y"),
                         help="in that one frame, cut out the pale patch around video px X,Y (repeatable)")
     parser.add_argument("--hold-still", type=int, nargs=4, metavar=("X0", "Y0", "X1", "Y1"),
                         help="video px box around a part that drifts sideways during the clip (e.g. a projectile's "
                              "orb); it is tracked and every frame is shifted so it stays where it is in the last frame")
+    parser.add_argument("--shine", action="store_true",
+                        help="the character has polished metal (a sword): its white shine stays solid instead of "
+                             "being made see-through like dust, and only pockets that match the background exactly "
+                             "and are ringed almost all round by dark are cut out")
+    parser.add_argument("--thin-lines", action="store_true",
+                        help="keep thin dark lines that lie wholly in the soft edge, such as whiskers: no pixel is "
+                             "made more see-through than its colour in the video allows")
     parser.add_argument("--keep-enclosed", action="store_true",
                         help="never cut enclosed pale areas as background (effects whose white glow sits inside)")
     parser.add_argument("--seal", type=int, default=0, metavar="PX",
@@ -664,7 +726,9 @@ def main():
                          [(x - left, y - top) for f, x, y in args.cut_region if f == i], not args.keep_enclosed,
                          args.seal, args.effect, flash, args.faint_ring,
                          [(x0 - left, y0 - top, x1 - left, y1 - top) for x0, y0, x1, y1 in args.keep_white],
-                         args.shading)
+                         args.shading, args.shine,
+                         [(x0 - left, y0 - top, x1 - left, y1 - top) for x0, y0, x1, y1 in args.keep_pocket],
+                         args.thin_lines)
         sides = {side for side, hits in contact.items() if i in hits} | set(args.fade_side)
         if sides:
             cell = fade_edges(cell, rect, width, height, sides, args.edge_fade)
