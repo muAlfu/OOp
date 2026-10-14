@@ -13,7 +13,9 @@ keep soft, halo-free edges. Where the clip itself runs out of the video frame
 is faded out instead of ending in a straight cut. For a glowing effect drawn on
 white, such as an explosion, --effect keeps its white-hot middle as solid white;
 for a colourless one, such as a grey magic circle, --shading turns its grey into
-see-through shading under solid white lines.
+see-through shading under solid white lines. When a character bursts into light
+that fills the video, --glow-from keys the frames from then on as light drawn on
+white, see-through as faint as it looks, with the rocks and the like kept solid.
 
 Requires: pip install av pillow numpy scipy pymatting
 
@@ -123,6 +125,15 @@ How assets/sprites was made (all clips share one 1080x756 canvas):
         --name crystal_golem_attack --scale 1.6333333 --rect 0 118 1466 1286 --columns 11 --keep-enclosed \
         --glow-cores --core-width 7 --cut-region 101 574 933 --cut-region 102 570 949 --cut-region 103 569 976 \
         --half --no-full --preview
+    # its death explosion, exported at 1080x1080 and 30 fps: its first frame is the walk's first frame at 1080, so it
+    # is scaled x1.4519 (1080 -> 1568) to the same size, where the boom's (x, y) is again at (x + 199, y + 399). The
+    # explosion fills the video and runs out of every edge, so the canvas is the whole video (2 px more on the left,
+    # so the boom's centre, x 783, is its middle) with all four edges faded, and its 157 frames go into two sheets
+    # that fit 8192 px. From frame 110 the golem bursts into light drawn on white (--glow-from)
+    python3 tools/video_to_spritesheet.py Death_Explosion_Crystal_Golem.MOV assets/sprites/crystal_golem_death \
+        --name crystal_golem_death --scale 1.4518519 --rect -2 0 1568 1568 --columns 10 --fade-side left \
+        --fade-side right --fade-side top --fade-side bottom --keep-enclosed --glow-cores --core-width 7 \
+        --glow-from 110 --sheet-frames 100 --half --no-full --preview
 """
 import argparse
 import json
@@ -153,6 +164,10 @@ SHADING_LINE = 0.5     # ... by as much as it is lighter beyond this share of th
 GLOW_LIGHT = 150       # --core-width: coloured glow is at least this light (luma) ...
 GLOW_SPREAD = 50       # ... and this saturated (brightest minus darkest channel) ...
 GLOW_RIM = 0.2         # ... and a glow's white core has at least this share of it right around it
+GLOW_EDGE = 2          # --glow-from: px of a solid thing's soft rim, un-mixed from white exactly (no pale halo)
+GLOW_GAIN = 2.5        # --glow-from: light is this many times as opaque as the least that shows its colour over white
+GLOW_SOFTEN = 2.0      # --glow-from: gaussian sigma (px) on the light's opacity, against the video's compression blocks
+GLOW_NECK = 3          # --glow-from: light narrower than 2x this + 1 px (a crack, a bolt) does not let the white in
 EIGHT = np.ones((3, 3), bool)
 
 
@@ -533,6 +548,46 @@ def min_alpha(rgb, bg):
     return np.clip(np.maximum(darker, lighter).max(axis=2), 0.0, 1.0)
 
 
+def glow_cell(rgb, core_width=0):
+    """Key a frame of light drawn on white, such as an explosion of light (--glow-from).
+
+    Over white, a pale pixel looks the same whether it is a solid pale thing or faint light over the
+    background, and an explosion's light fills wide areas, inside its rings too. So everything the
+    background reaches through light colour (wider than a crack or a bolt, which would let it into the
+    character through its outline) is light, with its colour's hue: GLOW_GAIN times the least opacity that
+    shows its colour over white (see min_alpha), less the compression noise near white (BG_TOLERANCE)
+    and softened against the video's compression blocks. White turns clear, faint light stays faint,
+    strong cyan turns solid, and the light still shows on a dark background. What dark outlines wall in
+    (rocks, the character, the shine on them) stays solid, its soft rim against the light is un-mixed from
+    white exactly (no pale halo on a dark background), and so is the white middle of glowing lines up to
+    core_width px across (see glow_core_lines).
+    """
+    image = rgb.astype(np.float64)
+    white = np.full(3, 255.0)
+    dist = colour_distance(rgb, white)
+    near_bg = dist <= BG_TOLERANCE
+    light = image @ np.array([0.299, 0.587, 0.114]) >= GLOW_LIGHT
+    labels, _ = ndi.label(ndi.binary_opening(light, structure=disk(GLOW_NECK)), structure=EIGHT)
+    reached = touching_border(labels)
+    solid = ndi.binary_erosion(~reached, EIGHT, iterations=GLOW_EDGE, border_value=1)
+    if core_width:
+        solid |= glow_core_lines(near_bg & reached, near_bg, rgb, core_width)
+    least = min_alpha(rgb, white)
+    colour = white - (white - image) / np.maximum(np.minimum(GLOW_GAIN * least, 1.0), 1e-6)[..., None]
+    noise = BG_TOLERANCE / 255
+    alpha = np.minimum(GLOW_GAIN * np.maximum(least - noise, 0) / (1 - noise), 1.0)
+    rim = ndi.binary_dilation(solid, EIGHT, iterations=GLOW_EDGE + 1) & ~solid & ~light
+    lit = (~solid & ~rim).astype(np.float64)
+    soft = ndi.gaussian_filter(alpha * lit, GLOW_SOFTEN) / np.maximum(ndi.gaussian_filter(lit, GLOW_SOFTEN), 1e-6)
+    alpha = np.where(solid, 1.0, np.where(rim, least, soft))
+    colour = np.where(rim[..., None], white - (white - image) / np.maximum(least, 1e-6)[..., None], colour)
+    alpha = drop_specks(alpha)
+    colour = np.where(solid[..., None], image, colour)
+    out = np.rint(np.dstack([np.clip(colour, 0, 255), alpha * 255])).astype(np.uint8)
+    out[out[..., 3] == 0, :3] = 0
+    return out
+
+
 def union_box(frames):
     x0 = y0 = 10**9
     x1 = y1 = -1
@@ -635,13 +690,13 @@ def build_sheet(cells, columns):
     return sheet, rows
 
 
-def sheet_json(name, image_file, count, columns, w, h, fps, sheet_size):
+def sheet_json(name, image_file, count, columns, w, h, fps, sheet_size, first=0):
     duration = round(1000 / fps)
     frames = []
     for i in range(count):
         r, c = divmod(i, columns)
         frames.append({
-            "filename": f"{name}_{i:02d}",
+            "filename": f"{name}_{first + i:02d}",
             "frame": {"x": c * w, "y": r * h, "w": w, "h": h},
             "rotated": False,
             "trimmed": False,
@@ -719,9 +774,14 @@ def main():
                         help="the character has a glow, such as lightning on crystals: white left inside it is the "
                              "glow's white-hot core and stays solid, and the glow around it turns solid toward it")
     parser.add_argument("--core-width", type=int, default=0, metavar="PX",
-                        help="with --glow-cores: only white at most PX px across with coloured glow right around it "
-                             "(the white middle of a lightning bolt) is a core; wider white, or white that fades out "
-                             "through pale glow (the air between floating sparks), stays see-through")
+                        help="with --glow-cores or --glow-from: only white at most PX px across with coloured glow "
+                             "right around it (the white middle of a lightning bolt) is a core; wider white, or white "
+                             "that fades out through pale glow (the air between floating sparks), stays see-through")
+    parser.add_argument("--glow-from", type=int, metavar="FRAME",
+                        help="from this frame on, the clip is light drawn on white, such as an explosion of light "
+                             "that fills the video: what the background reaches through light colour is keyed as "
+                             "light, see-through as faint as it looks, and what dark outlines wall in stays solid "
+                             "(--core-width also keeps the white middle of thin glowing lines solid)")
     parser.add_argument("--thin-lines", action="store_true",
                         help="keep thin dark lines that lie wholly in the soft edge, such as whiskers: no pixel is "
                              "made more see-through than its colour in the video allows")
@@ -750,6 +810,9 @@ def main():
     parser.add_argument("--half", action="store_true", help="also write a 50%% sheet")
     parser.add_argument("--no-full", action="store_true",
                         help="skip the full-resolution sheet (for long clips whose full sheet is too big for a texture)")
+    parser.add_argument("--sheet-frames", type=int, default=0, metavar="N",
+                        help="put at most N frames in each sheet: a longer clip is split into numbered sheets "
+                             "(_part1, _part2, ...), each with its own JSON, e.g. to keep each within 8192 px")
     parser.add_argument("--frames", action="store_true", help="also write every frame as its own PNG")
     parser.add_argument("--preview", action="store_true", help="also write an animated GIF preview")
     args = parser.parse_args()
@@ -782,20 +845,25 @@ def main():
         print(f"  white flash: solid up to frame {flash_from}, opening up until it is gone at frame {flash_to}")
     if (args.faint_ring or args.keep_white or args.shading) and not args.effect:
         raise SystemExit("--faint-ring, --keep-white and --shading need --effect")
-    if args.core_width and not args.glow_cores:
-        raise SystemExit("--core-width needs --glow-cores")
+    if args.core_width and not args.glow_cores and args.glow_from is None:
+        raise SystemExit("--core-width needs --glow-cores or --glow-from")
+    if args.glow_from is not None:
+        print(f"  from frame {args.glow_from} on: light drawn on white (an explosion's light)")
 
     os.makedirs(args.out_dir, exist_ok=True)
     cells = []
     for i, rgb in enumerate(frames):
         flash = float(np.clip((flash_to - i) / (flash_to - flash_from), 0, 1)) if args.flash else 0.0
-        cell = key_frame(crop(rgb, rect), [(x - left, y - top) for x, y in args.cut_pocket],
-                         [(x - left, y - top) for f, x, y in args.cut_region if f == i], not args.keep_enclosed,
-                         args.seal, args.effect, flash, args.faint_ring,
-                         [(x0 - left, y0 - top, x1 - left, y1 - top) for x0, y0, x1, y1 in args.keep_white],
-                         args.shading, args.shine,
-                         [(x0 - left, y0 - top, x1 - left, y1 - top) for x0, y0, x1, y1 in args.keep_pocket],
-                         args.thin_lines, args.glow_cores, args.core_width)
+        if args.glow_from is not None and i >= args.glow_from:
+            cell = glow_cell(crop(rgb, rect), args.core_width)
+        else:
+            cell = key_frame(crop(rgb, rect), [(x - left, y - top) for x, y in args.cut_pocket],
+                             [(x - left, y - top) for f, x, y in args.cut_region if f == i], not args.keep_enclosed,
+                             args.seal, args.effect, flash, args.faint_ring,
+                             [(x0 - left, y0 - top, x1 - left, y1 - top) for x0, y0, x1, y1 in args.keep_white],
+                             args.shading, args.shine,
+                             [(x0 - left, y0 - top, x1 - left, y1 - top) for x0, y0, x1, y1 in args.keep_pocket],
+                             args.thin_lines, args.glow_cores, args.core_width)
         sides = {side for side, hits in contact.items() if i in hits} | set(args.fade_side)
         if sides:
             cell = fade_edges(cell, rect, width, height, sides, args.edge_fade)
@@ -824,14 +892,21 @@ def main():
         half = [halve(c) for c in cells]
     if args.half:
         outputs.append(("_half", half, w // 2, h // 2))
+    per_sheet = args.sheet_frames or len(cells)
+    starts = range(0, len(cells), per_sheet)
     for suffix, sheet_cells, cw, ch in outputs:
-        sheet, rows = build_sheet(sheet_cells, args.columns)
-        image_file = f"{args.name}_spritesheet{suffix}.png"
-        Image.fromarray(sheet, "RGBA").save(os.path.join(args.out_dir, image_file), optimize=True)
-        meta = sheet_json(args.name, image_file, len(cells), args.columns, cw, ch, fps, (sheet.shape[1], sheet.shape[0]))
-        with open(os.path.join(args.out_dir, f"{args.name}_spritesheet{suffix}.json"), "w") as fh:
-            json.dump(meta, fh, indent=2)
-        print(f"{image_file}: {sheet.shape[1]}x{sheet.shape[0]}, {args.columns}x{rows} grid of {cw}x{ch}")
+        for part, first in enumerate(starts, start=1):
+            stem = f"{args.name}_spritesheet{suffix}" + (f"_part{part}" if len(starts) > 1 else "")
+            part_cells = sheet_cells[first:first + per_sheet]
+            sheet, rows = build_sheet(part_cells, args.columns)
+            image_file = f"{stem}.png"
+            Image.fromarray(sheet, "RGBA").save(os.path.join(args.out_dir, image_file), optimize=True)
+            meta = sheet_json(args.name, image_file, len(part_cells), args.columns, cw, ch, fps,
+                              (sheet.shape[1], sheet.shape[0]), first)
+            with open(os.path.join(args.out_dir, f"{stem}.json"), "w") as fh:
+                json.dump(meta, fh, indent=2)
+            print(f"{image_file}: {sheet.shape[1]}x{sheet.shape[0]}, {args.columns}x{rows} grid of {cw}x{ch}"
+                  + (f", frames {first}-{first + len(part_cells) - 1}" if len(starts) > 1 else ""))
     if args.preview:
         save_preview(os.path.join(args.out_dir, f"{args.name}_preview.gif"), half, fps)
         print(f"{args.name}_preview.gif written")

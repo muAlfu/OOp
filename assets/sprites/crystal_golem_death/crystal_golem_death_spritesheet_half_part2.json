@@ -1,0 +1,1283 @@
+{
+  "frames": [
+    {
+      "filename": "crystal_golem_death_100",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_101",
+      "frame": {
+        "x": 785,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_102",
+      "frame": {
+        "x": 1570,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_103",
+      "frame": {
+        "x": 2355,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_104",
+      "frame": {
+        "x": 3140,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_105",
+      "frame": {
+        "x": 3925,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_106",
+      "frame": {
+        "x": 4710,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_107",
+      "frame": {
+        "x": 5495,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_108",
+      "frame": {
+        "x": 6280,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_109",
+      "frame": {
+        "x": 7065,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_110",
+      "frame": {
+        "x": 0,
+        "y": 784,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_111",
+      "frame": {
+        "x": 785,
+        "y": 784,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_112",
+      "frame": {
+        "x": 1570,
+        "y": 784,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_113",
+      "frame": {
+        "x": 2355,
+        "y": 784,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_114",
+      "frame": {
+        "x": 3140,
+        "y": 784,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_115",
+      "frame": {
+        "x": 3925,
+        "y": 784,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_116",
+      "frame": {
+        "x": 4710,
+        "y": 784,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_117",
+      "frame": {
+        "x": 5495,
+        "y": 784,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_118",
+      "frame": {
+        "x": 6280,
+        "y": 784,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_119",
+      "frame": {
+        "x": 7065,
+        "y": 784,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_120",
+      "frame": {
+        "x": 0,
+        "y": 1568,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_121",
+      "frame": {
+        "x": 785,
+        "y": 1568,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_122",
+      "frame": {
+        "x": 1570,
+        "y": 1568,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_123",
+      "frame": {
+        "x": 2355,
+        "y": 1568,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_124",
+      "frame": {
+        "x": 3140,
+        "y": 1568,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_125",
+      "frame": {
+        "x": 3925,
+        "y": 1568,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_126",
+      "frame": {
+        "x": 4710,
+        "y": 1568,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_127",
+      "frame": {
+        "x": 5495,
+        "y": 1568,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_128",
+      "frame": {
+        "x": 6280,
+        "y": 1568,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_129",
+      "frame": {
+        "x": 7065,
+        "y": 1568,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_130",
+      "frame": {
+        "x": 0,
+        "y": 2352,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_131",
+      "frame": {
+        "x": 785,
+        "y": 2352,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_132",
+      "frame": {
+        "x": 1570,
+        "y": 2352,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_133",
+      "frame": {
+        "x": 2355,
+        "y": 2352,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_134",
+      "frame": {
+        "x": 3140,
+        "y": 2352,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_135",
+      "frame": {
+        "x": 3925,
+        "y": 2352,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_136",
+      "frame": {
+        "x": 4710,
+        "y": 2352,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_137",
+      "frame": {
+        "x": 5495,
+        "y": 2352,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_138",
+      "frame": {
+        "x": 6280,
+        "y": 2352,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_139",
+      "frame": {
+        "x": 7065,
+        "y": 2352,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_140",
+      "frame": {
+        "x": 0,
+        "y": 3136,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_141",
+      "frame": {
+        "x": 785,
+        "y": 3136,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_142",
+      "frame": {
+        "x": 1570,
+        "y": 3136,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_143",
+      "frame": {
+        "x": 2355,
+        "y": 3136,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_144",
+      "frame": {
+        "x": 3140,
+        "y": 3136,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_145",
+      "frame": {
+        "x": 3925,
+        "y": 3136,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_146",
+      "frame": {
+        "x": 4710,
+        "y": 3136,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_147",
+      "frame": {
+        "x": 5495,
+        "y": 3136,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_148",
+      "frame": {
+        "x": 6280,
+        "y": 3136,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_149",
+      "frame": {
+        "x": 7065,
+        "y": 3136,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_150",
+      "frame": {
+        "x": 0,
+        "y": 3920,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_151",
+      "frame": {
+        "x": 785,
+        "y": 3920,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_152",
+      "frame": {
+        "x": 1570,
+        "y": 3920,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_153",
+      "frame": {
+        "x": 2355,
+        "y": 3920,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_154",
+      "frame": {
+        "x": 3140,
+        "y": 3920,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_155",
+      "frame": {
+        "x": 3925,
+        "y": 3920,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    },
+    {
+      "filename": "crystal_golem_death_156",
+      "frame": {
+        "x": 4710,
+        "y": 3920,
+        "w": 785,
+        "h": 784
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 784
+      },
+      "sourceSize": {
+        "w": 785,
+        "h": 784
+      },
+      "duration": 33
+    }
+  ],
+  "meta": {
+    "app": "tools/video_to_spritesheet.py",
+    "version": "1.0",
+    "image": "crystal_golem_death_spritesheet_half_part2.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 7850,
+      "h": 4704
+    },
+    "scale": "1",
+    "frameTags": [
+      {
+        "name": "crystal_golem_death",
+        "from": 0,
+        "to": 56,
+        "direction": "forward"
+      }
+    ],
+    "frameWidth": 785,
+    "frameHeight": 784,
+    "columns": 10,
+    "rows": 6,
+    "frameCount": 57,
+    "fps": 30.0
+  }
+}

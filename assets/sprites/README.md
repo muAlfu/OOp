@@ -91,13 +91,15 @@ whiskers, are kept; the background seen through the gaps between the sword, the 
 out (where the video's compression tinted it, by hand).
 
 An enemy, the crystal creature, has its own canvas too: x 116–1052, y 33–741 of its 1168×768 video, at the video's
-own scale (936×708, half 468×354). Use the `Bottom` pivot (the walk and the attack: the custom pivots below).
+own scale (936×708, half 468×354). Use the `Bottom` pivot (the walk, the attack and the death: the custom pivots
+below).
 
 | Animation | Frames | Grid | Full sheet (frame 936×708) | Half sheet (frame 468×354) |
 | --- | --- | --- | --- | --- |
 | `enemy_crystal_boom/` | 121, **24 fps** | 11 columns × 11 rows (every cell used) | not made (would be 10296×7788) | 5148×3894 |
 | `crystal_golem_walk/` | 121, **24 fps** | 11 columns × 11 rows (every cell used) | not made (kept at the boom's scale) | 5764×4400, **frame 524×400** |
 | `crystal_golem_attack/` | 121, **24 fps** | 11 columns × 11 rows (every cell used) | not made (kept at the boom's scale) | 8063×6424, **frame 733×584** |
+| `crystal_golem_death/` | 157, **30 fps**, in 2 sheets | part 1 (frames 0–99): 10 × 10; part 2 (frames 100–156): 10 × 6 (last 3 cells empty) | not made (kept at the boom's scale) | 7850×7840 and 7850×4704, **frame 785×784** |
 
 From frame 72 its eyes close and lightning crackles through its crystals; around frame 90 the eyes open again. The last
 four frames (117–120) are the same still frame in the video and are kept so the timing matches. The clip does not loop:
@@ -127,10 +129,24 @@ is a small jump. The shine on the claw, toes and eyes and the white facets of th
 of the burst stays white, the white between floating sparks is see-through, and so is the background under the arm
 in frames 101–103, which the arm and the burst close in (cut by hand).
 
+The death explosion was exported at 1080×1080 and 30 fps; its first frame is the walk's first frame at 1080 instead
+of 960, so it is scaled ×1.452 (1080 → 1568), to the same size again. Lightning builds up in the golem and debris
+flies; from frame 110 (counting from 0) a sphere of light grows around it, the golem bursts into rings of cyan light
+and rock fragments that fly out of every edge of the video, and the last frames are nearly empty. The explosion fills
+the whole video, so the canvas is the whole scaled video (1570×1568 with 2 px more on the left, half 785×784), and
+all four edges fade out the same way in every frame. 157 frames that big do not fit in one 8192 texture, so the
+sheet is split in two: part 1 has frames 0–99 and part 2 frames 100–156. Slice both the same way, then select the
+sprites of part 1 and then part 2 together and make one animation of them. Use a custom pivot at the boom's bottom
+edge, **X 0.5, Y 0.273**. Over white, the explosion's light looks the same whether it is solid or faint light over
+the background, so from frame 110 on it is see-through about as faint as it looks: the empty inside of the rings is
+clear, the faintest haze (the video's compression noise next to white) is dropped, and on a dark background the
+rings and the light still show. The rocks, the golem's body and the white middle of thin glowing lines stay solid,
+with their dark edges and no pale halo. It does not loop: play it once, at 30 fps.
+
 - Frames go left to right, top to bottom: frame `i` is at column `i % columns`, row `i / columns`.
 - Play at 30 fps (33 ms per frame), except the rat clips after the idle (walk, cast, projectile, explosion, buff,
-  aura, healing and magic circle), the soldier rat and the crystal enemy (boom, walk and attack): 24 fps (42 ms).
-  The JSON files carry the right duration.
+  aura, healing and magic circle), the soldier rat and the crystal enemy's boom, walk and attack: 24 fps (42 ms).
+  The crystal golem's death is 30 fps again. The JSON files carry the right duration.
 - Each folder also has the frame rectangles as JSON (Aseprite / TexturePacker "JSON Array" format) and a GIF preview
   on a dark background. The GIF is only for viewing, not for the game.
 - `heavy_claw_attack`: in frames 22–24 (counting from 0) the dust from the strike runs past the right edge of the
@@ -157,19 +173,20 @@ in frames 101–103, which the arm and the burst close in (cut by hand).
 2. Inspector: **Texture Type** `Sprite (2D and UI)`, **Sprite Mode** `Multiple`, **Max Size** at least the sheet's
    larger side: `4096` for the 3780-wide half sheets, `8192` for `final_heavy_claw_attack`, `jump_hallow`,
    `rat_under_magic_idle`, `rat_under_magic_cast_projectile`, `rat_under_magic_impact_explosion`,
-   `rat_under_magic_cast_buff`, `enemy_crystal_boom`, `crystal_golem_walk`, `crystal_golem_attack` and the full
-   sheets. The default 2048 shrinks the sheet. Apply.
+   `rat_under_magic_cast_buff`, `enemy_crystal_boom`, `crystal_golem_walk`, `crystal_golem_attack`, both
+   `crystal_golem_death` sheets and the full sheets. The default 2048 shrinks the sheet. Apply.
 3. **Sprite Editor → Slice**: **Type** `Grid By Cell Size`, **Pixel Size** `540 × 378` (half) or `1080 × 756` (full),
    except `jump_hallow`: `540 × 426`, the rat idle: `356 × 408`, the rat walk: `418 × 368`, the rat cast:
    `566 × 406`, the projectile: `456 × 188`, the explosion: `540 × 540`, the buff: `544 × 434`, the aura: `396 × 420`,
    the healing: `312 × 420`, the magic circle: `540 × 188`, the soldier rat: `330 × 240`, the crystal enemy's boom:
-   `468 × 354`, its walk: `524 × 400` and its attack: `733 × 584`. **Pivot** `Bottom` (the projectile: `Custom Pivot`
-   X 0.82, Y 0.47; the explosion and the magic circle: `Center`; the aura: `Custom Pivot` X 0.5, Y 0.0595; the
-   healing: `Custom Pivot` X 0.5, Y 0.0786; the crystal golem's walk: `Custom Pivot` X 0.5, Y 0.03, and its attack:
-   `Custom Pivot` X 0.5341, Y 0.125). Slice, then Apply. Empty cells at the end are skipped.
+   `468 × 354`, its walk: `524 × 400`, its attack: `733 × 584` and its death: `785 × 784`. **Pivot** `Bottom` (the
+   projectile: `Custom Pivot` X 0.82, Y 0.47; the explosion and the magic circle: `Center`; the aura: `Custom Pivot`
+   X 0.5, Y 0.0595; the healing: `Custom Pivot` X 0.5, Y 0.0786; the crystal golem's walk: `Custom Pivot` X 0.5,
+   Y 0.03, its attack: `Custom Pivot` X 0.5341, Y 0.125, and its death: `Custom Pivot` X 0.5, Y 0.273). Slice, then
+   Apply. Empty cells at the end are skipped.
 4. Select the sprites, drag them into the scene to make the animation, and set **Sample Rate** to `30`
    (`24` for the rat walk, cast, projectile, explosion, buff, aura, healing, magic circle, the soldier rat and the
-   crystal enemy's boom, walk and attack).
+   crystal enemy's boom, walk and attack; the golem's death stays at `30`).
 
 ## Java
 
