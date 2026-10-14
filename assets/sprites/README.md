@@ -90,9 +90,23 @@ looped, jumps from the last frame back to the first. The white shine on the swor
 whiskers, are kept; the background seen through the gaps between the sword, the legs, the arms and the cloth is cut
 out (where the video's compression tinted it, by hand).
 
+An enemy, the crystal creature, has its own canvas too: x 116–1052, y 33–741 of its 1168×768 video, at the video's
+own scale (936×708, half 468×354). Use the `Bottom` pivot.
+
+| Animation | Frames | Grid | Full sheet (frame 936×708) | Half sheet (frame 468×354) |
+| --- | --- | --- | --- | --- |
+| `enemy_crystal_boom/` | 121, **24 fps** | 11 columns × 11 rows (every cell used) | not made (would be 10296×7788) | 5148×3894 |
+
+From frame 72 its eyes close and lightning crackles through its crystals; around frame 90 the eyes open again. The last
+four frames (117–120) are the same still frame in the video and are kept so the timing matches. The clip does not loop:
+its last frame does not lead back into the first, so play it once. The white-hot middle of the eyes, the white flash of
+the lightning inside the crystals and the crystals' white facets stay solid; the glow around the lightning fades out
+over the background.
+
 - Frames go left to right, top to bottom: frame `i` is at column `i % columns`, row `i / columns`.
 - Play at 30 fps (33 ms per frame), except the rat clips after the idle (walk, cast, projectile, explosion, buff,
-  aura, healing and magic circle) and the soldier rat: 24 fps (42 ms). The JSON files carry the right duration.
+  aura, healing and magic circle), the soldier rat and the crystal enemy: 24 fps (42 ms). The JSON files carry the
+  right duration.
 - Each folder also has the frame rectangles as JSON (Aseprite / TexturePacker "JSON Array" format) and a GIF preview
   on a dark background. The GIF is only for viewing, not for the game.
 - `heavy_claw_attack`: in frames 22–24 (counting from 0) the dust from the strike runs past the right edge of the
@@ -119,16 +133,17 @@ out (where the video's compression tinted it, by hand).
 2. Inspector: **Texture Type** `Sprite (2D and UI)`, **Sprite Mode** `Multiple`, **Max Size** at least the sheet's
    larger side: `4096` for the 3780-wide half sheets, `8192` for `final_heavy_claw_attack`, `jump_hallow`,
    `rat_under_magic_idle`, `rat_under_magic_cast_projectile`, `rat_under_magic_impact_explosion`,
-   `rat_under_magic_cast_buff` and the full sheets. The default 2048 shrinks the sheet. Apply.
+   `rat_under_magic_cast_buff`, `enemy_crystal_boom` and the full sheets. The default 2048 shrinks the sheet. Apply.
 3. **Sprite Editor → Slice**: **Type** `Grid By Cell Size`, **Pixel Size** `540 × 378` (half) or `1080 × 756` (full),
    except `jump_hallow`: `540 × 426`, the rat idle: `356 × 408`, the rat walk: `418 × 368`, the rat cast:
    `566 × 406`, the projectile: `456 × 188`, the explosion: `540 × 540`, the buff: `544 × 434`, the aura: `396 × 420`,
-   the healing: `312 × 420`, the magic circle: `540 × 188` and the soldier rat: `330 × 240`. **Pivot** `Bottom` (the
-   projectile: `Custom Pivot` X 0.82, Y 0.47; the explosion and the magic circle: `Center`; the aura: `Custom Pivot`
-   X 0.5, Y 0.0595; the healing: `Custom Pivot` X 0.5, Y 0.0786). Slice, then Apply. Empty cells at the end are
-   skipped.
+   the healing: `312 × 420`, the magic circle: `540 × 188`, the soldier rat: `330 × 240` and the crystal enemy:
+   `468 × 354`. **Pivot** `Bottom` (the projectile: `Custom Pivot` X 0.82, Y 0.47; the explosion and the magic circle:
+   `Center`; the aura: `Custom Pivot` X 0.5, Y 0.0595; the healing: `Custom Pivot` X 0.5, Y 0.0786). Slice, then
+   Apply. Empty cells at the end are skipped.
 4. Select the sprites, drag them into the scene to make the animation, and set **Sample Rate** to `30`
-   (`24` for the rat walk, cast, projectile, explosion, buff, aura, healing, magic circle and the soldier rat).
+   (`24` for the rat walk, cast, projectile, explosion, buff, aura, healing, magic circle, the soldier rat and the
+   crystal enemy).
 
 ## Java
 

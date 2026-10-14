@@ -100,6 +100,12 @@ How assets/sprites was made (all clips share one 1080x756 canvas):
         --cut-region 38 531 687 --cut-region 48 594 694 --cut-region 50 467 525 --cut-region 53 595 678 \
         --cut-region 65 463 502 --cut-region 72 584 738 \
         --half --no-full --preview
+    # an enemy, the crystal creature, on its own canvas from a 1168x768 video, at its own scale. The white-hot middle
+    # of its eyes is ringed by red and the white flash of the lightning in its crystals is ringed by glow, so
+    # --keep-pocket holds them, and --glow-cores keeps the lightning's white core solid with its glow around it
+    python3 tools/video_to_spritesheet.py Enemy_Crystal_boom.MP4 assets/sprites/enemy_crystal_boom \
+        --name enemy_crystal_boom --rect 116 33 1052 741 --columns 11 --keep-pocket 320 515 610 610 \
+        --keep-pocket 620 50 1010 480 --glow-cores --half --no-full --preview
 """
 import argparse
 import json
@@ -299,7 +305,7 @@ def disk(radius):
 
 
 def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=False, flash=0.0, faint=0,
-              keep_white=(), shading=False, shine=False, keep_pockets=(), thin_lines=False):
+              keep_white=(), shading=False, shine=False, keep_pockets=(), thin_lines=False, glow_cores=False):
     """Return an RGBA frame with the background removed.
 
     cut_points are (x, y) spots, in this frame's coordinates, where any enclosed
@@ -322,7 +328,10 @@ def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=
     and are ringed almost all round by dark are cut out. keep_pockets boxes (x0, y0, x1, y1)
     hold white pockets that are part of the character, such as the shine in an eye: a
     pocket that reaches into one is never cut out. thin_lines=True keeps thin dark lines
-    that lie wholly in the soft edge, such as whiskers (see min_alpha).
+    that lie wholly in the soft edge, such as whiskers (see min_alpha). glow_cores=True is
+    for a character with a glow, such as lightning on crystals: white the cut leaves
+    inside the character is the glow's white-hot core and stays solid, and the pale glow
+    around it turns solid toward it instead of fading like dust.
     """
     bg = background_colour(rgb)
     dist = colour_distance(rgb, bg)
@@ -375,6 +384,8 @@ def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=
                 break
         else:
             print(f"  --cut-region at ({x},{y}) is not on a small pale patch; skipped")
+    if glow_cores and keep is None:
+        keep = near_bg & ~known_bg
 
     from_bg = ndi.distance_transform_edt(~known_bg)
     band = ~known_bg & (from_bg <= EDGE_BAND)
@@ -657,6 +668,9 @@ def main():
                         help="the character has polished metal (a sword): its white shine stays solid instead of "
                              "being made see-through like dust, and only pockets that match the background exactly "
                              "and are ringed almost all round by dark are cut out")
+    parser.add_argument("--glow-cores", action="store_true",
+                        help="the character has a glow, such as lightning on crystals: white left inside it is the "
+                             "glow's white-hot core and stays solid, and the glow around it turns solid toward it")
     parser.add_argument("--thin-lines", action="store_true",
                         help="keep thin dark lines that lie wholly in the soft edge, such as whiskers: no pixel is "
                              "made more see-through than its colour in the video allows")
@@ -728,7 +742,7 @@ def main():
                          [(x0 - left, y0 - top, x1 - left, y1 - top) for x0, y0, x1, y1 in args.keep_white],
                          args.shading, args.shine,
                          [(x0 - left, y0 - top, x1 - left, y1 - top) for x0, y0, x1, y1 in args.keep_pocket],
-                         args.thin_lines)
+                         args.thin_lines, args.glow_cores)
         sides = {side for side, hits in contact.items() if i in hits} | set(args.fade_side)
         if sides:
             cell = fade_edges(cell, rect, width, height, sides, args.edge_fade)
