@@ -115,6 +115,14 @@ How assets/sprites was made (all clips share one 1080x756 canvas):
     python3 tools/video_to_spritesheet.py Crystal_Golem_walks_.MP4 assets/sprites/crystal_golem_walk \
         --name crystal_golem_walk --scale 1.6333333 --rect 259 364 1307 1164 --columns 11 --keep-enclosed \
         --glow-cores --core-width 7 --half --no-full --preview
+    # its attack, exported like the walk (same first frame, same scale). The raised claw, the burst below its feet and
+    # the burst running out of the left edge of the video make the canvas much bigger: from the video's left edge, so
+    # the boom's bottom centre (783, 1140) is at X 783/1466, Y 146/1168 of it for the custom pivot. The background the
+    # arm and the burst close in under the arm in frames 101-103 is cut by hand
+    python3 tools/video_to_spritesheet.py Crystal_Golem_attack_.MP4 assets/sprites/crystal_golem_attack \
+        --name crystal_golem_attack --scale 1.6333333 --rect 0 118 1466 1286 --columns 11 --keep-enclosed \
+        --glow-cores --core-width 7 --cut-region 101 574 933 --cut-region 102 570 949 --cut-region 103 569 976 \
+        --half --no-full --preview
 """
 import argparse
 import json

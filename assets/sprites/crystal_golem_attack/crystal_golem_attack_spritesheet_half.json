@@ -1,0 +1,2691 @@
+{
+  "frames": [
+    {
+      "filename": "crystal_golem_attack_00",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_01",
+      "frame": {
+        "x": 733,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_02",
+      "frame": {
+        "x": 1466,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_03",
+      "frame": {
+        "x": 2199,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_04",
+      "frame": {
+        "x": 2932,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_05",
+      "frame": {
+        "x": 3665,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_06",
+      "frame": {
+        "x": 4398,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_07",
+      "frame": {
+        "x": 5131,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_08",
+      "frame": {
+        "x": 5864,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_09",
+      "frame": {
+        "x": 6597,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_10",
+      "frame": {
+        "x": 7330,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_11",
+      "frame": {
+        "x": 0,
+        "y": 584,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_12",
+      "frame": {
+        "x": 733,
+        "y": 584,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_13",
+      "frame": {
+        "x": 1466,
+        "y": 584,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_14",
+      "frame": {
+        "x": 2199,
+        "y": 584,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_15",
+      "frame": {
+        "x": 2932,
+        "y": 584,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_16",
+      "frame": {
+        "x": 3665,
+        "y": 584,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_17",
+      "frame": {
+        "x": 4398,
+        "y": 584,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_18",
+      "frame": {
+        "x": 5131,
+        "y": 584,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_19",
+      "frame": {
+        "x": 5864,
+        "y": 584,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_20",
+      "frame": {
+        "x": 6597,
+        "y": 584,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_21",
+      "frame": {
+        "x": 7330,
+        "y": 584,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_22",
+      "frame": {
+        "x": 0,
+        "y": 1168,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_23",
+      "frame": {
+        "x": 733,
+        "y": 1168,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_24",
+      "frame": {
+        "x": 1466,
+        "y": 1168,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_25",
+      "frame": {
+        "x": 2199,
+        "y": 1168,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_26",
+      "frame": {
+        "x": 2932,
+        "y": 1168,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_27",
+      "frame": {
+        "x": 3665,
+        "y": 1168,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_28",
+      "frame": {
+        "x": 4398,
+        "y": 1168,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_29",
+      "frame": {
+        "x": 5131,
+        "y": 1168,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_30",
+      "frame": {
+        "x": 5864,
+        "y": 1168,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_31",
+      "frame": {
+        "x": 6597,
+        "y": 1168,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_32",
+      "frame": {
+        "x": 7330,
+        "y": 1168,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_33",
+      "frame": {
+        "x": 0,
+        "y": 1752,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_34",
+      "frame": {
+        "x": 733,
+        "y": 1752,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_35",
+      "frame": {
+        "x": 1466,
+        "y": 1752,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_36",
+      "frame": {
+        "x": 2199,
+        "y": 1752,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_37",
+      "frame": {
+        "x": 2932,
+        "y": 1752,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_38",
+      "frame": {
+        "x": 3665,
+        "y": 1752,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_39",
+      "frame": {
+        "x": 4398,
+        "y": 1752,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_40",
+      "frame": {
+        "x": 5131,
+        "y": 1752,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_41",
+      "frame": {
+        "x": 5864,
+        "y": 1752,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_42",
+      "frame": {
+        "x": 6597,
+        "y": 1752,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_43",
+      "frame": {
+        "x": 7330,
+        "y": 1752,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_44",
+      "frame": {
+        "x": 0,
+        "y": 2336,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_45",
+      "frame": {
+        "x": 733,
+        "y": 2336,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_46",
+      "frame": {
+        "x": 1466,
+        "y": 2336,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_47",
+      "frame": {
+        "x": 2199,
+        "y": 2336,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_48",
+      "frame": {
+        "x": 2932,
+        "y": 2336,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_49",
+      "frame": {
+        "x": 3665,
+        "y": 2336,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_50",
+      "frame": {
+        "x": 4398,
+        "y": 2336,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_51",
+      "frame": {
+        "x": 5131,
+        "y": 2336,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_52",
+      "frame": {
+        "x": 5864,
+        "y": 2336,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_53",
+      "frame": {
+        "x": 6597,
+        "y": 2336,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_54",
+      "frame": {
+        "x": 7330,
+        "y": 2336,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_55",
+      "frame": {
+        "x": 0,
+        "y": 2920,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_56",
+      "frame": {
+        "x": 733,
+        "y": 2920,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_57",
+      "frame": {
+        "x": 1466,
+        "y": 2920,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_58",
+      "frame": {
+        "x": 2199,
+        "y": 2920,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_59",
+      "frame": {
+        "x": 2932,
+        "y": 2920,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_60",
+      "frame": {
+        "x": 3665,
+        "y": 2920,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_61",
+      "frame": {
+        "x": 4398,
+        "y": 2920,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_62",
+      "frame": {
+        "x": 5131,
+        "y": 2920,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_63",
+      "frame": {
+        "x": 5864,
+        "y": 2920,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_64",
+      "frame": {
+        "x": 6597,
+        "y": 2920,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_65",
+      "frame": {
+        "x": 7330,
+        "y": 2920,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_66",
+      "frame": {
+        "x": 0,
+        "y": 3504,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_67",
+      "frame": {
+        "x": 733,
+        "y": 3504,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_68",
+      "frame": {
+        "x": 1466,
+        "y": 3504,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_69",
+      "frame": {
+        "x": 2199,
+        "y": 3504,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_70",
+      "frame": {
+        "x": 2932,
+        "y": 3504,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_71",
+      "frame": {
+        "x": 3665,
+        "y": 3504,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_72",
+      "frame": {
+        "x": 4398,
+        "y": 3504,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_73",
+      "frame": {
+        "x": 5131,
+        "y": 3504,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_74",
+      "frame": {
+        "x": 5864,
+        "y": 3504,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_75",
+      "frame": {
+        "x": 6597,
+        "y": 3504,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_76",
+      "frame": {
+        "x": 7330,
+        "y": 3504,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_77",
+      "frame": {
+        "x": 0,
+        "y": 4088,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_78",
+      "frame": {
+        "x": 733,
+        "y": 4088,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_79",
+      "frame": {
+        "x": 1466,
+        "y": 4088,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_80",
+      "frame": {
+        "x": 2199,
+        "y": 4088,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_81",
+      "frame": {
+        "x": 2932,
+        "y": 4088,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_82",
+      "frame": {
+        "x": 3665,
+        "y": 4088,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_83",
+      "frame": {
+        "x": 4398,
+        "y": 4088,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_84",
+      "frame": {
+        "x": 5131,
+        "y": 4088,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_85",
+      "frame": {
+        "x": 5864,
+        "y": 4088,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_86",
+      "frame": {
+        "x": 6597,
+        "y": 4088,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_87",
+      "frame": {
+        "x": 7330,
+        "y": 4088,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_88",
+      "frame": {
+        "x": 0,
+        "y": 4672,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_89",
+      "frame": {
+        "x": 733,
+        "y": 4672,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_90",
+      "frame": {
+        "x": 1466,
+        "y": 4672,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_91",
+      "frame": {
+        "x": 2199,
+        "y": 4672,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_92",
+      "frame": {
+        "x": 2932,
+        "y": 4672,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_93",
+      "frame": {
+        "x": 3665,
+        "y": 4672,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_94",
+      "frame": {
+        "x": 4398,
+        "y": 4672,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_95",
+      "frame": {
+        "x": 5131,
+        "y": 4672,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_96",
+      "frame": {
+        "x": 5864,
+        "y": 4672,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_97",
+      "frame": {
+        "x": 6597,
+        "y": 4672,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_98",
+      "frame": {
+        "x": 7330,
+        "y": 4672,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_99",
+      "frame": {
+        "x": 0,
+        "y": 5256,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_100",
+      "frame": {
+        "x": 733,
+        "y": 5256,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_101",
+      "frame": {
+        "x": 1466,
+        "y": 5256,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_102",
+      "frame": {
+        "x": 2199,
+        "y": 5256,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_103",
+      "frame": {
+        "x": 2932,
+        "y": 5256,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_104",
+      "frame": {
+        "x": 3665,
+        "y": 5256,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_105",
+      "frame": {
+        "x": 4398,
+        "y": 5256,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_106",
+      "frame": {
+        "x": 5131,
+        "y": 5256,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_107",
+      "frame": {
+        "x": 5864,
+        "y": 5256,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_108",
+      "frame": {
+        "x": 6597,
+        "y": 5256,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_109",
+      "frame": {
+        "x": 7330,
+        "y": 5256,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_110",
+      "frame": {
+        "x": 0,
+        "y": 5840,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_111",
+      "frame": {
+        "x": 733,
+        "y": 5840,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_112",
+      "frame": {
+        "x": 1466,
+        "y": 5840,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_113",
+      "frame": {
+        "x": 2199,
+        "y": 5840,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_114",
+      "frame": {
+        "x": 2932,
+        "y": 5840,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_115",
+      "frame": {
+        "x": 3665,
+        "y": 5840,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_116",
+      "frame": {
+        "x": 4398,
+        "y": 5840,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_117",
+      "frame": {
+        "x": 5131,
+        "y": 5840,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_118",
+      "frame": {
+        "x": 5864,
+        "y": 5840,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_119",
+      "frame": {
+        "x": 6597,
+        "y": 5840,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_attack_120",
+      "frame": {
+        "x": 7330,
+        "y": 5840,
+        "w": 733,
+        "h": 584
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 733,
+        "h": 584
+      },
+      "sourceSize": {
+        "w": 733,
+        "h": 584
+      },
+      "duration": 42
+    }
+  ],
+  "meta": {
+    "app": "tools/video_to_spritesheet.py",
+    "version": "1.0",
+    "image": "crystal_golem_attack_spritesheet_half.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 8063,
+      "h": 6424
+    },
+    "scale": "1",
+    "frameTags": [
+      {
+        "name": "crystal_golem_attack",
+        "from": 0,
+        "to": 120,
+        "direction": "forward"
+      }
+    ],
+    "frameWidth": 733,
+    "frameHeight": 584,
+    "columns": 11,
+    "rows": 11,
+    "frameCount": 121,
+    "fps": 24.0
+  }
+}
