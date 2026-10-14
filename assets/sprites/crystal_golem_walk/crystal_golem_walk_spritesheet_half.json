@@ -1,0 +1,2691 @@
+{
+  "frames": [
+    {
+      "filename": "crystal_golem_walk_00",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_01",
+      "frame": {
+        "x": 524,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_02",
+      "frame": {
+        "x": 1048,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_03",
+      "frame": {
+        "x": 1572,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_04",
+      "frame": {
+        "x": 2096,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_05",
+      "frame": {
+        "x": 2620,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_06",
+      "frame": {
+        "x": 3144,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_07",
+      "frame": {
+        "x": 3668,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_08",
+      "frame": {
+        "x": 4192,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_09",
+      "frame": {
+        "x": 4716,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_10",
+      "frame": {
+        "x": 5240,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_11",
+      "frame": {
+        "x": 0,
+        "y": 400,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_12",
+      "frame": {
+        "x": 524,
+        "y": 400,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_13",
+      "frame": {
+        "x": 1048,
+        "y": 400,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_14",
+      "frame": {
+        "x": 1572,
+        "y": 400,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_15",
+      "frame": {
+        "x": 2096,
+        "y": 400,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_16",
+      "frame": {
+        "x": 2620,
+        "y": 400,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_17",
+      "frame": {
+        "x": 3144,
+        "y": 400,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_18",
+      "frame": {
+        "x": 3668,
+        "y": 400,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_19",
+      "frame": {
+        "x": 4192,
+        "y": 400,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_20",
+      "frame": {
+        "x": 4716,
+        "y": 400,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_21",
+      "frame": {
+        "x": 5240,
+        "y": 400,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_22",
+      "frame": {
+        "x": 0,
+        "y": 800,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_23",
+      "frame": {
+        "x": 524,
+        "y": 800,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_24",
+      "frame": {
+        "x": 1048,
+        "y": 800,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_25",
+      "frame": {
+        "x": 1572,
+        "y": 800,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_26",
+      "frame": {
+        "x": 2096,
+        "y": 800,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_27",
+      "frame": {
+        "x": 2620,
+        "y": 800,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_28",
+      "frame": {
+        "x": 3144,
+        "y": 800,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_29",
+      "frame": {
+        "x": 3668,
+        "y": 800,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_30",
+      "frame": {
+        "x": 4192,
+        "y": 800,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_31",
+      "frame": {
+        "x": 4716,
+        "y": 800,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_32",
+      "frame": {
+        "x": 5240,
+        "y": 800,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_33",
+      "frame": {
+        "x": 0,
+        "y": 1200,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_34",
+      "frame": {
+        "x": 524,
+        "y": 1200,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_35",
+      "frame": {
+        "x": 1048,
+        "y": 1200,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_36",
+      "frame": {
+        "x": 1572,
+        "y": 1200,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_37",
+      "frame": {
+        "x": 2096,
+        "y": 1200,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_38",
+      "frame": {
+        "x": 2620,
+        "y": 1200,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_39",
+      "frame": {
+        "x": 3144,
+        "y": 1200,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_40",
+      "frame": {
+        "x": 3668,
+        "y": 1200,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_41",
+      "frame": {
+        "x": 4192,
+        "y": 1200,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_42",
+      "frame": {
+        "x": 4716,
+        "y": 1200,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_43",
+      "frame": {
+        "x": 5240,
+        "y": 1200,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_44",
+      "frame": {
+        "x": 0,
+        "y": 1600,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_45",
+      "frame": {
+        "x": 524,
+        "y": 1600,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_46",
+      "frame": {
+        "x": 1048,
+        "y": 1600,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_47",
+      "frame": {
+        "x": 1572,
+        "y": 1600,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_48",
+      "frame": {
+        "x": 2096,
+        "y": 1600,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_49",
+      "frame": {
+        "x": 2620,
+        "y": 1600,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_50",
+      "frame": {
+        "x": 3144,
+        "y": 1600,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_51",
+      "frame": {
+        "x": 3668,
+        "y": 1600,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_52",
+      "frame": {
+        "x": 4192,
+        "y": 1600,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_53",
+      "frame": {
+        "x": 4716,
+        "y": 1600,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_54",
+      "frame": {
+        "x": 5240,
+        "y": 1600,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_55",
+      "frame": {
+        "x": 0,
+        "y": 2000,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_56",
+      "frame": {
+        "x": 524,
+        "y": 2000,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_57",
+      "frame": {
+        "x": 1048,
+        "y": 2000,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_58",
+      "frame": {
+        "x": 1572,
+        "y": 2000,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_59",
+      "frame": {
+        "x": 2096,
+        "y": 2000,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_60",
+      "frame": {
+        "x": 2620,
+        "y": 2000,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_61",
+      "frame": {
+        "x": 3144,
+        "y": 2000,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_62",
+      "frame": {
+        "x": 3668,
+        "y": 2000,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_63",
+      "frame": {
+        "x": 4192,
+        "y": 2000,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_64",
+      "frame": {
+        "x": 4716,
+        "y": 2000,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_65",
+      "frame": {
+        "x": 5240,
+        "y": 2000,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_66",
+      "frame": {
+        "x": 0,
+        "y": 2400,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_67",
+      "frame": {
+        "x": 524,
+        "y": 2400,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_68",
+      "frame": {
+        "x": 1048,
+        "y": 2400,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_69",
+      "frame": {
+        "x": 1572,
+        "y": 2400,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_70",
+      "frame": {
+        "x": 2096,
+        "y": 2400,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_71",
+      "frame": {
+        "x": 2620,
+        "y": 2400,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_72",
+      "frame": {
+        "x": 3144,
+        "y": 2400,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_73",
+      "frame": {
+        "x": 3668,
+        "y": 2400,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_74",
+      "frame": {
+        "x": 4192,
+        "y": 2400,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_75",
+      "frame": {
+        "x": 4716,
+        "y": 2400,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_76",
+      "frame": {
+        "x": 5240,
+        "y": 2400,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_77",
+      "frame": {
+        "x": 0,
+        "y": 2800,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_78",
+      "frame": {
+        "x": 524,
+        "y": 2800,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_79",
+      "frame": {
+        "x": 1048,
+        "y": 2800,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_80",
+      "frame": {
+        "x": 1572,
+        "y": 2800,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_81",
+      "frame": {
+        "x": 2096,
+        "y": 2800,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_82",
+      "frame": {
+        "x": 2620,
+        "y": 2800,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_83",
+      "frame": {
+        "x": 3144,
+        "y": 2800,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_84",
+      "frame": {
+        "x": 3668,
+        "y": 2800,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_85",
+      "frame": {
+        "x": 4192,
+        "y": 2800,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_86",
+      "frame": {
+        "x": 4716,
+        "y": 2800,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_87",
+      "frame": {
+        "x": 5240,
+        "y": 2800,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_88",
+      "frame": {
+        "x": 0,
+        "y": 3200,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_89",
+      "frame": {
+        "x": 524,
+        "y": 3200,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_90",
+      "frame": {
+        "x": 1048,
+        "y": 3200,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_91",
+      "frame": {
+        "x": 1572,
+        "y": 3200,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_92",
+      "frame": {
+        "x": 2096,
+        "y": 3200,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_93",
+      "frame": {
+        "x": 2620,
+        "y": 3200,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_94",
+      "frame": {
+        "x": 3144,
+        "y": 3200,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_95",
+      "frame": {
+        "x": 3668,
+        "y": 3200,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_96",
+      "frame": {
+        "x": 4192,
+        "y": 3200,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_97",
+      "frame": {
+        "x": 4716,
+        "y": 3200,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_98",
+      "frame": {
+        "x": 5240,
+        "y": 3200,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_99",
+      "frame": {
+        "x": 0,
+        "y": 3600,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_100",
+      "frame": {
+        "x": 524,
+        "y": 3600,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_101",
+      "frame": {
+        "x": 1048,
+        "y": 3600,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_102",
+      "frame": {
+        "x": 1572,
+        "y": 3600,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_103",
+      "frame": {
+        "x": 2096,
+        "y": 3600,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_104",
+      "frame": {
+        "x": 2620,
+        "y": 3600,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_105",
+      "frame": {
+        "x": 3144,
+        "y": 3600,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_106",
+      "frame": {
+        "x": 3668,
+        "y": 3600,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_107",
+      "frame": {
+        "x": 4192,
+        "y": 3600,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_108",
+      "frame": {
+        "x": 4716,
+        "y": 3600,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_109",
+      "frame": {
+        "x": 5240,
+        "y": 3600,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_110",
+      "frame": {
+        "x": 0,
+        "y": 4000,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_111",
+      "frame": {
+        "x": 524,
+        "y": 4000,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_112",
+      "frame": {
+        "x": 1048,
+        "y": 4000,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_113",
+      "frame": {
+        "x": 1572,
+        "y": 4000,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_114",
+      "frame": {
+        "x": 2096,
+        "y": 4000,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_115",
+      "frame": {
+        "x": 2620,
+        "y": 4000,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_116",
+      "frame": {
+        "x": 3144,
+        "y": 4000,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_117",
+      "frame": {
+        "x": 3668,
+        "y": 4000,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_118",
+      "frame": {
+        "x": 4192,
+        "y": 4000,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_119",
+      "frame": {
+        "x": 4716,
+        "y": 4000,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_golem_walk_120",
+      "frame": {
+        "x": 5240,
+        "y": 4000,
+        "w": 524,
+        "h": 400
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 524,
+        "h": 400
+      },
+      "sourceSize": {
+        "w": 524,
+        "h": 400
+      },
+      "duration": 42
+    }
+  ],
+  "meta": {
+    "app": "tools/video_to_spritesheet.py",
+    "version": "1.0",
+    "image": "crystal_golem_walk_spritesheet_half.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 5764,
+      "h": 4400
+    },
+    "scale": "1",
+    "frameTags": [
+      {
+        "name": "crystal_golem_walk",
+        "from": 0,
+        "to": 120,
+        "direction": "forward"
+      }
+    ],
+    "frameWidth": 524,
+    "frameHeight": 400,
+    "columns": 11,
+    "rows": 11,
+    "frameCount": 121,
+    "fps": 24.0
+  }
+}

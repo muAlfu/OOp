@@ -106,6 +106,15 @@ How assets/sprites was made (all clips share one 1080x756 canvas):
     python3 tools/video_to_spritesheet.py Enemy_Crystal_boom.MP4 assets/sprites/enemy_crystal_boom \
         --name enemy_crystal_boom --rect 116 33 1052 741 --columns 11 --keep-pocket 320 515 610 610 \
         --keep-pocket 620 50 1010 480 --glow-cores --half --no-full --preview
+    # the same creature walking, exported at 960x960: its first frame is the boom's first frame, smaller, so the
+    # video is scaled x1.6333 (960 -> 1568) to the boom's size, where the boom's (x, y) is at (x + 199, y + 399). The
+    # canvas keeps the boom's centre (x 584, here 783) and reaches 24 px below its bottom edge (741, here 1140) for
+    # the lowest steps, so a custom pivot at X 0.5, Y 24/800 lines the two up. Nothing in the walk is see-through
+    # background, so every enclosed white stays (the shine on its toes and rocks, its crystals' white facets); in
+    # its lightning only the white middle of the bolts is solid, and the air between floating sparks is not
+    python3 tools/video_to_spritesheet.py Crystal_Golem_walks_.MP4 assets/sprites/crystal_golem_walk \
+        --name crystal_golem_walk --scale 1.6333333 --rect 259 364 1307 1164 --columns 11 --keep-enclosed \
+        --glow-cores --core-width 7 --half --no-full --preview
 """
 import argparse
 import json
@@ -133,6 +142,9 @@ FLASH_FEATHER = 12     # --flash: px over which the opening flash fades into its
 SHADING_SURFACE = 30   # --shading: pixels at least this far from the background are the effect's surface ...
 SHADING_REACH = 4      # ... a pixel lighter than the surface within this many px is part of a white line ...
 SHADING_LINE = 0.5     # ... by as much as it is lighter beyond this share of the surface's shade
+GLOW_LIGHT = 150       # --core-width: coloured glow is at least this light (luma) ...
+GLOW_SPREAD = 50       # ... and this saturated (brightest minus darkest channel) ...
+GLOW_RIM = 0.2         # ... and a glow's white core has at least this share of it right around it
 EIGHT = np.ones((3, 3), bool)
 
 
@@ -264,6 +276,27 @@ def flash_rim(hollow, weight):
     return np.where(hollow, np.clip((reach - depth) / FLASH_FEATHER + 0.5, 0, 1), 0.0)
 
 
+def glow_core_lines(white, near_bg, rgb, width):
+    """The pieces of white that are the white-hot middle of a glowing line, such as a lightning bolt (--core-width):
+    at most width px across, with coloured glow right around them. Wider white, or white that fades out through
+    pale glow, such as the air between floating sparks, is not a core."""
+    luma = rgb.astype(np.float32) @ np.array([0.299, 0.587, 0.114], np.float32)
+    glow = (luma >= GLOW_LIGHT) & (rgb.max(axis=2).astype(np.int16) - rgb.min(axis=2) >= GLOW_SPREAD)
+    labels, _ = ndi.label(white, structure=EIGHT)
+    cores = np.zeros_like(white)
+    for index, region in enumerate(ndi.find_objects(labels), start=1):
+        y, x = region
+        y = slice(max(y.start - 4, 0), y.stop + 4)
+        x = slice(max(x.start - 4, 0), x.stop + 4)
+        blob = labels[y, x] == index
+        if 2 * ndi.distance_transform_edt(np.pad(blob, 1)).max() > width:
+            continue
+        ring = ndi.binary_dilation(blob, EIGHT, iterations=3) & ~ndi.binary_dilation(blob, EIGHT) & ~near_bg[y, x]
+        if ring.any() and glow[y, x][ring].mean() >= GLOW_RIM:
+            cores[y, x] |= blob
+    return cores
+
+
 def drop_specks(alpha, faint=6 / 255, max_area=16, max_peak=0.15):
     """Clear invisible matting noise: near-zero alpha and tiny faint islands off the body."""
     alpha[alpha < faint] = 0.0
@@ -305,7 +338,8 @@ def disk(radius):
 
 
 def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=False, flash=0.0, faint=0,
-              keep_white=(), shading=False, shine=False, keep_pockets=(), thin_lines=False, glow_cores=False):
+              keep_white=(), shading=False, shine=False, keep_pockets=(), thin_lines=False, glow_cores=False,
+              core_width=0):
     """Return an RGBA frame with the background removed.
 
     cut_points are (x, y) spots, in this frame's coordinates, where any enclosed
@@ -331,7 +365,9 @@ def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=
     that lie wholly in the soft edge, such as whiskers (see min_alpha). glow_cores=True is
     for a character with a glow, such as lightning on crystals: white the cut leaves
     inside the character is the glow's white-hot core and stays solid, and the pale glow
-    around it turns solid toward it instead of fading like dust.
+    around it turns solid toward it instead of fading like dust. core_width > 0 narrows
+    that to the white middle of glowing lines, such as lightning bolts (see glow_core_lines):
+    other white left inside, such as the air between sparks, fades with its glow as before.
     """
     bg = background_colour(rgb)
     dist = colour_distance(rgb, bg)
@@ -386,6 +422,8 @@ def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=
             print(f"  --cut-region at ({x},{y}) is not on a small pale patch; skipped")
     if glow_cores and keep is None:
         keep = near_bg & ~known_bg
+        if core_width:
+            keep = glow_core_lines(keep, near_bg, rgb, core_width)
 
     from_bg = ndi.distance_transform_edt(~known_bg)
     band = ~known_bg & (from_bg <= EDGE_BAND)
@@ -409,9 +447,10 @@ def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=
     # background so they do not turn into solid white patches on a dark backdrop.
     cap = dist / TRAIL_LIGHTNESS
     if keep is not None and keep.any():
-        # in an effect, pale glow between the background and a white-hot part turns solid toward that part
+        # in an effect, pale glow between the background and a white-hot part turns solid toward that part;
+        # white that is not such a part itself (the air between sparks, with --core-width) stays see-through
         from_keep = ndi.distance_transform_edt(~keep)
-        cap = np.maximum(cap, from_bg / np.maximum(from_bg + from_keep, 1e-6))
+        cap = np.maximum(cap, np.where(near_bg, 0.0, from_bg / np.maximum(from_bg + from_keep, 1e-6)))
     alpha[pale] = np.minimum(alpha[pale], cap[pale])
     # Those trails also carry the video's 8x8 compression blocks; soften them so the
     # edge does not stair-step. Crisp outlines (the thin edge band) are untouched.
@@ -671,6 +710,10 @@ def main():
     parser.add_argument("--glow-cores", action="store_true",
                         help="the character has a glow, such as lightning on crystals: white left inside it is the "
                              "glow's white-hot core and stays solid, and the glow around it turns solid toward it")
+    parser.add_argument("--core-width", type=int, default=0, metavar="PX",
+                        help="with --glow-cores: only white at most PX px across with coloured glow right around it "
+                             "(the white middle of a lightning bolt) is a core; wider white, or white that fades out "
+                             "through pale glow (the air between floating sparks), stays see-through")
     parser.add_argument("--thin-lines", action="store_true",
                         help="keep thin dark lines that lie wholly in the soft edge, such as whiskers: no pixel is "
                              "made more see-through than its colour in the video allows")
@@ -731,6 +774,8 @@ def main():
         print(f"  white flash: solid up to frame {flash_from}, opening up until it is gone at frame {flash_to}")
     if (args.faint_ring or args.keep_white or args.shading) and not args.effect:
         raise SystemExit("--faint-ring, --keep-white and --shading need --effect")
+    if args.core_width and not args.glow_cores:
+        raise SystemExit("--core-width needs --glow-cores")
 
     os.makedirs(args.out_dir, exist_ok=True)
     cells = []
@@ -742,7 +787,7 @@ def main():
                          [(x0 - left, y0 - top, x1 - left, y1 - top) for x0, y0, x1, y1 in args.keep_white],
                          args.shading, args.shine,
                          [(x0 - left, y0 - top, x1 - left, y1 - top) for x0, y0, x1, y1 in args.keep_pocket],
-                         args.thin_lines, args.glow_cores)
+                         args.thin_lines, args.glow_cores, args.core_width)
         sides = {side for side, hits in contact.items() if i in hits} | set(args.fade_side)
         if sides:
             cell = fade_edges(cell, rect, width, height, sides, args.edge_fade)
