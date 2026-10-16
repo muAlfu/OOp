@@ -134,6 +134,12 @@ How assets/sprites was made (all clips share one 1080x756 canvas):
         --name crystal_golem_death --scale 1.4518519 --rect -2 0 1568 1568 --columns 10 --fade-side left \
         --fade-side right --fade-side top --fade-side bottom --keep-enclosed --glow-cores --core-width 7 \
         --glow-from 110 --sheet-frames 100 --half --no-full --preview
+    # a second enemy, the Vexbat, on its own canvas at its video's own scale (960x960, 24 fps), centred on the bat's
+    # head (x 525, y 477 on average: it bobs as it flaps) for the Center pivot. The light highlight lines along its
+    # wings' edges touch the background at the tips, so --shine keeps them solid, and --haze cuts the light smudges
+    # the compression left in the corners between the wings' parts
+    python3 tools/video_to_spritesheet.py Vexbat_idle_.MP4 assets/sprites/vexbat_idle --name vexbat_idle \
+        --rect 23 263 1027 691 --columns 8 --shine --haze 30 --half --no-full --preview
 """
 import argparse
 import json
@@ -154,6 +160,7 @@ TRAIL_LIGHTNESS = 48   # pale pixels touching the background (dust, motion blur)
 TRAIL_REACH = 48       # ... up to this many px from the background
 TRAIL_SOFTEN = 1.5     # gaussian sigma (px) applied to the alpha of those trails
 SHINE_GAP_DARK = 0.75  # --shine: a pocket's ring must be at least this dark to be cut (a sword's shine is half light)
+HAZE_WIDTH = 2         # --haze: pale areas wider than 2x this + 1 px are haze; thinner ones are lines (a highlight)
 EFFECT_SEAL = 6        # --effect: white closed in by the effect except for gaps narrower than 2x this is inside it
 EFFECT_THIN = 40       # --effect: white inside the effect up to 2x this across is its white-hot middle and stays ...
 EFFECT_SPARKLE = 135   # ... and so does wider white ringed by colour at least this strong (a sparkle on a shard)
@@ -362,7 +369,7 @@ def disk(radius):
 
 def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=False, flash=0.0, faint=0,
               keep_white=(), shading=False, shine=False, keep_pockets=(), thin_lines=False, glow_cores=False,
-              core_width=0):
+              core_width=0, haze=0):
     """Return an RGBA frame with the background removed.
 
     cut_points are (x, y) spots, in this frame's coordinates, where any enclosed
@@ -391,6 +398,10 @@ def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=
     around it turns solid toward it instead of fading like dust. core_width > 0 narrows
     that to the white middle of glowing lines, such as lightning bolts (see glow_core_lines):
     other white left inside, such as the air between sparks, fades with its glow as before.
+    haze > 0 also takes pale areas within haze of the background colour that touch the
+    background and are wider than a thin line as background: the video's compression leaves
+    such smudges in the corners between a wing's parts, while thin highlight lines along the
+    character's edges stay (with shine=True, solid).
     """
     bg = background_colour(rgb)
     dist = colour_distance(rgb, bg)
@@ -429,6 +440,15 @@ def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=
                 reached = np.unique(labels[held & gaps])
                 gaps &= ~np.isin(labels, reached[reached > 0])
             known_bg = outer_bg | gaps
+        if haze:
+            pale = ~known_bg & (dist <= haze)
+            wide = ndi.binary_opening(pale, structure=disk(HAZE_WIDTH))
+            labels, _ = ndi.label(wide, structure=EIGHT)
+            touched = np.unique(labels[ndi.binary_dilation(known_bg, EIGHT) & wide])
+            smudge = np.isin(labels, touched[touched > 0])
+            # the opening also trims the smudge's own tapering tips (into the corner); grow it back over them
+            smudge = ndi.binary_dilation(smudge, EIGHT, iterations=HAZE_WIDTH + 1, mask=pale)
+            known_bg = known_bg | smudge
     if cut_points:
         labels, _ = ndi.label(near_bg & ~known_bg, structure=EIGHT)
         for x, y in cut_points:
@@ -782,6 +802,11 @@ def main():
                              "that fills the video: what the background reaches through light colour is keyed as "
                              "light, see-through as faint as it looks, and what dark outlines wall in stays solid "
                              "(--core-width also keeps the white middle of thin glowing lines solid)")
+    parser.add_argument("--haze", type=int, default=0, metavar="DIST",
+                        help="pale smudges the video's compression leaves next to the character, such as in the "
+                             "corners between a wing's parts: pale areas within DIST of the background colour that "
+                             "touch the background and are wider than a thin line are background (thin highlight "
+                             "lines along the edges stay)")
     parser.add_argument("--thin-lines", action="store_true",
                         help="keep thin dark lines that lie wholly in the soft edge, such as whiskers: no pixel is "
                              "made more see-through than its colour in the video allows")
@@ -863,7 +888,7 @@ def main():
                              [(x0 - left, y0 - top, x1 - left, y1 - top) for x0, y0, x1, y1 in args.keep_white],
                              args.shading, args.shine,
                              [(x0 - left, y0 - top, x1 - left, y1 - top) for x0, y0, x1, y1 in args.keep_pocket],
-                             args.thin_lines, args.glow_cores, args.core_width)
+                             args.thin_lines, args.glow_cores, args.core_width, args.haze)
         sides = {side for side, hits in contact.items() if i in hits} | set(args.fade_side)
         if sides:
             cell = fade_edges(cell, rect, width, height, sides, args.edge_fade)

@@ -1,0 +1,1635 @@
+{
+  "frames": [
+    {
+      "filename": "vexbat_idle_00",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_01",
+      "frame": {
+        "x": 502,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_02",
+      "frame": {
+        "x": 1004,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_03",
+      "frame": {
+        "x": 1506,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_04",
+      "frame": {
+        "x": 2008,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_05",
+      "frame": {
+        "x": 2510,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_06",
+      "frame": {
+        "x": 3012,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_07",
+      "frame": {
+        "x": 3514,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_08",
+      "frame": {
+        "x": 0,
+        "y": 214,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_09",
+      "frame": {
+        "x": 502,
+        "y": 214,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_10",
+      "frame": {
+        "x": 1004,
+        "y": 214,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_11",
+      "frame": {
+        "x": 1506,
+        "y": 214,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_12",
+      "frame": {
+        "x": 2008,
+        "y": 214,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_13",
+      "frame": {
+        "x": 2510,
+        "y": 214,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_14",
+      "frame": {
+        "x": 3012,
+        "y": 214,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_15",
+      "frame": {
+        "x": 3514,
+        "y": 214,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_16",
+      "frame": {
+        "x": 0,
+        "y": 428,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_17",
+      "frame": {
+        "x": 502,
+        "y": 428,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_18",
+      "frame": {
+        "x": 1004,
+        "y": 428,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_19",
+      "frame": {
+        "x": 1506,
+        "y": 428,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_20",
+      "frame": {
+        "x": 2008,
+        "y": 428,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_21",
+      "frame": {
+        "x": 2510,
+        "y": 428,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_22",
+      "frame": {
+        "x": 3012,
+        "y": 428,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_23",
+      "frame": {
+        "x": 3514,
+        "y": 428,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_24",
+      "frame": {
+        "x": 0,
+        "y": 642,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_25",
+      "frame": {
+        "x": 502,
+        "y": 642,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_26",
+      "frame": {
+        "x": 1004,
+        "y": 642,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_27",
+      "frame": {
+        "x": 1506,
+        "y": 642,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_28",
+      "frame": {
+        "x": 2008,
+        "y": 642,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_29",
+      "frame": {
+        "x": 2510,
+        "y": 642,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_30",
+      "frame": {
+        "x": 3012,
+        "y": 642,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_31",
+      "frame": {
+        "x": 3514,
+        "y": 642,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_32",
+      "frame": {
+        "x": 0,
+        "y": 856,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_33",
+      "frame": {
+        "x": 502,
+        "y": 856,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_34",
+      "frame": {
+        "x": 1004,
+        "y": 856,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_35",
+      "frame": {
+        "x": 1506,
+        "y": 856,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_36",
+      "frame": {
+        "x": 2008,
+        "y": 856,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_37",
+      "frame": {
+        "x": 2510,
+        "y": 856,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_38",
+      "frame": {
+        "x": 3012,
+        "y": 856,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_39",
+      "frame": {
+        "x": 3514,
+        "y": 856,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_40",
+      "frame": {
+        "x": 0,
+        "y": 1070,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_41",
+      "frame": {
+        "x": 502,
+        "y": 1070,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_42",
+      "frame": {
+        "x": 1004,
+        "y": 1070,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_43",
+      "frame": {
+        "x": 1506,
+        "y": 1070,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_44",
+      "frame": {
+        "x": 2008,
+        "y": 1070,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_45",
+      "frame": {
+        "x": 2510,
+        "y": 1070,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_46",
+      "frame": {
+        "x": 3012,
+        "y": 1070,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_47",
+      "frame": {
+        "x": 3514,
+        "y": 1070,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_48",
+      "frame": {
+        "x": 0,
+        "y": 1284,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_49",
+      "frame": {
+        "x": 502,
+        "y": 1284,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_50",
+      "frame": {
+        "x": 1004,
+        "y": 1284,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_51",
+      "frame": {
+        "x": 1506,
+        "y": 1284,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_52",
+      "frame": {
+        "x": 2008,
+        "y": 1284,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_53",
+      "frame": {
+        "x": 2510,
+        "y": 1284,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_54",
+      "frame": {
+        "x": 3012,
+        "y": 1284,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_55",
+      "frame": {
+        "x": 3514,
+        "y": 1284,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_56",
+      "frame": {
+        "x": 0,
+        "y": 1498,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_57",
+      "frame": {
+        "x": 502,
+        "y": 1498,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_58",
+      "frame": {
+        "x": 1004,
+        "y": 1498,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_59",
+      "frame": {
+        "x": 1506,
+        "y": 1498,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_60",
+      "frame": {
+        "x": 2008,
+        "y": 1498,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_61",
+      "frame": {
+        "x": 2510,
+        "y": 1498,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_62",
+      "frame": {
+        "x": 3012,
+        "y": 1498,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_63",
+      "frame": {
+        "x": 3514,
+        "y": 1498,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_64",
+      "frame": {
+        "x": 0,
+        "y": 1712,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_65",
+      "frame": {
+        "x": 502,
+        "y": 1712,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_66",
+      "frame": {
+        "x": 1004,
+        "y": 1712,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_67",
+      "frame": {
+        "x": 1506,
+        "y": 1712,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_68",
+      "frame": {
+        "x": 2008,
+        "y": 1712,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_69",
+      "frame": {
+        "x": 2510,
+        "y": 1712,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_70",
+      "frame": {
+        "x": 3012,
+        "y": 1712,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_71",
+      "frame": {
+        "x": 3514,
+        "y": 1712,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_idle_72",
+      "frame": {
+        "x": 0,
+        "y": 1926,
+        "w": 502,
+        "h": 214
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 502,
+        "h": 214
+      },
+      "sourceSize": {
+        "w": 502,
+        "h": 214
+      },
+      "duration": 42
+    }
+  ],
+  "meta": {
+    "app": "tools/video_to_spritesheet.py",
+    "version": "1.0",
+    "image": "vexbat_idle_spritesheet_half.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 4016,
+      "h": 2140
+    },
+    "scale": "1",
+    "frameTags": [
+      {
+        "name": "vexbat_idle",
+        "from": 0,
+        "to": 72,
+        "direction": "forward"
+      }
+    ],
+    "frameWidth": 502,
+    "frameHeight": 214,
+    "columns": 8,
+    "rows": 10,
+    "frameCount": 73,
+    "fps": 24.0
+  }
+}
