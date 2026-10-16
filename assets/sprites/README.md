@@ -149,6 +149,7 @@ own scale (1004×428, half 502×214).
 | Animation | Frames | Grid | Full sheet (frame 1004×428) | Half sheet (frame 502×214) |
 | --- | --- | --- | --- | --- |
 | `vexbat_idle/` | 73, **24 fps** | 8 columns × 10 rows (last 7 cells empty) | not made (would be 8032×4280) | 4016×2140 |
+| `vexbat_attack/` | 73, **24 fps** | 9 columns × 9 rows (last 8 cells empty) | not made (would be 9288×8532) | 4644×4266, **frame 516×474** |
 
 The bat hovers in place, flapping, and bobs up and down about 56 px as it flaps. The canvas is centred on the
 head's average position, so use the `Center` pivot: the head stays around the sprite's position and the bob plays
@@ -156,6 +157,19 @@ as in the video. The whole clip, looped, jumps a little from the last frame back
 frames, two flaps) loop without a jump, so use those for a looping idle. The white-hot middle of the eyes, the
 fangs and the light highlight lines along the wings' edges stay solid; the light smudges the video's compression
 left in the corners between the wings' parts (by the claws on the wings and between the feet) are cut out.
+
+The attack was exported the same way, and its first frame is the idle's first frame. Its canvas is bigger
+(1032×948, x 9–1041, y 3–951; half 516×474), because the bat draws back, swoops and strikes down to the right, but
+it has the same centre as the idle's (x 525, y 477 of the video), so with the `Center` pivot the attack starts
+exactly where the idle has the bat. It draws back (frames 10–30, getting smaller as if further away), spreads its
+wings and swoops (31–50), and strikes with its claws in frames 51–55, where sparks fly from them (the hit is at
+frame 52, counting from 0); then it flaps back up. It ends about 60 px to the right of and 100 px below where it
+started (30 and 50 px at half size), so going back to the idle the bat jumps, unless the game moves it. In frames
+51, 59–61 and 66–69 its wing tips run past the right edge of the video, so that part of the wing was never
+recorded; the last 16 px there fade out instead of ending in a straight cut. The sparks' soft glow is see-through
+and their white-hot middle solid; the eyes, the fangs and the highlight lines along the wings' edges stay; the
+background in the slivers between an ear and a wing (frames 25–32) and between the claws (frames 55, 59 and 67),
+tinted by the video's compression, is cut by hand.
 
 - Frames go left to right, top to bottom: frame `i` is at column `i % columns`, row `i / columns`.
 - Play at 30 fps (33 ms per frame), except the rat clips after the idle (walk, cast, projectile, explosion, buff,
@@ -186,16 +200,15 @@ left in the corners between the wings' parts (by the claws on the wings and betw
 1. Drop the PNG into `Assets`.
 2. Inspector: **Texture Type** `Sprite (2D and UI)`, **Sprite Mode** `Multiple`, **Max Size** at least the sheet's
    larger side: `4096` for the 3780-wide half sheets and `vexbat_idle`, `8192` for `final_heavy_claw_attack`,
-   `jump_hallow`,
-   `rat_under_magic_idle`, `rat_under_magic_cast_projectile`, `rat_under_magic_impact_explosion`,
+   `jump_hallow`, `rat_under_magic_idle`, `rat_under_magic_cast_projectile`, `rat_under_magic_impact_explosion`,
    `rat_under_magic_cast_buff`, `enemy_crystal_boom`, `crystal_golem_walk`, `crystal_golem_attack`, both
-   `crystal_golem_death` sheets and the full sheets. The default 2048 shrinks the sheet. Apply.
+   `crystal_golem_death` sheets, `vexbat_attack` and the full sheets. The default 2048 shrinks the sheet. Apply.
 3. **Sprite Editor → Slice**: **Type** `Grid By Cell Size`, **Pixel Size** `540 × 378` (half) or `1080 × 756` (full),
    except `jump_hallow`: `540 × 426`, the rat idle: `356 × 408`, the rat walk: `418 × 368`, the rat cast:
    `566 × 406`, the projectile: `456 × 188`, the explosion: `540 × 540`, the buff: `544 × 434`, the aura: `396 × 420`,
    the healing: `312 × 420`, the magic circle: `540 × 188`, the soldier rat: `330 × 240`, the crystal enemy's boom:
-   `468 × 354`, its walk: `524 × 400`, its attack: `733 × 584` and its death: `785 × 784`, and the Vexbat:
-   `502 × 214`. **Pivot** `Bottom` (the projectile: `Custom Pivot` X 0.82, Y 0.47; the explosion, the magic circle
+   `468 × 354`, its walk: `524 × 400`, its attack: `733 × 584` and its death: `785 × 784`, and the Vexbat's idle:
+   `502 × 214` and its attack: `516 × 474`. **Pivot** `Bottom` (the projectile: `Custom Pivot` X 0.82, Y 0.47; the explosion, the magic circle
    and the Vexbat: `Center`; the aura: `Custom Pivot` X 0.5, Y 0.0595; the healing: `Custom Pivot` X 0.5, Y 0.0786;
    the crystal golem's walk: `Custom Pivot` X 0.5, Y 0.03, its attack: `Custom Pivot` X 0.5341, Y 0.125, and its
    death: `Custom Pivot` X 0.5, Y 0.273). Slice, then Apply. Empty cells at the end are skipped.

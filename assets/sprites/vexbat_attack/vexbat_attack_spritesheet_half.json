@@ -1,0 +1,1635 @@
+{
+  "frames": [
+    {
+      "filename": "vexbat_attack_00",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_01",
+      "frame": {
+        "x": 516,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_02",
+      "frame": {
+        "x": 1032,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_03",
+      "frame": {
+        "x": 1548,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_04",
+      "frame": {
+        "x": 2064,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_05",
+      "frame": {
+        "x": 2580,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_06",
+      "frame": {
+        "x": 3096,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_07",
+      "frame": {
+        "x": 3612,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_08",
+      "frame": {
+        "x": 4128,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_09",
+      "frame": {
+        "x": 0,
+        "y": 474,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_10",
+      "frame": {
+        "x": 516,
+        "y": 474,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_11",
+      "frame": {
+        "x": 1032,
+        "y": 474,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_12",
+      "frame": {
+        "x": 1548,
+        "y": 474,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_13",
+      "frame": {
+        "x": 2064,
+        "y": 474,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_14",
+      "frame": {
+        "x": 2580,
+        "y": 474,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_15",
+      "frame": {
+        "x": 3096,
+        "y": 474,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_16",
+      "frame": {
+        "x": 3612,
+        "y": 474,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_17",
+      "frame": {
+        "x": 4128,
+        "y": 474,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_18",
+      "frame": {
+        "x": 0,
+        "y": 948,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_19",
+      "frame": {
+        "x": 516,
+        "y": 948,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_20",
+      "frame": {
+        "x": 1032,
+        "y": 948,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_21",
+      "frame": {
+        "x": 1548,
+        "y": 948,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_22",
+      "frame": {
+        "x": 2064,
+        "y": 948,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_23",
+      "frame": {
+        "x": 2580,
+        "y": 948,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_24",
+      "frame": {
+        "x": 3096,
+        "y": 948,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_25",
+      "frame": {
+        "x": 3612,
+        "y": 948,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_26",
+      "frame": {
+        "x": 4128,
+        "y": 948,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_27",
+      "frame": {
+        "x": 0,
+        "y": 1422,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_28",
+      "frame": {
+        "x": 516,
+        "y": 1422,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_29",
+      "frame": {
+        "x": 1032,
+        "y": 1422,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_30",
+      "frame": {
+        "x": 1548,
+        "y": 1422,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_31",
+      "frame": {
+        "x": 2064,
+        "y": 1422,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_32",
+      "frame": {
+        "x": 2580,
+        "y": 1422,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_33",
+      "frame": {
+        "x": 3096,
+        "y": 1422,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_34",
+      "frame": {
+        "x": 3612,
+        "y": 1422,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_35",
+      "frame": {
+        "x": 4128,
+        "y": 1422,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_36",
+      "frame": {
+        "x": 0,
+        "y": 1896,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_37",
+      "frame": {
+        "x": 516,
+        "y": 1896,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_38",
+      "frame": {
+        "x": 1032,
+        "y": 1896,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_39",
+      "frame": {
+        "x": 1548,
+        "y": 1896,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_40",
+      "frame": {
+        "x": 2064,
+        "y": 1896,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_41",
+      "frame": {
+        "x": 2580,
+        "y": 1896,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_42",
+      "frame": {
+        "x": 3096,
+        "y": 1896,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_43",
+      "frame": {
+        "x": 3612,
+        "y": 1896,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_44",
+      "frame": {
+        "x": 4128,
+        "y": 1896,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_45",
+      "frame": {
+        "x": 0,
+        "y": 2370,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_46",
+      "frame": {
+        "x": 516,
+        "y": 2370,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_47",
+      "frame": {
+        "x": 1032,
+        "y": 2370,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_48",
+      "frame": {
+        "x": 1548,
+        "y": 2370,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_49",
+      "frame": {
+        "x": 2064,
+        "y": 2370,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_50",
+      "frame": {
+        "x": 2580,
+        "y": 2370,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_51",
+      "frame": {
+        "x": 3096,
+        "y": 2370,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_52",
+      "frame": {
+        "x": 3612,
+        "y": 2370,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_53",
+      "frame": {
+        "x": 4128,
+        "y": 2370,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_54",
+      "frame": {
+        "x": 0,
+        "y": 2844,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_55",
+      "frame": {
+        "x": 516,
+        "y": 2844,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_56",
+      "frame": {
+        "x": 1032,
+        "y": 2844,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_57",
+      "frame": {
+        "x": 1548,
+        "y": 2844,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_58",
+      "frame": {
+        "x": 2064,
+        "y": 2844,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_59",
+      "frame": {
+        "x": 2580,
+        "y": 2844,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_60",
+      "frame": {
+        "x": 3096,
+        "y": 2844,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_61",
+      "frame": {
+        "x": 3612,
+        "y": 2844,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_62",
+      "frame": {
+        "x": 4128,
+        "y": 2844,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_63",
+      "frame": {
+        "x": 0,
+        "y": 3318,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_64",
+      "frame": {
+        "x": 516,
+        "y": 3318,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_65",
+      "frame": {
+        "x": 1032,
+        "y": 3318,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_66",
+      "frame": {
+        "x": 1548,
+        "y": 3318,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_67",
+      "frame": {
+        "x": 2064,
+        "y": 3318,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_68",
+      "frame": {
+        "x": 2580,
+        "y": 3318,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_69",
+      "frame": {
+        "x": 3096,
+        "y": 3318,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_70",
+      "frame": {
+        "x": 3612,
+        "y": 3318,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_71",
+      "frame": {
+        "x": 4128,
+        "y": 3318,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    },
+    {
+      "filename": "vexbat_attack_72",
+      "frame": {
+        "x": 0,
+        "y": 3792,
+        "w": 516,
+        "h": 474
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 516,
+        "h": 474
+      },
+      "sourceSize": {
+        "w": 516,
+        "h": 474
+      },
+      "duration": 42
+    }
+  ],
+  "meta": {
+    "app": "tools/video_to_spritesheet.py",
+    "version": "1.0",
+    "image": "vexbat_attack_spritesheet_half.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 4644,
+      "h": 4266
+    },
+    "scale": "1",
+    "frameTags": [
+      {
+        "name": "vexbat_attack",
+        "from": 0,
+        "to": 72,
+        "direction": "forward"
+      }
+    ],
+    "frameWidth": 516,
+    "frameHeight": 474,
+    "columns": 9,
+    "rows": 9,
+    "frameCount": 73,
+    "fps": 24.0
+  }
+}
