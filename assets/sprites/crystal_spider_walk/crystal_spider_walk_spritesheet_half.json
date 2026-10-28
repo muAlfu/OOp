@@ -1,0 +1,2163 @@
+{
+  "frames": [
+    {
+      "filename": "crystal_spider_walk_00",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_01",
+      "frame": {
+        "x": 373,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_02",
+      "frame": {
+        "x": 746,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_03",
+      "frame": {
+        "x": 1119,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_04",
+      "frame": {
+        "x": 1492,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_05",
+      "frame": {
+        "x": 1865,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_06",
+      "frame": {
+        "x": 2238,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_07",
+      "frame": {
+        "x": 2611,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_08",
+      "frame": {
+        "x": 2984,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_09",
+      "frame": {
+        "x": 3357,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_10",
+      "frame": {
+        "x": 0,
+        "y": 279,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_11",
+      "frame": {
+        "x": 373,
+        "y": 279,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_12",
+      "frame": {
+        "x": 746,
+        "y": 279,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_13",
+      "frame": {
+        "x": 1119,
+        "y": 279,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_14",
+      "frame": {
+        "x": 1492,
+        "y": 279,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_15",
+      "frame": {
+        "x": 1865,
+        "y": 279,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_16",
+      "frame": {
+        "x": 2238,
+        "y": 279,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_17",
+      "frame": {
+        "x": 2611,
+        "y": 279,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_18",
+      "frame": {
+        "x": 2984,
+        "y": 279,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_19",
+      "frame": {
+        "x": 3357,
+        "y": 279,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_20",
+      "frame": {
+        "x": 0,
+        "y": 558,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_21",
+      "frame": {
+        "x": 373,
+        "y": 558,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_22",
+      "frame": {
+        "x": 746,
+        "y": 558,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_23",
+      "frame": {
+        "x": 1119,
+        "y": 558,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_24",
+      "frame": {
+        "x": 1492,
+        "y": 558,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_25",
+      "frame": {
+        "x": 1865,
+        "y": 558,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_26",
+      "frame": {
+        "x": 2238,
+        "y": 558,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_27",
+      "frame": {
+        "x": 2611,
+        "y": 558,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_28",
+      "frame": {
+        "x": 2984,
+        "y": 558,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_29",
+      "frame": {
+        "x": 3357,
+        "y": 558,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_30",
+      "frame": {
+        "x": 0,
+        "y": 837,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_31",
+      "frame": {
+        "x": 373,
+        "y": 837,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_32",
+      "frame": {
+        "x": 746,
+        "y": 837,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_33",
+      "frame": {
+        "x": 1119,
+        "y": 837,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_34",
+      "frame": {
+        "x": 1492,
+        "y": 837,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_35",
+      "frame": {
+        "x": 1865,
+        "y": 837,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_36",
+      "frame": {
+        "x": 2238,
+        "y": 837,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_37",
+      "frame": {
+        "x": 2611,
+        "y": 837,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_38",
+      "frame": {
+        "x": 2984,
+        "y": 837,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_39",
+      "frame": {
+        "x": 3357,
+        "y": 837,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_40",
+      "frame": {
+        "x": 0,
+        "y": 1116,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_41",
+      "frame": {
+        "x": 373,
+        "y": 1116,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_42",
+      "frame": {
+        "x": 746,
+        "y": 1116,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_43",
+      "frame": {
+        "x": 1119,
+        "y": 1116,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_44",
+      "frame": {
+        "x": 1492,
+        "y": 1116,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_45",
+      "frame": {
+        "x": 1865,
+        "y": 1116,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_46",
+      "frame": {
+        "x": 2238,
+        "y": 1116,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_47",
+      "frame": {
+        "x": 2611,
+        "y": 1116,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_48",
+      "frame": {
+        "x": 2984,
+        "y": 1116,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_49",
+      "frame": {
+        "x": 3357,
+        "y": 1116,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_50",
+      "frame": {
+        "x": 0,
+        "y": 1395,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_51",
+      "frame": {
+        "x": 373,
+        "y": 1395,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_52",
+      "frame": {
+        "x": 746,
+        "y": 1395,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_53",
+      "frame": {
+        "x": 1119,
+        "y": 1395,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_54",
+      "frame": {
+        "x": 1492,
+        "y": 1395,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_55",
+      "frame": {
+        "x": 1865,
+        "y": 1395,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_56",
+      "frame": {
+        "x": 2238,
+        "y": 1395,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_57",
+      "frame": {
+        "x": 2611,
+        "y": 1395,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_58",
+      "frame": {
+        "x": 2984,
+        "y": 1395,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_59",
+      "frame": {
+        "x": 3357,
+        "y": 1395,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_60",
+      "frame": {
+        "x": 0,
+        "y": 1674,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_61",
+      "frame": {
+        "x": 373,
+        "y": 1674,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_62",
+      "frame": {
+        "x": 746,
+        "y": 1674,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_63",
+      "frame": {
+        "x": 1119,
+        "y": 1674,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_64",
+      "frame": {
+        "x": 1492,
+        "y": 1674,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_65",
+      "frame": {
+        "x": 1865,
+        "y": 1674,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_66",
+      "frame": {
+        "x": 2238,
+        "y": 1674,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_67",
+      "frame": {
+        "x": 2611,
+        "y": 1674,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_68",
+      "frame": {
+        "x": 2984,
+        "y": 1674,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_69",
+      "frame": {
+        "x": 3357,
+        "y": 1674,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_70",
+      "frame": {
+        "x": 0,
+        "y": 1953,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_71",
+      "frame": {
+        "x": 373,
+        "y": 1953,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_72",
+      "frame": {
+        "x": 746,
+        "y": 1953,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_73",
+      "frame": {
+        "x": 1119,
+        "y": 1953,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_74",
+      "frame": {
+        "x": 1492,
+        "y": 1953,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_75",
+      "frame": {
+        "x": 1865,
+        "y": 1953,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_76",
+      "frame": {
+        "x": 2238,
+        "y": 1953,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_77",
+      "frame": {
+        "x": 2611,
+        "y": 1953,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_78",
+      "frame": {
+        "x": 2984,
+        "y": 1953,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_79",
+      "frame": {
+        "x": 3357,
+        "y": 1953,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_80",
+      "frame": {
+        "x": 0,
+        "y": 2232,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_81",
+      "frame": {
+        "x": 373,
+        "y": 2232,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_82",
+      "frame": {
+        "x": 746,
+        "y": 2232,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_83",
+      "frame": {
+        "x": 1119,
+        "y": 2232,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_84",
+      "frame": {
+        "x": 1492,
+        "y": 2232,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_85",
+      "frame": {
+        "x": 1865,
+        "y": 2232,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_86",
+      "frame": {
+        "x": 2238,
+        "y": 2232,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_87",
+      "frame": {
+        "x": 2611,
+        "y": 2232,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_88",
+      "frame": {
+        "x": 2984,
+        "y": 2232,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_89",
+      "frame": {
+        "x": 3357,
+        "y": 2232,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_90",
+      "frame": {
+        "x": 0,
+        "y": 2511,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_91",
+      "frame": {
+        "x": 373,
+        "y": 2511,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_92",
+      "frame": {
+        "x": 746,
+        "y": 2511,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_93",
+      "frame": {
+        "x": 1119,
+        "y": 2511,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_94",
+      "frame": {
+        "x": 1492,
+        "y": 2511,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_95",
+      "frame": {
+        "x": 1865,
+        "y": 2511,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    },
+    {
+      "filename": "crystal_spider_walk_96",
+      "frame": {
+        "x": 2238,
+        "y": 2511,
+        "w": 373,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 373,
+        "h": 279
+      },
+      "sourceSize": {
+        "w": 373,
+        "h": 279
+      },
+      "duration": 42
+    }
+  ],
+  "meta": {
+    "app": "tools/video_to_spritesheet.py",
+    "version": "1.0",
+    "image": "crystal_spider_walk_spritesheet_half.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 3730,
+      "h": 2790
+    },
+    "scale": "1",
+    "frameTags": [
+      {
+        "name": "crystal_spider_walk",
+        "from": 0,
+        "to": 96,
+        "direction": "forward"
+      }
+    ],
+    "frameWidth": 373,
+    "frameHeight": 279,
+    "columns": 10,
+    "rows": 10,
+    "frameCount": 97,
+    "fps": 24.0
+  }
+}

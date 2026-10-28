@@ -16,6 +16,9 @@ for a colourless one, such as a grey magic circle, --shading turns its grey into
 see-through shading under solid white lines. When a character bursts into light
 that fills the video, --glow-from keys the frames from then on as light drawn on
 white, see-through as faint as it looks, with the rocks and the like kept solid.
+On a green or blue screen the screen's light is taken off the character's edges;
+--screen-hue also cuts every pixel of the screen's own hue, and --uneven-bg copes
+with a background that is not quite even, such as a fade from white to green.
 
 Requires: pip install av pillow numpy scipy pymatting
 
@@ -152,6 +155,14 @@ How assets/sprites was made (all clips share one 1080x756 canvas):
         --cut-region 29 432 433 --cut-region 30 429 458 --cut-region 31 429 488 --cut-region 31 428 481 \
         --cut-region 31 433 494 --cut-region 32 430 493 --cut-region 55 670 755 --cut-region 59 637 798 \
         --cut-region 67 616 723 --half --no-full --preview
+    # a third enemy, the crystal spider, on its own canvas at its video's own scale (960x960, 24 fps). The clip starts
+    # on white and fades to a green screen over frames 1-4, so the background is measured around each pixel
+    # (--uneven-bg); on white the light faces of its crystals would fade like dust behind their dark outline, so
+    # --outlined keeps them solid; and the gaps between its legs, where compression darkened the green, and the
+    # green fringe along its outline are cut by their hue (--screen-hue)
+    python3 tools/video_to_spritesheet.py crystal_spider_walk.MP4 assets/sprites/crystal_spider_walk \
+        --name crystal_spider_walk --rect 112 190 858 748 --columns 10 --uneven-bg --outlined --screen-hue --half \
+        --no-full --preview
 """
 import argparse
 import json
@@ -189,6 +200,9 @@ GLOW_EDGE = 2          # --glow-from: px of a solid thing's soft rim, un-mixed f
 GLOW_GAIN = 2.5        # --glow-from: light is this many times as opaque as the least that shows its colour over white
 GLOW_SOFTEN = 2.0      # --glow-from: gaussian sigma (px) on the light's opacity, against the video's compression blocks
 GLOW_NECK = 3          # --glow-from: light narrower than 2x this + 1 px (a crack, a bolt) does not let the white in
+BG_FIELD_REACH = 40    # --uneven-bg: the background is what the border reaches through colour this close to its own ...
+BG_FIELD_SIGMA = 8     # ... and its colour smoothed over this many px (gaussian sigma) is the background at each pixel
+SCREEN_SHARE = 0.8     # --screen-hue: colour whose key channel leads by this share of the screen's own lead is screen
 EIGHT = np.ones((3, 3), bool)
 
 
@@ -203,6 +217,43 @@ def read_frames(path):
 def background_colour(rgb):
     border = np.concatenate([rgb[0], rgb[-1], rgb[:, 0], rgb[:, -1]])
     return np.median(border, axis=0)
+
+
+def background_field(rgb):
+    """The background colour at each pixel, for a background that is not quite even (--uneven-bg), such as one
+    caught in a fade from white to a green screen: the colour of the background around each pixel, smoothed so
+    the video's compression noise stays out of it. Far inside the character the border's colour stands in."""
+    bg = background_colour(rgb)
+    labels, _ = ndi.label(colour_distance(rgb, bg) <= BG_FIELD_REACH, structure=EIGHT)
+    # stay clear of the character's soft edge, whose colours are part character
+    sample = ndi.binary_erosion(touching_border(labels), EIGHT, iterations=EDGE_BAND, border_value=1)
+    weight = ndi.gaussian_filter(sample.astype(np.float64), BG_FIELD_SIGMA)
+    field = np.dstack([ndi.gaussian_filter(np.where(sample, rgb[..., c], 0).astype(np.float64), BG_FIELD_SIGMA)
+                       for c in range(3)])
+    return np.where(weight[..., None] > 1e-3, field / np.maximum(weight, 1e-12)[..., None], bg)
+
+
+def background_distance(rgb, uneven=False):
+    """How far each pixel's colour is from the background: from the border's median colour, or with uneven=True
+    from the colour of the background around it (see background_field)."""
+    if not uneven:
+        return colour_distance(rgb, background_colour(rgb))
+    return np.rint(np.abs(rgb.astype(np.float64) - background_field(rgb)).max(axis=2)).astype(np.int16)
+
+
+def content(rgb, uneven=False):
+    """The pixels that are not background. With uneven=True, tiny faint specks the video's compression leaves in an
+    uneven background (fewer than 16 px, within 2x BG_TOLERANCE of it) are not content either."""
+    dist = background_distance(rgb, uneven)
+    solid = dist > BG_TOLERANCE
+    if uneven:
+        labels, count = ndi.label(solid, structure=EIGHT)
+        if count:
+            index = np.arange(1, count + 1)
+            area = ndi.sum(np.ones(dist.shape), labels, index)
+            peak = ndi.maximum(dist, labels, index)
+            solid &= ~np.isin(labels, index[(area < 16) & (peak <= 2 * BG_TOLERANCE)])
+    return solid
 
 
 def key_channel(bg):
@@ -383,7 +434,8 @@ def disk(radius):
 
 def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=False, flash=0.0, faint=0,
               keep_white=(), shading=False, shine=False, keep_pockets=(), thin_lines=False, glow_cores=False,
-              core_width=0, haze=0, shine_lines=False, min_pocket=20):
+              core_width=0, haze=0, shine_lines=False, min_pocket=20, uneven_bg=False, outlined=False,
+              screen_hue=False):
     """Return an RGBA frame with the background removed.
 
     cut_points are (x, y) spots, in this frame's coordinates, where any enclosed
@@ -420,10 +472,17 @@ def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=
     shine=True does all pale areas, while wider pale areas that touch the background still
     fade as trails (the soft glow of sparks, motion blur). min_pocket is the smallest
     enclosed pocket, in px, that the gap test may cut out (smaller white is a detail, such
-    as a fang).
+    as a fang). uneven_bg=True compares each pixel with the colour of the background around it
+    instead of one colour for the whole frame, for a background that is not quite even (see
+    background_field). outlined=True is for a character with a dark outline all round: pale areas
+    inside it, such as light crystal faces on a white background, stay solid even right behind
+    the outline; only pale areas that touch the background itself (motion blur) fade as trails.
+    screen_hue=True is for a green or blue screen: every pixel of nearly the screen's own hue is
+    background, even where compression darkened or tinted it past the gap test: small gaps between
+    legs, and the fringe that would turn into a grey haze along the outline once despilled.
     """
     bg = background_colour(rgb)
-    dist = colour_distance(rgb, bg)
+    dist = background_distance(rgb, uneven_bg)
     if seal:
         solid = dist > BG_TOLERANCE
         pad = seal + 2
@@ -459,6 +518,13 @@ def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=
                 reached = np.unique(labels[held & gaps])
                 gaps &= ~np.isin(labels, reached[reached > 0])
             known_bg = outer_bg | gaps
+        key = key_channel(bg)
+        if screen_hue and key is not None:
+            # on a green or blue screen, its own hue is background even where compression darkened or tinted it: in
+            # the gaps between legs, and in the fringe it leaves along the outline
+            others = [c for c in range(3) if c != key]
+            lead = rgb[..., key].astype(np.float64) - rgb[..., others].max(axis=2)
+            known_bg = known_bg | (lead >= SCREEN_SHARE * (bg[key] - bg[others].max()))
         if haze:
             pale = ~known_bg & (dist <= haze)
             wide = ndi.binary_opening(pale, structure=disk(HAZE_WIDTH))
@@ -508,8 +574,13 @@ def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=
         # thin pale lines (a highlight along an edge) are solid; wider pale areas (and their fringes) are trails
         wide = ndi.binary_opening(light, structure=disk(HAZE_WIDTH))
         light &= ndi.binary_dilation(wide, EIGHT, iterations=HAZE_WIDTH + 1, mask=light)
-    labels, _ = ndi.label(light | band, structure=EIGHT)
-    reached = np.unique(labels[band])
+    if outlined:
+        # only pale areas that touch the background itself are trails; those behind a dark outline are solid
+        labels, _ = ndi.label(light, structure=EIGHT)
+        reached = np.unique(labels[ndi.binary_dilation(known_bg, EIGHT) & light])
+    else:
+        labels, _ = ndi.label(light | band, structure=EIGHT)
+        reached = np.unique(labels[band])
     pale = light & np.isin(labels, reached[reached > 0])
     unknown = band | pale
 
@@ -643,12 +714,11 @@ def glow_cell(rgb, core_width=0):
     return out
 
 
-def union_box(frames):
+def union_box(frames, uneven=False):
     x0 = y0 = 10**9
     x1 = y1 = -1
     for rgb in frames:
-        dist = colour_distance(rgb, background_colour(rgb))
-        ys, xs = np.nonzero(dist > BG_TOLERANCE)
+        ys, xs = np.nonzero(content(rgb, uneven))
         x0, x1 = min(x0, int(xs.min())), max(x1, int(xs.max()))
         y0, y1 = min(y0, int(ys.min())), max(y1, int(ys.max()))
     return x0, y0, x1 + 1, y1 + 1
@@ -676,11 +746,11 @@ def crop(rgb, rect):
     return out
 
 
-def border_contact(frames):
+def border_contact(frames, uneven=False):
     """Which video edges the clip's content touches, and in which frames."""
     sides = {}
     for i, rgb in enumerate(frames):
-        solid = colour_distance(rgb, background_colour(rgb)) > BG_TOLERANCE
+        solid = content(rgb, uneven)
         for side, strip in (("left", solid[:, 0]), ("right", solid[:, -1]), ("top", solid[0]), ("bottom", solid[-1])):
             if strip.any():
                 sides.setdefault(side, []).append(i)
@@ -837,6 +907,18 @@ def main():
                              "that fills the video: what the background reaches through light colour is keyed as "
                              "light, see-through as faint as it looks, and what dark outlines wall in stays solid "
                              "(--core-width also keeps the white middle of thin glowing lines solid)")
+    parser.add_argument("--screen-hue", action="store_true",
+                        help="on a green or blue screen: every pixel of nearly the screen's own hue is background, "
+                             "even where the video's compression darkened or tinted it (small gaps between legs, "
+                             "the fringe along the outline); not for a character with parts of the screen's hue")
+    parser.add_argument("--outlined", action="store_true",
+                        help="the character has a dark outline all round: pale areas inside it (light crystal faces "
+                             "on a white background) stay solid even right behind the outline; only pale areas that "
+                             "touch the background itself, such as motion blur, fade like dust")
+    parser.add_argument("--uneven-bg", action="store_true",
+                        help="the background is not quite even, e.g. the clip fades from a white background to a "
+                             "green screen: compare each pixel with the colour of the background around it instead "
+                             "of one colour for the whole frame")
     parser.add_argument("--min-pocket", type=int, default=20, metavar="PX",
                         help="smallest enclosed background pocket, in px, that is cut out automatically; smaller "
                              "white ringed by dark stays, e.g. raise it so a fang's white is not taken for a gap")
@@ -889,14 +971,14 @@ def main():
         size = (round(frames[0].shape[1] * args.scale), round(frames[0].shape[0] * args.scale))
         frames = [np.asarray(Image.fromarray(f).resize(size, Image.LANCZOS)) for f in frames]
     height, width = frames[0].shape[:2]
-    box = union_box(frames)
+    box = union_box(frames, args.uneven_bg)
     rect = tuple(args.rect) if args.rect else cell_rect(box, args.margin)
     left, top, right, bottom = rect
     w, h = right - left, bottom - top
     print(f"{len(frames)} frames @ {fps:g} fps, {width}x{height}; character box {box}; cell {w}x{h} at ({left},{top})")
     if box[0] < left or box[1] < top or box[2] > right or box[3] > bottom:
         raise SystemExit(f"the clip reaches {box}, outside the cell {rect} - frames would be cut; widen --rect")
-    contact = border_contact(frames) if args.edge_fade > 0 else {}
+    contact = border_contact(frames, args.uneven_bg) if args.edge_fade > 0 else {}
     if args.hold_still:
         hold = track_x(frames, args.hold_still)
         print(f"  holding the tracked part still: it drifts {hold[-1] - hold[0]:+d} px over the clip")
@@ -931,7 +1013,7 @@ def main():
                              args.shading, args.shine,
                              [(x0 - left, y0 - top, x1 - left, y1 - top) for x0, y0, x1, y1 in args.keep_pocket],
                              args.thin_lines, args.glow_cores, args.core_width, args.haze, args.shine_lines,
-                             args.min_pocket)
+                             args.min_pocket, args.uneven_bg, args.outlined, args.screen_hue)
         sides = {side for side, hits in contact.items() if i in hits} | set(args.fade_side)
         if sides:
             cell = fade_edges(cell, rect, width, height, sides, args.edge_fade)
