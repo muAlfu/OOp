@@ -17,7 +17,8 @@ see-through shading under solid white lines. When a character bursts into light
 that fills the video, --glow-from keys the frames from then on as light drawn on
 white, see-through as faint as it looks, with the rocks and the like kept solid.
 On a green or blue screen the screen's light is taken off the character's edges;
---screen-hue also cuts every pixel of the screen's own hue, and --uneven-bg copes
+--screen-hue also cuts every pixel of the screen's own hue, --screen-light keeps
+light over the screen, such as a spark's glow, see-through, and --uneven-bg copes
 with a background that is not quite even, such as a fade from white to green.
 
 Requires: pip install av pillow numpy scipy pymatting
@@ -163,6 +164,13 @@ How assets/sprites was made (all clips share one 1080x756 canvas):
     python3 tools/video_to_spritesheet.py crystal_spider_walk.MP4 assets/sprites/crystal_spider_walk \
         --name crystal_spider_walk --rect 112 190 858 748 --columns 10 --uneven-bg --outlined --screen-hue --half \
         --no-full --preview
+    # its attack, exported the same way (its first frame is the walk's first frame): it lunges to the right and a
+    # white spark flashes from its claw, so the canvas is wider, around the walk's centre (x 485) and bottom (748) for
+    # the Bottom pivot. The spark's rays run past the right edge in two frames, so the last 16 px there fade, and the
+    # spark is light over the green screen, so --screen-light keeps its glow see-through instead of a solid halo
+    python3 tools/video_to_spritesheet.py crystal_spider_attack.MP4 assets/sprites/crystal_spider_attack \
+        --name crystal_spider_attack --rect 10 190 960 748 --columns 7 --uneven-bg --outlined --screen-hue \
+        --screen-light --edge-fade 16 --half --no-full --preview
 """
 import argparse
 import json
@@ -203,6 +211,12 @@ GLOW_NECK = 3          # --glow-from: light narrower than 2x this + 1 px (a crac
 BG_FIELD_REACH = 40    # --uneven-bg: the background is what the border reaches through colour this close to its own ...
 BG_FIELD_SIGMA = 8     # ... and its colour smoothed over this many px (gaussian sigma) is the background at each pixel
 SCREEN_SHARE = 0.8     # --screen-hue: colour whose key channel leads by this share of the screen's own lead is screen
+SCREEN_LIGHT_FAINT = 0.04  # --screen-light: light rises from the screen's colour toward white by this share or more ...
+SCREEN_LIGHT_WARM = 0.6    # ... in both other channels, red by at most this share more (warm light: a spark's yellow
+SCREEN_LIGHT_TINT = 0.2    # glow) and the other by at most this much more (a cyan crystal's edge rises in blue) ...
+SCREEN_LIGHT_DIM = 32      # ... with the key channel at most this much below the screen's (an outline darkens it) ...
+SCREEN_LIGHT_CORE = 0.5    # ... and it reaches the screen and has a part that rises at least this much, 3 px across or
+                           # more (a spark's middle; the light fringe sharpening leaves along an outline is thinner)
 EIGHT = np.ones((3, 3), bool)
 
 
@@ -422,6 +436,35 @@ def despill(foreground, key):
     return foreground
 
 
+def light_over_screen(rgb, bg, key, known_bg):
+    """Light drawn over a green or blue screen, such as a white spark and its glow: (where, alpha, colour).
+
+    Light is colour on the way from the screen's toward white or a warm tint of it: both
+    other channels rise, by about the same share of the way or red ahead, and the key channel
+    stays up (a cyan edge rises in blue only, and an outline's soft edge darkens the key
+    channel). Light that reaches the screen and has a wide light middle is a glow the screen
+    shows through: its opacity is how much of the screen's lead in the key channel is gone
+    (a colour-difference key), and its colour is what is left once that much of the screen
+    is taken out. bg is the background colour, or one per pixel (background_field).
+    """
+    others = [c for c in range(3) if c != key]
+    rgb = rgb.astype(np.float64)
+    bg = np.broadcast_to(np.asarray(bg, np.float64), rgb.shape)
+    rise = (rgb[..., others] - bg[..., others]) / np.maximum(255 - bg[..., others], 1)
+    tilt = rise[..., 0] - rise[..., 1]
+    light = ((rise.min(axis=2) >= SCREEN_LIGHT_FAINT) & (tilt <= SCREEN_LIGHT_WARM) & (tilt >= -SCREEN_LIGHT_TINT)
+             & (rgb[..., key] >= bg[..., key] - SCREEN_LIGHT_DIM))
+    labels, _ = ndi.label(light, structure=EIGHT)
+    cored = labels[ndi.binary_erosion(light & (rise.min(axis=2) >= SCREEN_LIGHT_CORE), EIGHT)]
+    touched = labels[light & ndi.binary_dilation(known_bg, EIGHT)]
+    glow = np.isin(labels, np.intersect1d(cored, touched))
+    screen = bg[..., key] - bg[..., others].max(axis=2)
+    lead = rgb[..., key] - rgb[..., others].max(axis=2)
+    alpha = np.clip(1 - lead / np.maximum(screen, 1), 0, 1)
+    colour = np.clip(bg + (rgb - bg) / np.maximum(alpha, 1e-3)[..., None], 0, 255) / 255
+    return glow, alpha, colour
+
+
 CUT_REGION_TOLERANCES = (30, 20, 15, 10)  # a hand-picked region may be this far off the background colour ...
 CUT_REGION_MAX = 20000     # ... and at most this many px; a tighter tolerance is tried when a pale line joins it
                            # to the background around the character (none at all means the spot was wrong)
@@ -435,7 +478,7 @@ def disk(radius):
 def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=False, flash=0.0, faint=0,
               keep_white=(), shading=False, shine=False, keep_pockets=(), thin_lines=False, glow_cores=False,
               core_width=0, haze=0, shine_lines=False, min_pocket=20, uneven_bg=False, outlined=False,
-              screen_hue=False):
+              screen_hue=False, screen_light=False):
     """Return an RGBA frame with the background removed.
 
     cut_points are (x, y) spots, in this frame's coordinates, where any enclosed
@@ -480,6 +523,8 @@ def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=
     screen_hue=True is for a green or blue screen: every pixel of nearly the screen's own hue is
     background, even where compression darkened or tinted it past the gap test: small gaps between
     legs, and the fringe that would turn into a grey haze along the outline once despilled.
+    screen_light=True keeps light drawn over such a screen, such as a white spark's glow, see-through by
+    how much of the screen shows through it (see light_over_screen) instead of a solid tinted halo.
     """
     bg = background_colour(rgb)
     dist = background_distance(rgb, uneven_bg)
@@ -610,11 +655,18 @@ def key_frame(rgb, cut_points=(), cut_regions=(), cut_gaps=True, seal=0, effect=
     if rim is not None:
         fading = rim > 0
         alpha[fading] *= rim[fading]
+    key = key_channel(bg)
+    glow = None
+    if screen_light and key is not None:
+        glow, glow_alpha, glow_colour = light_over_screen(rgb, background_field(rgb) if uneven_bg else bg, key,
+                                                          known_bg)
+        alpha[glow] = glow_alpha[glow]
     alpha = drop_specks(alpha)
     foreground = estimate_foreground_ml(image, alpha)
-    key = key_channel(bg)
     if key is not None:
         foreground = despill(foreground, key)
+    if glow is not None:
+        foreground[glow] = glow_colour[glow]  # the screen is already taken out of the light's colour
 
     out = np.dstack([np.clip(foreground, 0, 1) * 255, alpha * 255])
     out = np.rint(out).astype(np.uint8)
@@ -911,6 +963,10 @@ def main():
                         help="on a green or blue screen: every pixel of nearly the screen's own hue is background, "
                              "even where the video's compression darkened or tinted it (small gaps between legs, "
                              "the fringe along the outline); not for a character with parts of the screen's hue")
+    parser.add_argument("--screen-light", action="store_true",
+                        help="on a green or blue screen: light drawn over the screen, such as a white spark and its "
+                             "glow, is see-through by how much of the screen shows through it, with the screen's "
+                             "colour taken out of it, instead of a solid halo tinted by the screen")
     parser.add_argument("--outlined", action="store_true",
                         help="the character has a dark outline all round: pale areas inside it (light crystal faces "
                              "on a white background) stay solid even right behind the outline; only pale areas that "
@@ -1013,7 +1069,7 @@ def main():
                              args.shading, args.shine,
                              [(x0 - left, y0 - top, x1 - left, y1 - top) for x0, y0, x1, y1 in args.keep_pocket],
                              args.thin_lines, args.glow_cores, args.core_width, args.haze, args.shine_lines,
-                             args.min_pocket, args.uneven_bg, args.outlined, args.screen_hue)
+                             args.min_pocket, args.uneven_bg, args.outlined, args.screen_hue, args.screen_light)
         sides = {side for side, hits in contact.items() if i in hits} | set(args.fade_side)
         if sides:
             cell = fade_edges(cell, rect, width, height, sides, args.edge_fade)

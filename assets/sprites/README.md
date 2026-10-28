@@ -177,6 +177,7 @@ own scale (746×558, half 373×279). Use the `Bottom` pivot.
 | Animation | Frames | Grid | Full sheet (frame 746×558) | Half sheet (frame 373×279) |
 | --- | --- | --- | --- | --- |
 | `crystal_spider_walk/` | 97, **24 fps** | 10 columns × 10 rows (last 3 cells empty) | not made (would be 7460×5580) | 3730×2790 |
+| `crystal_spider_attack/` | 97, **24 fps** | 7 columns × 14 rows (last cell empty) | not made (would be 6650×7812) | 3325×3906, **frame 475×279** |
 
 The spider walks in place. The clip starts on a white background that fades to a green screen over frames 1–4
 (counting from 0); every frame is cut out against its own background, so all 97 frames look alike whatever the
@@ -185,6 +186,17 @@ the smoothest loop, frames 41–72 (32 frames), still has a small hitch. The whi
 solid; the background seen through the gaps between the legs is cut out, also where the video's compression darkened
 its green, and the green screen's light is taken off the edges. In frames 50–57 the claws' motion blur stays as a
 soft, see-through smear.
+
+The attack was exported the same way, and its first frame is the walk's first frame. Its canvas is wider (950×558,
+x 10–960, y 190–748; half 475×279), because a white spark flashes from its claw out to the right edge of the video,
+but it has the same centre (x 485) and bottom edge (748) as the walk's, so with the `Bottom` pivot the attack starts
+exactly where the walk has the spider. The spider crouches (frames 8–19, counting from 0), raises its front legs
+(20–42), turns to the right and strikes with a front claw in frames 43–46, where the spark flashes from the claw's
+tip, stays turned, low and with its legs spread until about frame 63, and then turns back and stands up (64–84). It
+ends close to the pose it started in but not exactly in it, so going back to the walk the legs jump a little. In
+frames 44 and 45 the spark's rays run past the right edge of the video, so the last 16 px there fade out. The spark
+is light over the green screen: its white middle is solid and its glow see-through, so it shows as light on any
+background instead of a halo tinted by the screen.
 
 - Frames go left to right, top to bottom: frame `i` is at column `i % columns`, row `i / columns`.
 - Play at 30 fps (33 ms per frame), except the rat clips after the idle (walk, cast, projectile, explosion, buff,
@@ -214,21 +226,21 @@ soft, see-through smear.
 
 1. Drop the PNG into `Assets`.
 2. Inspector: **Texture Type** `Sprite (2D and UI)`, **Sprite Mode** `Multiple`, **Max Size** at least the sheet's
-   larger side: `4096` for the 3780-wide half sheets, `vexbat_idle` and `crystal_spider_walk`, `8192` for
-   `final_heavy_claw_attack`, `jump_hallow`, `rat_under_magic_idle`, `rat_under_magic_cast_projectile`,
-   `rat_under_magic_impact_explosion`, `rat_under_magic_cast_buff`, `enemy_crystal_boom`, `crystal_golem_walk`,
-   `crystal_golem_attack`, both `crystal_golem_death` sheets, `vexbat_attack` and the full sheets. The default 2048
-   shrinks the sheet. Apply.
+   larger side: `4096` for the 3780-wide half sheets, `vexbat_idle`, `crystal_spider_walk` and
+   `crystal_spider_attack`, `8192` for `final_heavy_claw_attack`, `jump_hallow`, `rat_under_magic_idle`,
+   `rat_under_magic_cast_projectile`, `rat_under_magic_impact_explosion`, `rat_under_magic_cast_buff`,
+   `enemy_crystal_boom`, `crystal_golem_walk`, `crystal_golem_attack`, both `crystal_golem_death` sheets,
+   `vexbat_attack` and the full sheets. The default 2048 shrinks the sheet. Apply.
 3. **Sprite Editor → Slice**: **Type** `Grid By Cell Size`, **Pixel Size** `540 × 378` (half) or `1080 × 756` (full),
-   except `jump_hallow`: `540 × 426`, the rat idle: `356 × 408`, the rat walk: `418 × 368`, the rat cast:
-   `566 × 406`, the projectile: `456 × 188`, the explosion: `540 × 540`, the buff: `544 × 434`, the aura: `396 × 420`,
-   the healing: `312 × 420`, the magic circle: `540 × 188`, the soldier rat: `330 × 240`, the crystal enemy's boom:
-   `468 × 354`, its walk: `524 × 400`, its attack: `733 × 584` and its death: `785 × 784`, the Vexbat's idle:
-   `502 × 214` and its attack: `516 × 474`, and the crystal spider: `373 × 279`. **Pivot** `Bottom` (the projectile:
-   `Custom Pivot` X 0.82, Y 0.47; the explosion, the magic circle and the Vexbat: `Center`; the aura: `Custom Pivot`
-   X 0.5, Y 0.0595; the healing: `Custom Pivot` X 0.5, Y 0.0786; the crystal golem's walk: `Custom Pivot` X 0.5,
-   Y 0.03, its attack: `Custom Pivot` X 0.5341, Y 0.125, and its death: `Custom Pivot` X 0.5, Y 0.273). Slice, then
-   Apply. Empty cells at the end are skipped.
+   except `jump_hallow`: `540 × 426`, the rat idle: `356 × 408`, the rat walk: `418 × 368`, the rat cast: `566 × 406`,
+   the projectile: `456 × 188`, the explosion: `540 × 540`, the buff: `544 × 434`, the aura: `396 × 420`, the healing:
+   `312 × 420`, the magic circle: `540 × 188`, the soldier rat: `330 × 240`, the crystal enemy's boom: `468 × 354`,
+   its walk: `524 × 400`, its attack: `733 × 584` and its death: `785 × 784`, the Vexbat's idle: `502 × 214` and its
+   attack: `516 × 474`, and the crystal spider's walk: `373 × 279` and its attack: `475 × 279`. **Pivot** `Bottom`
+   (the projectile: `Custom Pivot` X 0.82, Y 0.47; the explosion, the magic circle and the Vexbat: `Center`; the aura:
+   `Custom Pivot` X 0.5, Y 0.0595; the healing: `Custom Pivot` X 0.5, Y 0.0786; the crystal golem's walk:
+   `Custom Pivot` X 0.5, Y 0.03, its attack: `Custom Pivot` X 0.5341, Y 0.125, and its death: `Custom Pivot` X 0.5,
+   Y 0.273). Slice, then Apply. Empty cells at the end are skipped.
 4. Select the sprites, drag them into the scene to make the animation, and set **Sample Rate** to `30`
    (`24` for the rat walk, cast, projectile, explosion, buff, aura, healing, magic circle, the soldier rat, the
    crystal enemy's boom, walk and attack, the Vexbat and the crystal spider; the golem's death stays at `30`).
